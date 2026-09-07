@@ -1,0 +1,44 @@
+# Dependencies / environments
+node_modules/
+.venv/
+venv/
+env/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Private keys / credentials
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
+
+# Build / generated output
+dist/
+build/
+.cache/
+
+# Local backups
+*_backup*.html
+
+backupindex.html

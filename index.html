@@ -1,0 +1,3044 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+   <title>Mayank Yadav — Engineer, Founder & Builder</title>
+
+<meta
+    name="description"
+    content="Mayank Yadav is an engineer, founder and builder exploring AI, Web3, blockchain and technology while building products and startups."
+>
+
+<meta
+    name="author"
+    content="Mayank Yadav"
+>
+
+<meta
+    name="robots"
+    content="index, follow"
+>
+
+<meta
+    name="theme-color"
+    content="#000000"
+>
+
+<link
+    rel="icon"
+    type="image/png"
+    href="assets/icons/favicon.png"
+>
+
+<link
+    rel="canonical"
+    href="https://itsmayank.me/"
+>
+
+<!-- Open Graph -->
+<meta
+    property="og:type"
+    content="website"
+>
+
+<meta
+    property="og:url"
+    content="https://itsmayank.me/"
+>
+
+<meta
+    property="og:title"
+    content="Mayank Yadav — Engineer, Founder & Builder"
+>
+
+<meta
+    property="og:description"
+    content="Engineer, founder and builder exploring AI, Web3, blockchain and technology."
+>
+
+<meta
+    property="og:image"
+    content="https://itsmayank.me/assets/photos/mayank.jpg"
+>
+
+<meta
+    property="og:site_name"
+    content="Mayank Yadav"
+>
+
+<!-- X / Twitter -->
+<meta
+    name="twitter:card"
+    content="summary_large_image"
+>
+
+<meta
+    name="twitter:title"
+    content="Mayank Yadav — Engineer, Founder & Builder"
+>
+
+<meta
+    name="twitter:description"
+    content="Engineer, founder and builder exploring AI, Web3, blockchain and technology."
+>
+
+<meta
+    name="twitter:image"
+    content="https://itsmayank.me/assets/photos/mayank.jpg"
+>
+
+    <style>
+
+        /* ========================================
+           RESET
+        ======================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            width: 100%;
+            min-height: 100%;
+            scroll-behavior: smooth;
+            background: #000;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100%;
+            background: #000;
+            color: #fff;
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+
+        /* ========================================
+           PARTICLE BACKGROUND
+        ======================================== */
+
+        #particleBackground {
+            position: fixed;
+            inset: 0;
+
+            width: 100vw;
+            height: 100vh;
+
+            z-index: 0;
+
+            pointer-events: none;
+
+            overflow: hidden;
+
+            background: #000;
+        }
+
+        #particleCanvas {
+            display: block;
+
+            width: 100%;
+            height: 100%;
+        }
+
+
+        /* ========================================
+           SITE CONTENT
+        ======================================== */
+
+        #siteContent {
+            position: relative;
+
+            z-index: 2;
+
+            width: 100%;
+
+            min-height: 100vh;
+
+            pointer-events: none;
+        }
+
+        #siteContent a,
+        #siteContent button {
+            pointer-events: auto;
+        }
+
+
+        /* ========================================
+           TOP NAVIGATION
+        ======================================== */
+
+        .topbar {
+            position: fixed;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+
+            padding:
+                34px
+                3vw;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            z-index: 20;
+
+            pointer-events: none;
+        }
+
+        .brand {
+            color: #fff;
+
+            text-decoration: none;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            letter-spacing: 3px;
+
+            pointer-events: auto;
+        }
+
+        .brand span {
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.35
+                );
+        }
+
+        .nav-links {
+            display: flex;
+
+            align-items: center;
+
+            gap: 28px;
+        }
+
+        .nav-links a {
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.45
+                );
+
+            text-decoration: none;
+
+            font-size: 9px;
+
+            font-weight: 600;
+
+            letter-spacing: 1.5px;
+
+            transition:
+                color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: #fff;
+        }
+
+
+        /* ========================================
+           HERO
+        ======================================== */
+
+        .hero {
+            position: relative;
+
+            min-height: 100vh;
+
+            width: 100%;
+
+            display: flex;
+
+            align-items: center;
+
+            padding:
+                120px
+                7vw
+                100px;
+        }
+
+        .hero-content {
+            max-width: 680px;
+
+            position: relative;
+
+            z-index: 5;
+
+            animation:
+                heroReveal
+                1.2s
+                ease-out
+                both;
+        }
+
+        @keyframes heroReveal {
+
+            from {
+                opacity: 0;
+
+                transform:
+                    translateY(25px);
+            }
+
+            to {
+                opacity: 1;
+
+                transform:
+                    translateY(0);
+            }
+
+        }
+
+
+        /* ========================================
+           HERO EYEBROW
+        ======================================== */
+
+        .eyebrow {
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            margin-bottom: 30px;
+
+            font-size: 10px;
+
+            letter-spacing: 4px;
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.45
+                );
+
+            text-transform: uppercase;
+        }
+
+        .eyebrow::before {
+            content: "";
+
+            width: 30px;
+
+            height: 1px;
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.35
+                );
+        }
+
+
+        /* ========================================
+           HERO TITLE
+        ======================================== */
+
+        .hero-title {
+            position: relative;
+
+            font-size:
+                clamp(
+                    58px,
+                    7vw,
+                    108px
+                );
+
+            line-height: 0.92;
+
+            font-weight: 600;
+
+            letter-spacing: -5px;
+
+            margin-bottom: 38px;
+
+            text-shadow:
+                0 0 40px
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.04
+                );
+        }
+
+        .hero-title::after {
+            content: "";
+
+            position: absolute;
+
+            left: -20px;
+
+            bottom: -25px;
+
+            width: 180px;
+
+            height: 80px;
+
+            background:
+                radial-gradient(
+                    ellipse,
+                    rgba(
+                        255,
+                        255,
+                        255,
+                        0.08
+                    ),
+                    transparent 70%
+                );
+
+            filter: blur(25px);
+
+            pointer-events: none;
+        }
+
+        .hero-title .muted {
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.20
+                );
+        }
+
+
+        /* ========================================
+           HERO DESCRIPTION
+        ======================================== */
+
+        .hero-description {
+            max-width: 540px;
+
+            font-size: 15px;
+
+            line-height: 1.8;
+
+            letter-spacing: 0.1px;
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.48
+                );
+
+            margin-bottom: 38px;
+        }
+
+
+        /* ========================================
+           HERO BUTTONS
+        ======================================== */
+
+        .hero-buttons {
+            display: flex;
+
+            gap: 12px;
+
+            flex-wrap: wrap;
+        }
+
+        .hero-button {
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            min-width: 125px;
+
+            padding:
+                14px
+                23px;
+
+            border-radius: 999px;
+
+            border:
+                1px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.18
+                );
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.03
+                );
+
+            color: #fff;
+
+            text-decoration: none;
+
+            font-size: 10px;
+
+            font-weight: 600;
+
+            letter-spacing: 1.5px;
+
+            transition:
+                transform 0.25s ease,
+                background 0.25s ease,
+                border-color 0.25s ease;
+        }
+
+        .hero-button:hover {
+            transform:
+                translateY(-3px);
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.10
+                );
+
+            border-color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.45
+                );
+        }
+
+        .hero-button.primary {
+            background: #fff;
+
+            color: #000;
+
+            border-color: #fff;
+        }
+
+        .hero-button.primary:hover {
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.88
+                );
+        }
+
+
+        /* ========================================
+           HERO META
+        ======================================== */
+
+        .hero-meta {
+            display: flex;
+
+            gap: 18px;
+
+            margin-top: 28px;
+
+            flex-wrap: wrap;
+        }
+
+        .hero-meta span {
+            font-size: 8px;
+
+            letter-spacing: 2px;
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.22
+                );
+
+            position: relative;
+        }
+
+        .hero-meta span:not(:last-child)::after {
+            content: "·";
+
+            position: absolute;
+
+            right: -11px;
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.15
+                );
+        }
+
+
+        /* ========================================
+           SCROLL INDICATOR
+        ======================================== */
+
+        .scroll-indicator {
+            position: absolute;
+
+            left: 7vw;
+
+            bottom: 38px;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 14px;
+
+            z-index: 5;
+        }
+
+        .scroll-indicator span {
+            font-size: 8px;
+
+            letter-spacing: 2px;
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.22
+                );
+        }
+
+        .scroll-line {
+            width: 45px;
+
+            height: 1px;
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.18
+                );
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+        .scroll-line::after {
+            content: "";
+
+            position: absolute;
+
+            left: -100%;
+
+            top: 0;
+
+            width: 100%;
+
+            height: 100%;
+
+            background: #fff;
+
+            animation:
+                scrollLine
+                2s
+                ease-in-out
+                infinite;
+        }
+
+        @keyframes scrollLine {
+
+            0% {
+                left: -100%;
+            }
+
+            50% {
+                left: 0;
+            }
+
+            100% {
+                left: 100%;
+            }
+
+        }
+
+
+        /* ========================================
+           FIXED LOCATION
+        ======================================== */
+
+        .location {
+            position: fixed;
+
+            left: 3vw;
+
+            bottom: 34px;
+
+            z-index: 20;
+
+            font-size: 9px;
+
+            letter-spacing: 2px;
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.25
+                );
+
+            text-transform: uppercase;
+
+            pointer-events: none;
+        }
+
+        .location::before {
+            content: "";
+
+            display: inline-block;
+
+            width: 5px;
+
+            height: 5px;
+
+            margin-right: 8px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.35
+                );
+        }
+
+
+        /* ========================================
+           PARTICLE LABEL
+        ======================================== */
+
+        .particle-label {
+            position: fixed;
+
+            right: 4vw;
+
+            bottom: 34px;
+
+            z-index: 20;
+
+            font-size: 9px;
+
+            letter-spacing: 2px;
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.25
+                );
+
+            pointer-events: none;
+        }
+
+
+        /* ========================================
+           GENERAL SECTIONS
+        ======================================== */
+
+        .section {
+            position: relative;
+
+            min-height: 100vh;
+
+            width: 100%;
+
+            padding:
+                120px
+                7vw;
+        }
+
+        .section-inner {
+            max-width: 1200px;
+
+            margin: 0 auto;
+        }
+
+        .section-label {
+            font-size: 10px;
+
+            letter-spacing: 4px;
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.35
+                );
+
+            text-transform: uppercase;
+
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size:
+                clamp(
+                    42px,
+                    5vw,
+                    72px
+                );
+
+            line-height: 1;
+
+            letter-spacing: -3px;
+
+            margin-bottom: 30px;
+        }
+
+        .section-text {
+            max-width: 650px;
+
+            font-size: 16px;
+
+            line-height: 1.8;
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.5
+                );
+        }
+
+
+        /* ========================================
+           ABOUT
+        ======================================== */
+
+        .about-layout {
+            display: grid;
+
+            grid-template-columns:
+                1fr
+                1fr;
+
+            gap: 80px;
+
+            align-items: center;
+
+            min-height: 70vh;
+        }
+
+        .about-large {
+            font-size:
+                clamp(
+                    38px,
+                    4vw,
+                    64px
+                );
+
+            line-height: 1.05;
+
+            letter-spacing: -3px;
+        }
+
+        .about-large span {
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.28
+                );
+        }
+
+        .about-details {
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.45
+                );
+
+            font-size: 14px;
+
+            line-height: 1.8;
+        }
+
+        .about-details strong {
+            color: #fff;
+        }
+
+
+        /* ========================================
+           PROJECTS
+        ======================================== */
+
+        .project-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    2,
+                    minmax(
+                        0,
+                        1fr
+                    )
+                );
+
+            gap: 16px;
+
+            margin-top: 60px;
+        }
+
+        .project-card {
+            position: relative;
+
+            min-height: 280px;
+
+            padding: 30px;
+
+            border:
+                1px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.1
+                );
+
+            border-radius: 20px;
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.025
+                );
+
+            backdrop-filter: blur(10px);
+
+            transition:
+                transform 0.3s ease,
+                border-color 0.3s ease,
+                background 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform:
+                translateY(-6px);
+
+            border-color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.28
+                );
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.045
+                );
+        }
+
+        .project-status {
+            display: inline-block;
+
+            margin-bottom: 45px;
+
+            padding:
+                6px
+                10px;
+
+            border:
+                1px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.12
+                );
+
+            border-radius: 999px;
+
+            font-size: 8px;
+
+            letter-spacing: 1.5px;
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.45
+                );
+
+            text-transform: uppercase;
+        }
+
+        .project-card h3 {
+            font-size: 28px;
+
+            letter-spacing: -1px;
+
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            max-width: 480px;
+
+            font-size: 13px;
+
+            line-height: 1.7;
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.42
+                );
+        }
+
+        .project-link {
+            position: absolute;
+
+            right: 30px;
+
+            bottom: 30px;
+
+            color: #fff;
+
+            text-decoration: none;
+
+            font-size: 9px;
+
+            letter-spacing: 1.5px;
+        }
+
+
+        /* ========================================
+           SKILLS
+        ======================================== */
+
+        .skills-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    2,
+                    minmax(
+                        0,
+                        1fr
+                    )
+                );
+
+            gap: 16px;
+
+            margin-top: 60px;
+        }
+
+        .skill-box {
+            padding: 30px;
+
+            min-height: 180px;
+
+            border:
+                1px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.1
+                );
+
+            border-radius: 20px;
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.025
+                );
+        }
+
+        .skill-box h3 {
+            margin-bottom: 20px;
+
+            font-size: 12px;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+        }
+
+        .skill-list {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 8px;
+        }
+
+        .skill {
+            padding:
+                8px
+                11px;
+
+            border:
+                1px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.1
+                );
+
+            border-radius: 999px;
+
+            font-size: 10px;
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.55
+                );
+        }
+
+
+        /* ========================================
+           CONTACT
+        ======================================== */
+
+        .contact {
+            min-height: 90vh;
+
+            display: flex;
+
+            align-items: center;
+        }
+
+        .contact-links {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+
+            margin-top: 40px;
+        }
+
+        .contact-link {
+            display: inline-flex;
+
+            padding:
+                14px
+                20px;
+
+            border:
+                1px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.12
+                );
+
+            border-radius: 999px;
+
+            color: #fff;
+
+            text-decoration: none;
+
+            font-size: 10px;
+
+            letter-spacing: 1.2px;
+
+            transition:
+                background 0.25s ease,
+                transform 0.25s ease;
+        }
+
+        .contact-link:hover {
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.08
+                );
+
+            transform:
+                translateY(-2px);
+        }
+
+
+        /* ========================================
+           FOOTER
+        ======================================== */
+
+        footer {
+            position: relative;
+
+            z-index: 5;
+
+            padding:
+                40px
+                7vw
+                60px;
+
+            border-top:
+                1px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.08
+                );
+        }
+
+        .footer-inner {
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.25
+                );
+
+            font-size: 9px;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+        }
+
+
+        /* ========================================
+           MOBILE
+        ======================================== */
+
+        @media (max-width: 800px) {
+
+            .topbar {
+                padding:
+                    24px
+                    20px;
+            }
+
+            .nav-links {
+                gap: 12px;
+            }
+
+            .nav-links a {
+                font-size: 8px;
+            }
+
+            .hero {
+                padding:
+                    120px
+                    24px
+                    100px;
+            }
+
+            .hero-title {
+                font-size:
+                    clamp(
+                        48px,
+                        14vw,
+                        72px
+                    );
+
+                letter-spacing: -3px;
+            }
+
+            .hero-description {
+                font-size: 13px;
+            }
+
+            .hero-meta {
+                gap: 14px;
+            }
+
+            .scroll-indicator {
+                left: 24px;
+                bottom: 24px;
+            }
+
+            .scroll-indicator span {
+                font-size: 7px;
+            }
+
+            .scroll-line {
+                width: 30px;
+            }
+
+            .section {
+                padding:
+                    100px
+                    24px;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-layout {
+                grid-template-columns: 1fr;
+
+                gap: 40px;
+            }
+
+            .location {
+                left: 20px;
+                bottom: 22px;
+            }
+
+            .particle-label {
+                right: 20px;
+                bottom: 22px;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+
+                gap: 12px;
+            }
+
+        }
+
+
+        /* ========================================
+           SMALL MOBILE
+        ======================================== */
+
+        @media (max-width: 480px) {
+
+            .nav-links a:nth-child(2) {
+                display: none;
+            }
+
+            .hero-buttons {
+                width: 100%;
+            }
+
+            .hero-button {
+                flex: 1;
+            }
+
+            .project-card {
+                min-height: 250px;
+            }
+
+        }
+
+/* =========================================================
+   STEP 31 — RESPONSIVE / MOBILE
+========================================================= */
+
+/* ---------- BASE ---------- */
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100dvh;
+}
+
+/* Particle canvas must stay fixed */
+canvas#particleCanvas {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+    pointer-events: auto;
+}
+
+
+/* =========================================================
+   CONTENT LAYER
+========================================================= */
+
+/*
+   Your website content should remain ABOVE
+   the particle background.
+*/
+
+section,
+header,
+nav,
+main,
+footer,
+.container,
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    canvas#particleCanvas {
+        transform: translate3d(0, 0, 0);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    canvas#particleCanvas {
+        position: fixed;
+        inset: 0;
+
+        width: 100vw;
+        height: 100dvh;
+
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+    canvas#particleCanvas {
+        width: 100vw;
+        height: 100dvh;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto !important;
+    }
+
+}
+/* =========================================================
+   STEP 33 — ACCESSIBILITY
+========================================================= */
+
+/* Visible keyboard focus */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+/* Don't remove focus for keyboard users */
+a:focus,
+button:focus {
+    outline: none;
+}
+
+/* Restore a clear focus ring only when keyboard navigation is used */
+:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto !important;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================================
+         FIXED PARTICLE BACKGROUND
+    ======================================== -->
+
+    <div id="particleBackground">
+
+        <canvas
+            id="particleCanvas"
+            aria-hidden="true"
+        ></canvas>
+
+    </div>
+
+
+    <!-- ========================================
+         NAVIGATION
+    ======================================== -->
+
+    <header class="topbar">
+
+        <a
+            class="brand"
+            href="#top"
+        >
+            MAYANK <span>YADAV</span>
+        </a>
+
+
+        <nav class="nav-links">
+
+            <a href="#about">
+                ABOUT
+            </a>
+
+            <a href="#projects">
+                PROJECTS
+            </a>
+
+            <a href="#contact">
+                CONTACT
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ========================================
+         SITE CONTENT
+    ======================================== -->
+
+    <main id="siteContent">
+
+
+        <!-- ====================================
+             HERO
+        ==================================== -->
+
+        <section
+            class="hero"
+            id="top"
+        >
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    ENGINEER · FOUNDER · BUILDER
+                </div>
+
+
+                <h1 class="hero-title">
+
+                    Building the<br>
+
+                    <span class="muted">
+                        future of
+                    </span><br>
+
+                    technology.
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    Exploring AI, Web3, blockchain and
+                    technology while building products
+                    at the intersection of ideas and
+                    execution.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a
+                        class="hero-button primary"
+                        href="https://github.com/mayankyadav89"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        VIEW GITHUB
+                    </a>
+
+
+                    <a
+                        class="hero-button"
+                        href="#projects"
+                    >
+                        PORTFOLIO
+                    </a>
+
+                </div>
+
+
+                <div class="hero-meta">
+
+                    <span>
+                        AI
+                    </span>
+
+                    <span>
+                        WEB3
+                    </span>
+
+                    <span>
+                        BLOCKCHAIN
+                    </span>
+
+                    <span>
+                        STARTUPS
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- SCROLL -->
+
+            <div class="scroll-indicator">
+
+                <span>
+                    SCROLL TO EXPLORE
+                </span>
+
+                <div class="scroll-line"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             ABOUT
+        ==================================== -->
+
+        <section
+            class="section"
+            id="about"
+        >
+
+            <div class="section-inner">
+
+                <div class="section-label">
+                    01 · ABOUT
+                </div>
+
+
+                <div class="about-layout">
+
+                    <div class="about-large">
+
+                        Engineer.<br>
+
+                        <span>
+                            Founder.
+                        </span><br>
+
+                        Builder.
+
+                    </div>
+
+
+                    <div class="about-details">
+
+                        <p>
+
+                            I work at the intersection of
+                            AI, Web3, software and
+                            entrepreneurship — turning
+                            ideas into products,
+                            experiments and businesses.
+
+                        </p>
+
+                        <br>
+
+                        <p>
+
+                            Currently building
+                            <strong>MRIG</strong>
+                            and exploring new ideas across
+                            technology, careers and digital
+                            infrastructure.
+
+                        </p>
+
+                        <br>
+
+                        <p>
+
+                            <strong>
+                                B.Tech — Computer Science &
+                                Engineering (AI & ML)
+                            </strong>
+
+                            <br>
+
+                            University Institute of Technology,
+                            RGPV, Bhopal
+
+                            <br>
+
+                            2021 — 2026
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             PROJECTS
+        ==================================== -->
+
+        <section
+            class="section"
+            id="projects"
+        >
+
+            <div class="section-inner">
+
+                <div class="section-label">
+                    02 · PROJECTS & VENTURES
+                </div>
+
+
+                <h2 class="section-title">
+                    Things I'm building.
+                </h2>
+
+
+                <div class="project-grid">
+
+
+                    <!-- MRIG -->
+
+                    <article class="project-card">
+
+                        <span class="project-status">
+                            BUILDING
+                        </span>
+
+                        <h3>
+                            MRIG
+                        </h3>
+
+                        <p>
+
+                            Building the
+                            <strong>
+                                Amazon of Physical Assets
+                            </strong>
+                            — a marketplace designed to
+                            unlock the value of physical
+                            assets.
+
+                        </p>
+
+                        <a
+                            class="project-link"
+                            href="https://mrig.tech"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            MRIG.TECH →
+                        </a>
+
+                    </article>
+
+
+                    <!-- RAS -->
+
+                    <article class="project-card">
+
+                        <span class="project-status">
+                            BUILDING
+                        </span>
+
+                        <h3>
+                            RAS
+                        </h3>
+
+                        <p>
+
+                            AI-powered career and
+                            recruitment ecosystem covering
+                            screening, job matching,
+                            auto-apply, AI interviews,
+                            evaluation and career guidance.
+
+                        </p>
+
+                        <a
+                            class="project-link"
+                            href="https://mrig.tech"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            EXPLORE →
+                        </a>
+
+                    </article>
+
+
+                    <!-- AEGISVAULT -->
+
+                    <article class="project-card">
+
+                        <span class="project-status">
+                            EXPERIMENTAL
+                        </span>
+
+                        <h3>
+                            SVG AegisVault
+                        </h3>
+
+                        <p>
+
+                            A hybrid wallet and Web3
+                            security experiment focused on
+                            secure digital asset infrastructure.
+
+                        </p>
+
+                        <a
+                            class="project-link"
+                            href="https://github.com/mayankyadav89/svg-aegisvault"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GITHUB →
+                        </a>
+
+                    </article>
+
+
+                    <!-- CRYPTICARD -->
+
+                    <article class="project-card">
+
+                        <span class="project-status">
+                            IDEA
+                        </span>
+
+                        <h3>
+                            Crypticard
+                        </h3>
+
+                        <p>
+
+                            An early-stage Web3 / crypto
+                            product concept currently
+                            being explored.
+
+                        </p>
+
+                    </article>
+
+
+                    <!-- ECOTIES -->
+
+                    <article class="project-card">
+
+                        <span class="project-status">
+                            IDEA
+                        </span>
+
+                        <h3>
+                            Ecoties
+                        </h3>
+
+                        <p>
+
+                            An early-stage startup concept
+                            currently in the idea and
+                            exploration phase.
+
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             SKILLS
+        ==================================== -->
+
+        <section
+            class="section"
+            id="skills"
+        >
+
+            <div class="section-inner">
+
+                <div class="section-label">
+                    03 · SKILLS
+                </div>
+
+
+                <h2 class="section-title">
+                    Tools of the trade.
+                </h2>
+
+
+                <div class="skills-grid">
+
+
+                    <div class="skill-box">
+
+                        <h3>
+                            Languages
+                        </h3>
+
+                        <div class="skill-list">
+
+                            <span class="skill">
+                                Python
+                            </span>
+
+                            <span class="skill">
+                                SQL
+                            </span>
+
+                            <span class="skill">
+                                Solidity
+                            </span>
+
+                            <span class="skill">
+                                DSA
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-box">
+
+                        <h3>
+                            Technology
+                        </h3>
+
+                        <div class="skill-list">
+
+                            <span class="skill">
+                                AI / ML
+                            </span>
+
+                            <span class="skill">
+                                Web3
+                            </span>
+
+                            <span class="skill">
+                                Blockchain
+                            </span>
+
+                            <span class="skill">
+                                Git
+                            </span>
+
+                            <span class="skill">
+                                GitHub
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-box">
+
+                        <h3>
+                            Business
+                        </h3>
+
+                        <div class="skill-list">
+
+                            <span class="skill">
+                                Market Research
+                            </span>
+
+                            <span class="skill">
+                                Business Development
+                            </span>
+
+                            <span class="skill">
+                                Product Strategy
+                            </span>
+
+                            <span class="skill">
+                                Partnerships
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-box">
+
+                        <h3>
+                            Languages
+                        </h3>
+
+                        <div class="skill-list">
+
+                            <span class="skill">
+                                Hindi
+                            </span>
+
+                            <span class="skill">
+                                English
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             CONTACT
+        ==================================== -->
+
+        <section
+            class="section contact"
+            id="contact"
+        >
+
+            <div class="section-inner">
+
+                <div class="section-label">
+                    04 · CONTACT
+                </div>
+
+
+                <h2 class="section-title">
+                    Let's build something.
+                </h2>
+
+
+                <p class="section-text">
+
+                    Open to interesting conversations,
+                    collaborations, technology,
+                    startups and ambitious ideas.
+
+                </p>
+
+
+                <div class="contact-links">
+
+                    <a
+                        class="contact-link"
+                        href="mailto:hello@itsmayank.me"
+                    >
+                        EMAIL
+                    </a>
+
+
+                    <a
+                        class="contact-link"
+                        href="https://github.com/mayankyadav89"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GITHUB
+                    </a>
+
+
+                    <a
+                        class="contact-link"
+                        href="https://www.linkedin.com/in/mayankyadav89/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LINKEDIN
+                    </a>
+
+
+                    <a
+                        class="contact-link"
+                        href="https://instagram.com/itsmayank.me"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        INSTAGRAM
+                    </a>
+
+
+                    <a
+                        class="contact-link"
+                        href="mailto:mayankyadavv353@gmail.com"
+                    >
+                        SECONDARY EMAIL
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             FOOTER
+        ==================================== -->
+
+        <footer>
+
+            <div class="footer-inner">
+
+                <span>
+                    MAYANK YADAV
+                </span>
+
+                <span>
+                    BHOPAL · INDIA
+                </span>
+
+                <span>
+                    © 2026
+                </span>
+
+            </div>
+
+        </footer>
+
+
+    </main>
+
+
+    <!-- ========================================
+         FIXED LABELS
+    ======================================== -->
+
+    <div class="location">
+        BHOPAL · INDIA
+    </div>
+
+
+    <div class="particle-label">
+        ● MAYANK
+    </div>
+
+
+    <!-- ========================================
+         PARTICLE ENGINE
+    ======================================== -->
+
+    <script>
+
+        const canvas =
+            document.getElementById(
+                "particleCanvas"
+            );
+
+        const ctx =
+            canvas.getContext("2d");
+
+
+        /* ========================================
+           CONFIG
+        ======================================== */
+
+        const PARTICLE_COUNT = 12953;
+
+        const GRID_WIDTH = 300;
+
+        const GRID_HEIGHT = 340;
+
+        const MORPH_SPEED = 0.045;
+
+        const MOUSE_RADIUS = 120;
+
+
+        /* ========================================
+           STATE
+        ======================================== */
+
+        let particles = [];
+
+        let currentTarget = "mayank";
+
+        let animationStarted = false;
+
+
+        const targets = {
+
+            mayank: null,
+
+            ethereum: null,
+
+            mrig: null
+
+        };
+
+
+        const mouse = {
+
+            x: -1000,
+
+            y: -1000
+
+        };
+
+
+        /* ========================================
+           PIXEL RATIO
+        ======================================== */
+
+        function getPixelRatio() {
+
+            return Math.min(
+                window.devicePixelRatio || 1,
+                2
+            );
+
+        }
+
+
+        /* ========================================
+           RESIZE
+        ======================================== */
+
+        function resizeCanvas() {
+
+            const ratio =
+                getPixelRatio();
+
+
+            canvas.width =
+                window.innerWidth *
+                ratio;
+
+
+            canvas.height =
+                window.innerHeight *
+                ratio;
+
+
+            canvas.style.width =
+                window.innerWidth + "px";
+
+
+            canvas.style.height =
+                window.innerHeight + "px";
+
+
+            ctx.setTransform(
+                ratio,
+                0,
+                0,
+                ratio,
+                0,
+                0
+            );
+
+
+            if (
+                targets.mayank &&
+                targets.ethereum &&
+                targets.mrig
+            ) {
+
+                updateTargetPositions();
+
+            }
+
+        }
+
+
+        window.addEventListener(
+            "resize",
+            resizeCanvas
+        );
+
+
+        /* ========================================
+           MOUSE
+        ======================================== */
+
+        window.addEventListener(
+            "mousemove",
+            event => {
+
+                mouse.x =
+                    event.clientX;
+
+                mouse.y =
+                    event.clientY;
+
+            },
+            {
+                passive: true
+            }
+        );
+
+
+        window.addEventListener(
+            "mouseleave",
+            () => {
+
+                mouse.x = -1000;
+
+                mouse.y = -1000;
+
+            }
+        );
+
+
+        /* ========================================
+           LOAD TARGET
+        ======================================== */
+
+        async function loadTarget(path) {
+
+            const response =
+                await fetch(path);
+
+
+            if (!response.ok) {
+
+                throw new Error(
+                    `Failed to load ${path}`
+                );
+
+            }
+
+
+            const data =
+                await response.json();
+
+
+            if (
+                !data.particles ||
+                data.particles.length !==
+                    PARTICLE_COUNT
+            ) {
+
+                throw new Error(
+                    `${path} has ${
+                        data.particles
+                            ? data.particles.length
+                            : 0
+                    } particles. Expected ${PARTICLE_COUNT}.`
+                );
+
+            }
+
+
+            return data.particles;
+
+        }
+
+
+        /* ========================================
+           SCREEN POSITION
+        ======================================== */
+
+        function getScreenPosition(point) {
+
+            const width =
+                window.innerWidth;
+
+            const height =
+                window.innerHeight;
+
+
+            const scale =
+                Math.min(
+                    width / GRID_WIDTH,
+                    height / GRID_HEIGHT
+                ) * 0.78;
+
+
+            const offsetX =
+                (
+                    width -
+                    GRID_WIDTH * scale
+                ) / 2;
+
+
+            const offsetY =
+                (
+                    height -
+                    GRID_HEIGHT * scale
+                ) / 2;
+
+
+            return {
+
+                x:
+                    offsetX +
+                    point.x * scale,
+
+                y:
+                    offsetY +
+                    point.y * scale
+
+            };
+
+        }
+
+
+        /* ========================================
+           TARGET POSITIONS
+        ======================================== */
+
+        function updateTargetPositions() {
+
+            for (
+                const name of [
+                    "mayank",
+                    "ethereum",
+                    "mrig"
+                ]
+            ) {
+
+                if (!targets[name]) {
+
+                    continue;
+
+                }
+
+
+                targets[name].screen =
+                    targets[name].points.map(
+                        point =>
+                            getScreenPosition(
+                                point
+                            )
+                    );
+
+            }
+
+        }
+
+
+        /* ========================================
+           CREATE PARTICLES
+        ======================================== */
+
+        function createParticles() {
+
+            particles = [];
+
+
+            const initialTarget =
+                targets.mayank.screen;
+
+
+            for (
+                let i = 0;
+                i < PARTICLE_COUNT;
+                i++
+            ) {
+
+                const point =
+                    initialTarget[i];
+
+
+                particles.push({
+
+                    x: point.x,
+
+                    y: point.y,
+
+                    targetX: point.x,
+
+                    targetY: point.y,
+
+                    vx: 0,
+
+                    vy: 0,
+
+                    size:
+                        0.7 +
+                        Math.random() * 1.4,
+
+                    alpha:
+                        0.5 +
+                        Math.random() * 0.5,
+
+                    phase:
+                        Math.random() *
+                        Math.PI *
+                        2,
+
+                    speed:
+                        0.5 +
+                        Math.random() *
+                        1.2
+
+                });
+
+            }
+
+        }
+
+
+        /* ========================================
+           MORPH
+        ======================================== */
+
+        function morphTo(name) {
+
+            if (
+                !targets[name] ||
+                !particles.length
+            ) {
+
+                return;
+
+            }
+
+
+            currentTarget =
+                name;
+
+
+            const target =
+                targets[name].screen;
+
+
+            for (
+                let i = 0;
+                i < PARTICLE_COUNT;
+                i++
+            ) {
+
+                particles[i].targetX =
+                    target[i].x;
+
+                particles[i].targetY =
+                    target[i].y;
+
+            }
+
+
+            document
+                .querySelector(".particle-label")
+                .textContent =
+                    `● ${name.toUpperCase()}`;
+
+
+            console.log(
+                `Morphing → ${name.toUpperCase()}`
+            );
+
+        }
+
+
+        /* ========================================
+           DRAW PARTICLE
+        ======================================== */
+
+        function drawParticle(particle) {
+
+            const size = particle.size;
+
+            /*
+             * Performance optimization:
+             * Use a simple filled square instead of creating
+             * a new radial gradient for every particle on every frame.
+             */
+
+            ctx.fillStyle =
+                `rgba(
+                    255,
+                    255,
+                    255,
+                    ${particle.alpha}
+                )`;
+
+            ctx.fillRect(
+                particle.x - size / 2,
+                particle.y - size / 2,
+                size,
+                size
+            );
+        }
+
+
+        /* ========================================
+           ANIMATION
+        ======================================== */
+
+        function animate(time) {
+            const reducedMotion =
+                window.matchMedia(
+                    "(prefers-reduced-motion: reduce)"
+                ).matches;
+
+            if (!animationStarted) {
+
+                return;
+
+            }
+
+
+            ctx.clearRect(
+                0,
+                0,
+                window.innerWidth,
+                window.innerHeight
+            );
+
+
+            for (
+                const particle of particles
+            ) {
+
+
+                /* FLOAT */
+
+                const floatX =
+                    reducedMotion
+                        ? 0
+                        : Math.sin(
+                            time *
+                            0.0005 *
+                            particle.speed +
+                            particle.phase
+                        ) * 0.18;
+
+
+                const floatY =
+                    reducedMotion
+                        ? 0
+                        : Math.cos(
+                            time *
+                            0.0004 *
+                            particle.speed +
+                            particle.phase
+                        ) * 0.18;
+
+
+                /* MOUSE REPULSION */
+
+                const dx =
+                    particle.x -
+                    mouse.x;
+
+
+                const dy =
+                    particle.y -
+                    mouse.y;
+
+
+                const distance =
+                    Math.sqrt(
+                        dx * dx +
+                        dy * dy
+                    );
+
+
+                if (
+                    !reducedMotion &&
+                    distance > 0 &&
+                    distance < MOUSE_RADIUS
+                ) {
+
+                    const force =
+                        (
+                            MOUSE_RADIUS -
+                            distance
+                        ) /
+                        MOUSE_RADIUS;
+
+
+                    particle.vx +=
+                        (
+                            dx /
+                            distance
+                        ) *
+                        force *
+                        1.4;
+
+
+                    particle.vy +=
+                        (
+                            dy /
+                            distance
+                        ) *
+                        force *
+                        1.4;
+
+                }
+
+
+                /* DAMPING */
+
+                particle.vx *= 0.88;
+
+                particle.vy *= 0.88;
+
+
+                /* MORPH */
+
+                particle.x +=
+                    (
+                        particle.targetX +
+                        floatX -
+                        particle.x
+                    ) *
+                    MORPH_SPEED;
+
+
+                particle.y +=
+                    (
+                        particle.targetY +
+                        floatY -
+                        particle.y
+                    ) *
+                    MORPH_SPEED;
+
+
+                /* VELOCITY */
+
+                particle.x +=
+                    particle.vx;
+
+
+                particle.y +=
+                    particle.vy;
+
+
+                /* DRAW */
+
+                drawParticle(
+                    particle
+                );
+
+            }
+
+
+            requestAnimationFrame(
+                animate
+            );
+
+        }
+
+
+        /* ========================================
+           AUTOMATIC MORPH LOOP
+        ======================================== */
+
+        function startAutomaticSequence() {
+
+            if (
+                window.matchMedia(
+                    "(prefers-reduced-motion: reduce)"
+                ).matches
+            ) {
+                return;
+            }
+
+            setTimeout(
+                () => {
+
+                    morphTo(
+                        "ethereum"
+                    );
+
+                },
+                4000
+            );
+
+
+            setTimeout(
+                () => {
+
+                    morphTo(
+                        "mrig"
+                    );
+
+                },
+                10000
+            );
+
+
+            setTimeout(
+                () => {
+
+                    morphTo(
+                        "mayank"
+                    );
+
+                },
+                16000
+            );
+
+
+            setTimeout(
+                startAutomaticSequence,
+                16000
+            );
+
+        }
+
+
+        /* ========================================
+           KEYBOARD CONTROLS
+        ======================================== */
+
+        window.addEventListener(
+            "keydown",
+            event => {
+
+                if (
+                    event.key === "1"
+                ) {
+
+                    morphTo(
+                        "mayank"
+                    );
+
+                }
+
+                if (
+                    event.key === "2"
+                ) {
+
+                    morphTo(
+                        "ethereum"
+                    );
+
+                }
+
+                if (
+                    event.key === "3"
+                ) {
+
+                    morphTo(
+                        "mrig"
+                    );
+
+                }
+
+            }
+        );
+
+
+        /* ========================================
+           INITIALIZE
+        ======================================== */
+
+        async function init() {
+
+            resizeCanvas();
+
+
+            console.log(
+                "Loading particle system..."
+            );
+
+
+            try {
+
+                const [
+                    mayank,
+                    ethereum,
+                    mrig
+                ] =
+                    await Promise.all([
+
+                        loadTarget(
+                            "assets/banner/mayank_particles.json"
+                        ),
+
+                        loadTarget(
+                            "assets/banner/ethereum_particles.json"
+                        ),
+
+                        loadTarget(
+                            "assets/banner/mrig_particles.json"
+                        )
+
+                    ]);
+
+
+                targets.mayank = {
+                    points: mayank
+                };
+
+
+                targets.ethereum = {
+                    points: ethereum
+                };
+
+
+                targets.mrig = {
+                    points: mrig
+                };
+
+
+                updateTargetPositions();
+
+
+                createParticles();
+
+
+                animationStarted =
+                    true;
+
+
+                console.log(
+                    "Particle system ready."
+                );
+
+
+                requestAnimationFrame(
+                    animate
+                );
+
+
+                startAutomaticSequence();
+
+            }
+
+            catch (error) {
+
+                console.error(
+                    "Particle system error:",
+                    error
+                );
+
+            }
+
+        }
+
+
+        /* ========================================
+           START
+        ======================================== */
+
+        init();
+
+    </script>
+
+
+</body>
+
+</html>
