@@ -1,9 +1,9 @@
 /* ==========================================================================
-   ANIMATIONS & INTERACTIVE STYLES
+   ANIMATIONS & INTERACTIVE STYLES (Restored to Classic Aesthetic)
    Mayank Yadav Portfolio — Premium Web3 / AI / Founder Aesthetic
    ========================================================================== */
 
-/* ===== 1. Custom Cursor System ===== */
+/* ===== 1. Custom Cursor System (Desktop Only) ===== */
 @media (pointer: fine) {
   body.custom-cursor-active,
   body.custom-cursor-active a,
@@ -98,7 +98,6 @@
   height: 64px;
   border-color: rgba(167, 139, 250, 0.3);
   background-color: rgba(167, 139, 250, 0.04);
-  border-style: solid;
 }
 
 .cursor-hover-card .cursor-dot {
@@ -500,14 +499,24 @@
   border-radius: 2px;
 }
 
-/* ===== 7. Responsive & Accessibility (Prefers Reduced Motion) ===== */
+/* ===== 7. Mobile & Touch Optimizations ===== */
 @media (max-width: 768px), (pointer: coarse) {
+  /* Completely hide desktop custom cursor */
   .cursor-dot,
   .cursor-ring,
   .cursor-click-ripple {
     display: none !important;
   }
 
+  body.custom-cursor-active,
+  body.custom-cursor-active a,
+  body.custom-cursor-active button,
+  body.custom-cursor-active .btn,
+  body.custom-cursor-active .social-icon-link {
+    cursor: auto !important;
+  }
+
+  /* Prevent 3D tilt overhead on touch screens */
   .build-card,
   .project-card,
   .timeline-content,
@@ -517,11 +526,37 @@
     transform: none !important;
   }
 
+  /* Hide hover tooltip on touch devices */
   .social-tooltip {
     display: none !important;
   }
+
+  /* Pleasant tactile tap feedback for touch elements */
+  .btn:active {
+    transform: scale(0.97) !important;
+  }
+
+  .build-card:active,
+  .project-card:active,
+  .social-icon-link:active {
+    transform: scale(0.985) !important;
+    border-color: var(--accent) !important;
+  }
+
+  .skill-tags span:active,
+  .interests-tags span:active,
+  .focus-item:active {
+    transform: scale(0.95) !important;
+    border-color: var(--accent) !important;
+  }
+
+  /* Mobile floating orbs: lighter blur and size for GPU efficiency */
+  .orb-1 { width: 320px; height: 320px; filter: blur(60px); }
+  .orb-2 { width: 260px; height: 260px; filter: blur(60px); }
+  .orb-3 { width: 200px; height: 200px; filter: blur(50px); }
 }
 
+/* ===== 8. Accessibility: Prefers Reduced Motion ===== */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -538,7 +573,7 @@
   }
 
   .hero-canvas {
-    opacity: 0.4;
+    opacity: 0.35;
   }
 
   .floating-orb {

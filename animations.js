@@ -1,20 +1,21 @@
 /**
  * ============================================================================
- * ANIMATIONS ENGINE — Mayank Yadav Portfolio
+ * ANIMATIONS ENGINE (Restored to Classic Aesthetic & Mobile Optimized)
+ * Mayank Yadav Portfolio
  * Features:
- *  1. Web3 / AI Network Particle System (Hero Canvas)
- *  2. Custom Smart Interactive Cursor (Magnetic, Context-aware, Desktop-only)
- *  3. Dynamic 3D Card Tilt & Mouse Spotlight Sheen
+ *  1. Web3 / AI Network Particle System (Hero Canvas with touch & mouse support)
+ *  2. Custom Smart Interactive Cursor (Desktop-only, Magnetic, Context-aware)
+ *  3. Dynamic 3D Card Tilt & Mouse Spotlight Sheen (Desktop)
  *  4. Social Platform Tooltips & Micro-interactions
  *  5. Scroll-driven Timeline & Staggered Reveal Enhancements
- *  6. Performance & Accessibility (Reduced-motion, Visibility-pause, Touch-safe)
+ *  6. Mobile Touch Optimizations & Performance (Reduced counts, Battery friendly)
  * ============================================================================
  */
 
 (function () {
   'use strict';
 
-  // Check user motion preference
+  // Check user motion preference and pointer type
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const isFinePointer = window.matchMedia('(pointer: fine)').matches && !('ontouchstart' in window);
 
@@ -62,23 +63,23 @@
     let isVisible = true;
     let animationFrameId = null;
 
-    // Mouse coordinates in hero
-    const mouse = {
+    // Pointer coordinates in hero (supports both mouse and touch)
+    const pointer = {
       x: -9999,
       y: -9999,
       targetX: -9999,
       targetY: -9999,
-      radius: 160,
+      radius: window.innerWidth < 768 ? 110 : 150,
       active: false
     };
 
-    // Responsive particle count
+    // Mobile-optimized particle count
     function getParticleCount() {
       const w = window.innerWidth;
-      if (w < 480) return 22;
-      if (w < 768) return 36;
-      if (w < 1200) return 55;
-      return 70;
+      if (w < 480) return 18; // Super lightweight on phones
+      if (w < 768) return 28; // Lightweight on tablets
+      if (w < 1200) return 50;
+      return 65;
     }
 
     // Color palette for nodes & data packets
@@ -104,14 +105,14 @@
         this.baseY = this.y;
 
         // Slow ambient velocities
-        this.vx = (Math.random() - 0.5) * 0.45;
-        this.vy = (Math.random() - 0.5) * 0.45;
+        this.vx = (Math.random() - 0.5) * 0.4;
+        this.vy = (Math.random() - 0.5) * 0.4;
 
         // Visual properties
-        this.radius = Math.random() * 1.8 + 1.2;
+        this.radius = Math.random() * 1.6 + 1.1;
         this.baseRadius = this.radius;
         this.color = nodeColors[Math.floor(Math.random() * nodeColors.length)];
-        this.alpha = Math.random() * 0.45 + 0.3;
+        this.alpha = Math.random() * 0.4 + 0.28;
         this.baseAlpha = this.alpha;
 
         // Breathing pulse phase
@@ -126,7 +127,7 @@
 
         // Pulse size & glow
         this.pulseAngle += this.pulseSpeed;
-        this.radius = this.baseRadius + Math.sin(this.pulseAngle) * 0.5;
+        this.radius = this.baseRadius + Math.sin(this.pulseAngle) * 0.4;
 
         // Boundary wrapping
         if (this.x < -20) this.x = width + 20;
@@ -134,18 +135,17 @@
         if (this.y < -20) this.y = height + 20;
         else if (this.y > height + 20) this.y = -20;
 
-        // Mouse gentle interaction
-        if (mouse.active) {
-          const dx = mouse.x - this.x;
-          const dy = mouse.y - this.y;
+        // Pointer (mouse or touch) gentle interaction
+        if (pointer.active) {
+          const dx = pointer.x - this.x;
+          const dy = pointer.y - this.y;
           const dist = Math.sqrt(dx * dx + dy * dy);
 
-          if (dist < mouse.radius && dist > 0) {
-            const force = (mouse.radius - dist) / mouse.radius;
+          if (dist < pointer.radius && dist > 0) {
+            const force = (pointer.radius - dist) / pointer.radius;
             const angle = Math.atan2(dy, dx);
-            // Slight push away + slight swirl
-            this.x -= Math.cos(angle) * force * 1.8;
-            this.y -= Math.sin(angle) * force * 1.8;
+            this.x -= Math.cos(angle) * force * 1.6;
+            this.y -= Math.sin(angle) * force * 1.6;
           }
         }
       }
@@ -157,10 +157,10 @@
         ctx.fill();
 
         // Subtle glow halo for larger nodes
-        if (this.radius > 2) {
+        if (this.radius > 1.8) {
           ctx.beginPath();
-          ctx.arc(this.x, this.y, this.radius * 2.8, 0, Math.PI * 2);
-          ctx.fillStyle = `rgba(${this.color.r}, ${this.color.g}, ${this.color.b}, ${this.alpha * 0.15})`;
+          ctx.arc(this.x, this.y, this.radius * 2.5, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(${this.color.r}, ${this.color.g}, ${this.color.b}, ${this.alpha * 0.12})`;
           ctx.fill();
         }
       }
@@ -186,10 +186,10 @@
         const currY = this.p1.y + (this.p2.y - this.p1.y) * this.progress;
 
         ctx.beginPath();
-        ctx.arc(currX, currY, 1.8, 0, Math.PI * 2);
+        ctx.arc(currX, currY, 1.6, 0, Math.PI * 2);
         ctx.fillStyle = `rgba(${this.color.r}, ${this.color.g}, ${this.color.b}, 0.85)`;
         ctx.shadowColor = `rgba(${this.color.r}, ${this.color.g}, ${this.color.b}, 0.8)`;
-        ctx.shadowBlur = 6;
+        ctx.shadowBlur = 5;
         ctx.fill();
         ctx.shadowBlur = 0; // reset
       }
@@ -218,22 +218,37 @@
     resize();
     window.addEventListener('resize', debounce(resize, 150));
 
-    // Mouse Tracking in Hero
+    // Desktop Mouse Tracking
     hero.addEventListener('mousemove', (e) => {
       const rect = hero.getBoundingClientRect();
-      mouse.targetX = e.clientX - rect.left;
-      mouse.targetY = e.clientY - rect.top;
-      mouse.active = true;
+      pointer.targetX = e.clientX - rect.left;
+      pointer.targetY = e.clientY - rect.top;
+      pointer.active = true;
     });
 
     hero.addEventListener('mouseleave', () => {
-      mouse.active = false;
+      pointer.active = false;
     });
+
+    // Mobile Touch Tracking (passive for 60fps smooth scrolling)
+    hero.addEventListener('touchmove', (e) => {
+      if (e.touches.length > 0) {
+        const rect = hero.getBoundingClientRect();
+        pointer.targetX = e.touches[0].clientX - rect.left;
+        pointer.targetY = e.touches[0].clientY - rect.top;
+        pointer.active = true;
+      }
+    }, { passive: true });
+
+    hero.addEventListener('touchend', () => {
+      pointer.active = false;
+    }, { passive: true });
 
     // Spawn occasional data signal packet between connected nodes
     let lastPulseTime = 0;
     function maybeSpawnPulse(now) {
-      if (now - lastPulseTime > 400 && pulses.length < 12 && particles.length > 2) {
+      const maxPulses = window.innerWidth < 768 ? 4 : 10;
+      if (now - lastPulseTime > 450 && pulses.length < maxPulses && particles.length > 2) {
         lastPulseTime = now;
         const idx1 = Math.floor(Math.random() * particles.length);
         const p1 = particles[idx1];
@@ -244,7 +259,8 @@
           const dx = p1.x - p2.x;
           const dy = p1.y - p2.y;
           const dist = Math.sqrt(dx * dx + dy * dy);
-          if (dist < 130) {
+          const maxDist = window.innerWidth < 768 ? 100 : 130;
+          if (dist < maxDist) {
             pulses.push(new DataPulse(p1, p2));
             break;
           }
@@ -253,8 +269,6 @@
     }
 
     // Animation Loop
-    const maxConnectionDistance = 140;
-
     function animate(timestamp) {
       if (!isVisible) {
         animationFrameId = null;
@@ -263,10 +277,10 @@
 
       ctx.clearRect(0, 0, width, height);
 
-      // Smooth mouse lerp
-      if (mouse.active) {
-        mouse.x += (mouse.targetX - mouse.x) * 0.15;
-        mouse.y += (mouse.targetY - mouse.y) * 0.15;
+      // Smooth pointer lerp
+      if (pointer.active) {
+        pointer.x += (pointer.targetX - pointer.x) * 0.15;
+        pointer.y += (pointer.targetY - pointer.y) * 0.15;
       }
 
       // Update & Draw Particles
@@ -276,7 +290,8 @@
       }
 
       // Draw Connections (Network Graph Lines)
-      ctx.lineWidth = 0.8;
+      const maxConnectionDistance = window.innerWidth < 768 ? 100 : 135;
+      ctx.lineWidth = 0.75;
       for (let i = 0; i < particles.length; i++) {
         for (let j = i + 1; j < particles.length; j++) {
           const p1 = particles[i];
@@ -286,7 +301,7 @@
           const dist = Math.sqrt(dx * dx + dy * dy);
 
           if (dist < maxConnectionDistance) {
-            const alpha = (1 - dist / maxConnectionDistance) * 0.22;
+            const alpha = (1 - dist / maxConnectionDistance) * 0.2;
             ctx.beginPath();
             ctx.moveTo(p1.x, p1.y);
             ctx.lineTo(p2.x, p2.y);
@@ -334,13 +349,12 @@
     if (!prefersReducedMotion) {
       animationFrameId = requestAnimationFrame(animate);
     } else {
-      // Draw static single frame for reduced motion
       animate(0);
     }
   }
 
   /* ==========================================================================
-     2. CUSTOM INTERACTIVE CURSOR SYSTEM
+     2. CUSTOM INTERACTIVE CURSOR SYSTEM (Desktop Only)
      ========================================================================== */
   function initCustomCursor() {
     document.body.classList.add('custom-cursor-active');
@@ -361,7 +375,6 @@
     let ringY = -100;
     let dotX = -100;
     let dotY = -100;
-    let isHovering = false;
     let magneticTarget = null;
 
     // Track mouse position
@@ -495,7 +508,7 @@
   }
 
   /* ==========================================================================
-     3. 3D CARD TILT & MOUSE SPOTLIGHT SHEEN
+     3. 3D CARD TILT & MOUSE SPOTLIGHT SHEEN (Desktop Only)
      ========================================================================== */
   function initCardTiltAndSpotlight() {
     const cards = document.querySelectorAll(
@@ -566,7 +579,6 @@
     };
 
     socialLinks.forEach((link) => {
-      // Don't duplicate tooltip
       if (link.querySelector('.social-tooltip')) return;
 
       let labelText = link.getAttribute('aria-label') || '';
