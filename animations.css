@@ -1,0 +1,553 @@
+/* ==========================================================================
+   ANIMATIONS & INTERACTIVE STYLES
+   Mayank Yadav Portfolio — Premium Web3 / AI / Founder Aesthetic
+   ========================================================================== */
+
+/* ===== 1. Custom Cursor System ===== */
+@media (pointer: fine) {
+  body.custom-cursor-active,
+  body.custom-cursor-active a,
+  body.custom-cursor-active button,
+  body.custom-cursor-active .btn,
+  body.custom-cursor-active .social-icon-link,
+  body.custom-cursor-active .nav-toggle,
+  body.custom-cursor-active .project-card,
+  body.custom-cursor-active .build-card {
+    cursor: none;
+  }
+
+  body.custom-cursor-active input,
+  body.custom-cursor-active textarea {
+    cursor: text;
+  }
+}
+
+.cursor-dot,
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease, border-color 0.25s ease, background-color 0.25s ease, transform 0.15s ease;
+  will-change: transform, width, height, top, left;
+}
+
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--accent);
+  box-shadow: 0 0 10px var(--accent-glow), 0 0 4px var(--accent);
+}
+
+.cursor-ring {
+  width: 34px;
+  height: 34px;
+  border: 1.5px solid rgba(167, 139, 250, 0.45);
+  background-color: transparent;
+  transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              height 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.25s ease,
+              background-color 0.25s ease,
+              opacity 0.3s ease,
+              box-shadow 0.25s ease;
+}
+
+.cursor-ring.active {
+  opacity: 1;
+}
+
+.cursor-dot.active {
+  opacity: 1;
+}
+
+/* Cursor State: Hovering Links / Nav */
+.cursor-hover-link .cursor-ring {
+  width: 48px;
+  height: 48px;
+  border-color: var(--accent);
+  background-color: rgba(167, 139, 250, 0.08);
+  box-shadow: 0 0 20px rgba(167, 139, 250, 0.2);
+}
+
+.cursor-hover-link .cursor-dot {
+  transform: translate(-50%, -50%) scale(0.6);
+}
+
+/* Cursor State: Hovering Buttons */
+.cursor-hover-btn .cursor-ring {
+  width: 58px;
+  height: 58px;
+  border-color: var(--accent);
+  background-color: rgba(167, 139, 250, 0.12);
+  box-shadow: 0 0 25px rgba(167, 139, 250, 0.35);
+}
+
+.cursor-hover-btn .cursor-dot {
+  transform: translate(-50%, -50%) scale(1.4);
+  background-color: #fff;
+  box-shadow: 0 0 12px #fff;
+}
+
+/* Cursor State: Hovering Cards */
+.cursor-hover-card .cursor-ring {
+  width: 64px;
+  height: 64px;
+  border-color: rgba(167, 139, 250, 0.3);
+  background-color: rgba(167, 139, 250, 0.04);
+  border-style: solid;
+}
+
+.cursor-hover-card .cursor-dot {
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+/* Cursor State: Hovering Social Icons */
+.cursor-hover-social .cursor-ring {
+  width: 52px;
+  height: 52px;
+  border-color: var(--accent);
+  background-color: rgba(167, 139, 250, 0.1);
+  box-shadow: 0 0 20px rgba(167, 139, 250, 0.25);
+}
+
+.cursor-hover-social .cursor-dot {
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
+/* Click Ripple Feedback */
+.cursor-click-ripple {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99998;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--accent);
+  animation: cursorRipple 0.55s cubic-bezier(0.1, 0.8, 0.3, 1) forwards;
+}
+
+@keyframes cursorRipple {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0.9;
+    border-color: var(--accent);
+  }
+  100% {
+    width: 70px;
+    height: 70px;
+    opacity: 0;
+    border-color: rgba(167, 139, 250, 0);
+  }
+}
+
+/* ===== 2. Hero Interactive Canvas ===== */
+.hero-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+  z-index: 0;
+  display: block;
+}
+
+/* Ambient Floating Orbs */
+.floating-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  opacity: 0.09;
+  mix-blend-mode: screen;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.orb-1 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #a78bfa 0%, rgba(129, 140, 248, 0.4) 60%, transparent 80%);
+  top: 15%;
+  right: 5%;
+  animation: orbDrift1 22s ease-in-out infinite alternate;
+}
+
+.orb-2 {
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, #38bdf8 0%, rgba(99, 102, 241, 0.4) 60%, transparent 80%);
+  bottom: 10%;
+  left: 5%;
+  animation: orbDrift2 26s ease-in-out infinite alternate;
+}
+
+.orb-3 {
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, #34d399 0%, rgba(167, 139, 250, 0.3) 60%, transparent 80%);
+  top: 45%;
+  left: 45%;
+  animation: orbDrift3 18s ease-in-out infinite alternate;
+}
+
+@keyframes orbDrift1 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-40px, 30px) scale(1.08); }
+  100% { transform: translate(30px, -40px) scale(0.95); }
+}
+
+@keyframes orbDrift2 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(45px, -35px) scale(1.1); }
+  100% { transform: translate(-30px, 25px) scale(0.92); }
+}
+
+@keyframes orbDrift3 {
+  0% { transform: translate(0, 0) scale(0.9); }
+  50% { transform: translate(-25px, -30px) scale(1.15); }
+  100% { transform: translate(35px, 20px) scale(1); }
+}
+
+/* ===== 3. Interactive 3D Cards & Dynamic Mouse Spotlight ===== */
+.build-card,
+.project-card,
+.timeline-content,
+.community-card,
+.edu-card,
+.cert-card {
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease,
+              box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+/* Spotlight radial gradient overlay tracking cursor */
+.build-card::before,
+.project-card::before,
+.timeline-content::before,
+.community-card::before,
+.edu-card::before,
+.cert-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    600px circle at var(--mouse-x, -999px) var(--mouse-y, -999px),
+    rgba(167, 139, 250, 0.08),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  border-radius: inherit;
+  z-index: 1;
+}
+
+.build-card:hover::before,
+.project-card:hover::before,
+.timeline-content:hover::before,
+.community-card:hover::before,
+.edu-card:hover::before,
+.cert-card:hover::before {
+  opacity: 1;
+}
+
+/* Subtle glowing border follow */
+.build-card::after,
+.project-card::after,
+.timeline-content::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: radial-gradient(
+    400px circle at var(--mouse-x, -999px) var(--mouse-y, -999px),
+    rgba(167, 139, 250, 0.35),
+    transparent 50%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+}
+
+.build-card:hover::after,
+.project-card:hover::after,
+.timeline-content:hover::after {
+  opacity: 1;
+}
+
+/* MRIG featured card special theme */
+.build-card.build-card--featured:hover {
+  box-shadow: 0 16px 40px -10px rgba(167, 139, 250, 0.12),
+              0 0 20px 0 rgba(167, 139, 250, 0.06);
+}
+
+/* Content layer inside cards so text stays crisp above the glow */
+.build-card > *,
+.project-card > *,
+.timeline-content > * {
+  position: relative;
+  z-index: 3;
+}
+
+/* ===== 4. Social Icon Tooltips & Interactive Orbit ===== */
+.social-icon-link {
+  position: relative;
+  overflow: visible !important;
+}
+
+.social-tooltip {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) translateY(6px);
+  background: rgba(18, 18, 24, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(167, 139, 250, 0.25);
+  color: var(--text);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  padding: 0.35rem 0.65rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5), 0 0 10px rgba(167, 139, 250, 0.15);
+  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 100;
+}
+
+.social-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 4px;
+  border-style: solid;
+  border-color: rgba(18, 18, 24, 0.94) transparent transparent transparent;
+}
+
+.social-icon-link:hover .social-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Social icon subtle orbital glow */
+.social-icon-link:hover svg {
+  filter: drop-shadow(0 0 8px rgba(167, 139, 250, 0.5));
+}
+
+/* ===== 5. Micro-interactions: Buttons & Links ===== */
+.btn {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              background 0.25s ease,
+              border-color 0.25s ease;
+  will-change: transform;
+}
+
+/* Button Shimmer / Glass Light sweep on hover */
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.18),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: none;
+  pointer-events: none;
+}
+
+.btn:hover::before {
+  left: 140%;
+  transition: left 0.75s ease-in-out;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 6px 24px var(--accent-glow), 0 0 12px rgba(167, 139, 250, 0.3);
+}
+
+/* Animated Underline for Navigation Links */
+.nav-links a {
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  border-radius: 2px;
+  transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Footer link underline */
+.footer-links a {
+  position: relative;
+}
+
+.footer-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--accent);
+  transition: width 0.2s ease;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+/* Interactive tags slight bounce */
+.skill-tags span,
+.interests-tags span,
+.focus-item {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.2s ease,
+              background 0.2s ease,
+              color 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.skill-tags span:hover,
+.interests-tags span:hover,
+.focus-item:hover {
+  transform: translateY(-2px);
+  border-color: rgba(167, 139, 250, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 0 8px rgba(167, 139, 250, 0.1);
+}
+
+/* ===== 6. Scroll & Timeline Animations ===== */
+/* Staggered Scroll Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delay classes dynamically added */
+.reveal-delay-1 { transition-delay: 0.08s; }
+.reveal-delay-2 { transition-delay: 0.16s; }
+.reveal-delay-3 { transition-delay: 0.24s; }
+.reveal-delay-4 { transition-delay: 0.32s; }
+.reveal-delay-5 { transition-delay: 0.40s; }
+
+/* Timeline Active Node Glow */
+.timeline-dot {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+
+.timeline-item.in-view .timeline-dot {
+  transform: scale(1.25);
+  box-shadow: 0 0 0 3px var(--bg), 0 0 16px var(--accent), 0 0 8px var(--accent);
+}
+
+/* Section title subtle underline gradient accent */
+.section-title {
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 36px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  border-radius: 2px;
+}
+
+/* ===== 7. Responsive & Accessibility (Prefers Reduced Motion) ===== */
+@media (max-width: 768px), (pointer: coarse) {
+  .cursor-dot,
+  .cursor-ring,
+  .cursor-click-ripple {
+    display: none !important;
+  }
+
+  .build-card,
+  .project-card,
+  .timeline-content,
+  .community-card,
+  .edu-card,
+  .cert-card {
+    transform: none !important;
+  }
+
+  .social-tooltip {
+    display: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  .cursor-dot,
+  .cursor-ring,
+  .cursor-click-ripple {
+    display: none !important;
+  }
+
+  .hero-canvas {
+    opacity: 0.4;
+  }
+
+  .floating-orb {
+    animation: none !important;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

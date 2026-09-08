@@ -6,6 +6,7 @@
   <title>Mayank Yadav — Engineer &middot; Founder &middot; Builder</title>
   <meta name="description" content="Mayank Yadav — Engineer, Founder, Builder. Building at the intersection of AI, Web3 &amp; Technology.">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animations.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -31,9 +32,13 @@
   <!-- ===== Hero ===== -->
   <section class="hero" id="hero">
     <div class="hero-bg">
+      <canvas id="hero-canvas" class="hero-canvas"></canvas>
       <div class="hero-grain"></div>
       <div class="hero-glow hero-glow-1"></div>
       <div class="hero-glow hero-glow-2"></div>
+      <div class="floating-orb orb-1"></div>
+      <div class="floating-orb orb-2"></div>
+      <div class="floating-orb orb-3"></div>
     </div>
     <div class="hero-content">
       <p class="hero-label">Engineer &middot; Founder &middot; Builder</p>
@@ -511,5 +516,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="animations.js"></script>
 </body>
 </html>
