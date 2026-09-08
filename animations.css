@@ -499,7 +499,291 @@
   border-radius: 2px;
 }
 
-/* ===== 7. Mobile & Touch Optimizations ===== */
+/* ===== 7. Scroll Progress Bar ===== */
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2), var(--green));
+  z-index: 99999;
+  pointer-events: none;
+  transition: width 0.05s ease-out;
+  box-shadow: 0 0 10px rgba(167, 139, 250, 0.7);
+}
+
+/* ===== 8. Hero Status Pill ===== */
+.hero-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: rgba(167, 139, 250, 0.07);
+  border: 1px solid rgba(167, 139, 250, 0.2);
+  border-radius: 24px;
+  padding: 0.35rem 0.95rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  animation: fadeUp 0.6s ease forwards;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-status-pill:hover {
+  border-color: var(--accent);
+  background: rgba(167, 139, 250, 0.14);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 18px rgba(167, 139, 250, 0.2);
+}
+
+.hero-status-pill strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.status-pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 8px var(--green);
+  animation: pulse 1.6s infinite;
+  flex-shrink: 0;
+}
+
+.status-pill-arrow {
+  color: var(--accent);
+  transition: transform 0.2s ease;
+}
+
+.hero-status-pill:hover .status-pill-arrow {
+  transform: translateX(3px);
+}
+
+/* Hero Content Subtle Parallax */
+.hero-content {
+  transition: transform 0.2s ease-out;
+  will-change: transform;
+}
+
+.hero-name {
+  transition: text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.hero-name.proximity-glow {
+  text-shadow: 0 0 32px rgba(167, 139, 250, 0.45), 0 0 12px rgba(167, 139, 250, 0.3);
+}
+
+/* ===== 9. Card Ecosystem Workflow Badges ===== */
+.card-flow-badge {
+  margin-top: 1.25rem;
+  padding-top: 0.95rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  position: relative;
+  z-index: 3;
+}
+
+.flow-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--accent);
+  opacity: 0.9;
+}
+
+.flow-steps {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.45rem;
+}
+
+.flow-step {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  transition: color 0.25s ease, background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+.build-card:hover .flow-step {
+  color: var(--text);
+  border-color: rgba(167, 139, 250, 0.25);
+  background: rgba(167, 139, 250, 0.06);
+}
+
+.flow-sep {
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.build-card:hover .flow-sep {
+  color: var(--accent);
+}
+
+/* ===== 10. Founder Journey Progression Strip ===== */
+.founder-journey-strip {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  padding: 0.8rem 1.1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.fj-node {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.fj-node:hover {
+  color: var(--text);
+}
+
+.fj-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--text-dim);
+}
+
+.fj-node--active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.fj-dot--active {
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent);
+  animation: pulse 1.8s infinite;
+}
+
+.fj-node--next {
+  color: var(--green);
+  font-weight: 600;
+  cursor: help;
+}
+
+.fj-dot--next {
+  background: var(--green);
+  box-shadow: 0 0 8px var(--green);
+  animation: pulse 1.4s infinite;
+}
+
+.fj-line {
+  width: 14px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* ===== 11. Skill Tag Micro Tooltip ===== */
+.skill-tags span {
+  position: relative;
+  cursor: default;
+}
+
+.skill-tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background: rgba(18, 18, 24, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(167, 139, 250, 0.28);
+  color: var(--text);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.3rem 0.65rem;
+  border-radius: 5px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5), 0 0 10px rgba(167, 139, 250, 0.15);
+  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 100;
+}
+
+.skill-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 4px;
+  border-style: solid;
+  border-color: rgba(18, 18, 24, 0.96) transparent transparent transparent;
+}
+
+.skill-tags span:hover .skill-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ===== 12. Subtle Founder Easter Egg Toast ===== */
+.easter-egg-toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: rgba(17, 17, 23, 0.95);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(167, 139, 250, 0.35);
+  padding: 0.65rem 1.2rem;
+  border-radius: 20px;
+  color: var(--text);
+  font-size: 0.84rem;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.65), 0 0 15px rgba(167, 139, 250, 0.25);
+  z-index: 999999;
+  opacity: 0;
+  transform: translateY(14px) scale(0.95);
+  pointer-events: none;
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.easter-egg-toast.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Stat numbers count animation */
+.stat-count {
+  font-weight: 700;
+  color: var(--text);
+  font-feature-settings: 'tnum';
+  font-variant-numeric: tabular-nums;
+}
+
+/* ===== 13. Mobile & Touch Optimizations ===== */
 @media (max-width: 768px), (pointer: coarse) {
   /* Completely hide desktop custom cursor */
   .cursor-dot,

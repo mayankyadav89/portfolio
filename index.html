@@ -12,6 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- ===== Scroll Progress Indicator ===== -->
+  <div class="scroll-progress-bar" id="scroll-progress-bar" aria-hidden="true"></div>
 
   <!-- ===== Navbar ===== -->
   <nav class="navbar" id="navbar">
@@ -41,6 +43,11 @@
       <div class="floating-orb orb-3"></div>
     </div>
     <div class="hero-content">
+      <a href="#building" class="hero-status-pill">
+        <span class="status-pulse-dot"></span>
+        <span class="status-pill-text"><strong>Currently Building:</strong> Rentro &amp; GetNextIn &middot; MRIG</span>
+        <span class="status-pill-arrow">&rarr;</span>
+      </a>
       <p class="hero-label">Engineer &middot; Founder &middot; Builder</p>
       <h1 class="hero-name">Mayank Yadav</h1>
       <p class="hero-tagline">Building at the intersection of <span class="typed-text" id="typed-text"></span><span class="cursor">|</span></p>
@@ -63,6 +70,19 @@
       <div class="about-content">
         <p class="about-lead">I'm Mayank Yadav, a Computer Science Engineer focused on building products, experimenting with emerging technology, and turning ideas into real-world systems.</p>
         <p class="about-body">My interests sit at the intersection of Artificial Intelligence &amp; Machine Learning, Blockchain &amp; Web3, Software &amp; Product Development, Entrepreneurship &amp; Startups, Business Strategy, and Community Building.</p>
+
+        <div class="founder-journey-strip" aria-label="Founder Progression">
+          <div class="fj-node"><span class="fj-dot"></span><span>Student</span></div>
+          <div class="fj-line"></div>
+          <div class="fj-node"><span class="fj-dot"></span><span>Engineer</span></div>
+          <div class="fj-line"></div>
+          <div class="fj-node"><span class="fj-dot"></span><span>Builder</span></div>
+          <div class="fj-line"></div>
+          <div class="fj-node fj-node--active"><span class="fj-dot fj-dot--active"></span><span>Founder</span></div>
+          <div class="fj-line"></div>
+          <div class="fj-node fj-node--next" title="Always exploring &amp; building"><span class="fj-dot fj-dot--next"></span><span>What&rsquo;s Next?</span></div>
+        </div>
+
         <div class="about-focus">
           <div class="focus-item">
             <span class="focus-label">AI &amp; ML</span>
@@ -102,6 +122,17 @@
             <li>Driving partnership discussions and long-term ecosystem development</li>
             <li>Leading day-to-day product and business operations</li>
           </ul>
+          <div class="card-flow-badge" aria-label="Rentro Ecosystem Lifecycle">
+            <span class="flow-label">Ecosystem Workflow:</span>
+            <div class="flow-steps">
+              <span class="flow-step">Assets</span><span class="flow-sep">&rarr;</span>
+              <span class="flow-step">Rent</span><span class="flow-sep">&rarr;</span>
+              <span class="flow-step">Buy</span><span class="flow-sep">&rarr;</span>
+              <span class="flow-step">Sell</span><span class="flow-sep">&rarr;</span>
+              <span class="flow-step">Finance</span><span class="flow-sep">&rarr;</span>
+              <span class="flow-step">Insurance</span>
+            </div>
+          </div>
         </article>
 
         <article class="build-card build-card--featured">
@@ -119,6 +150,17 @@
             <li>Driving partnerships and long-term ecosystem development</li>
             <li>Leading day-to-day product and business operations</li>
           </ul>
+          <div class="card-flow-badge" aria-label="GetNextIn AI Recruitment Lifecycle">
+            <span class="flow-label">AI Recruitment Workflow:</span>
+            <div class="flow-steps">
+              <span class="flow-step">Candidate</span><span class="flow-sep">&rarr;</span>
+              <span class="flow-step">AI</span><span class="flow-sep">&rarr;</span>
+              <span class="flow-step">Assessment</span><span class="flow-sep">&rarr;</span>
+              <span class="flow-step">Matching</span><span class="flow-sep">&rarr;</span>
+              <span class="flow-step">Interview</span><span class="flow-sep">&rarr;</span>
+              <span class="flow-step">Career</span>
+            </div>
+          </div>
         </article>
 
       </div>
@@ -356,7 +398,7 @@
       <div class="achievements-list">
         <div class="achievement-item">
           <span class="achievement-icon">&bull;</span>
-          <p>Built and managed a 2,500+ member community across Discord, Telegram and X</p>
+          <p>Built and managed a <strong class="stat-count" data-target="2500" data-suffix="+">2,500+</strong> member community across Discord, Telegram and X</p>
         </div>
         <div class="achievement-item">
           <span class="achievement-icon">&bull;</span>
@@ -364,7 +406,7 @@
         </div>
         <div class="achievement-item">
           <span class="achievement-icon">&bull;</span>
-          <p>Hackathon Bounty Winner &mdash; Unfold 2023</p>
+          <p>Hackathon Bounty Winner &mdash; Unfold <strong class="stat-count" data-target="2023">2023</strong></p>
         </div>
         <div class="achievement-item">
           <span class="achievement-icon">&bull;</span>

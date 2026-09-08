@@ -27,14 +27,19 @@
   }
 
   function init() {
+    initScrollProgressBar();
     initHeroParticles();
+    initHeroInteractive();
     if (isFinePointer && !prefersReducedMotion) {
       initCustomCursor();
       initCardTiltAndSpotlight();
     }
     initSocialTooltips();
+    initSkillTooltips();
+    initStatCounters();
     initScrollAndTimelineEnhancements();
     initAmbientOrbsParallax();
+    initEasterEgg();
   }
 
   /* ==========================================================================
@@ -680,6 +685,211 @@
         });
       }
     }
+  }
+
+  /* ==========================================================================
+     7. SCROLL PROGRESS INDICATOR
+     ========================================================================== */
+  function initScrollProgressBar() {
+    const progressBar = document.getElementById('scroll-progress-bar');
+    if (!progressBar) return;
+
+    function updateProgress() {
+      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (scrollHeight > 0) {
+        const progress = Math.min(Math.max((window.scrollY / scrollHeight) * 100, 0), 100);
+        progressBar.style.width = progress.toFixed(2) + '%';
+      }
+    }
+
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+  }
+
+  /* ==========================================================================
+     8. INTERACTIVE HERO ENHANCEMENTS
+     ========================================================================== */
+  function initHeroInteractive() {
+    const hero = document.getElementById('hero');
+    const heroContent = hero ? hero.querySelector('.hero-content') : null;
+    const heroName = hero ? hero.querySelector('.hero-name') : null;
+    if (!hero || !heroContent || !heroName) return;
+
+    if (isFinePointer && !prefersReducedMotion) {
+      hero.addEventListener('mousemove', (e) => {
+        const rect = hero.getBoundingClientRect();
+        const normX = (e.clientX - rect.left) / rect.width - 0.5;
+        const normY = (e.clientY - rect.top) / rect.height - 0.5;
+
+        // Subtle 2.5D content parallax
+        heroContent.style.transform = `translate(${(normX * 6).toFixed(2)}px, ${(normY * 6).toFixed(2)}px)`;
+
+        // Name proximity detection
+        const nameRect = heroName.getBoundingClientRect();
+        const nameCenterX = nameRect.left + nameRect.width / 2;
+        const nameCenterY = nameRect.top + nameRect.height / 2;
+        const dist = Math.hypot(e.clientX - nameCenterX, e.clientY - nameCenterY);
+
+        if (dist < 180) {
+          heroName.classList.add('proximity-glow');
+        } else {
+          heroName.classList.remove('proximity-glow');
+        }
+      });
+
+      hero.addEventListener('mouseleave', () => {
+        heroContent.style.transform = '';
+        heroName.classList.remove('proximity-glow');
+      });
+    }
+  }
+
+  /* ==========================================================================
+     9. REAL STATS / NUMBER COUNT-UP ANIMATION
+     ========================================================================== */
+  function initStatCounters() {
+    const counters = document.querySelectorAll('.stat-count');
+    if (!counters.length) return;
+
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseInt(el.getAttribute('data-target'), 10);
+          const suffix = el.getAttribute('data-suffix') || '';
+          if (isNaN(target)) return;
+
+          if (prefersReducedMotion) {
+            el.textContent = target.toLocaleString() + suffix;
+            obs.unobserve(el);
+            return;
+          }
+
+          let startTime = null;
+          const duration = 1200;
+
+          function countUp(timestamp) {
+            if (!startTime) startTime = timestamp;
+            const progress = Math.min((timestamp - startTime) / duration, 1);
+            // Ease out cubic
+            const ease = 1 - Math.pow(1 - progress, 3);
+            const current = Math.floor(ease * target);
+
+            el.textContent = current.toLocaleString() + (progress >= 1 ? suffix : '');
+
+            if (progress < 1) {
+              requestAnimationFrame(countUp);
+            } else {
+              el.textContent = target.toLocaleString() + suffix;
+            }
+          }
+
+          requestAnimationFrame(countUp);
+          obs.unobserve(el);
+        }
+      });
+    }, { threshold: 0.4 });
+
+    counters.forEach((c) => observer.observe(c));
+  }
+
+  /* ==========================================================================
+     10. TECH STACK & SKILL TOOLTIPS
+     ========================================================================== */
+  function initSkillTooltips() {
+    const skillSpans = document.querySelectorAll('.skill-tags span');
+    if (!skillSpans.length) return;
+
+    const skillMap = {
+      'Python (Basic)': 'Data & ML Fundamentals',
+      'SQL (Basic)': 'Database Management & Queries',
+      'Git': 'Version Control System',
+      'GitHub': 'Collaboration & Open Source',
+      'AI/ML Fundamentals': 'Core ML & Neural Networks',
+      'Blockchain & Web3 Fundamentals': 'Decentralized Systems & Protocols',
+      'Smart Contracts': 'Solidity & EVM Architecture',
+      'Ethereum': 'Smart Accounts & EVM',
+      'Solana': 'High-Performance Web3 Ecosystem',
+      'Polygon': 'Scalable Ethereum L2',
+      'Base': 'Base Sepolia & Account Abstraction',
+      'Node Operations': 'Node User Acquisition & Onboarding',
+      'Web3 Wallets': 'MetaMask, Phantom & Passkeys',
+      'MetaMask': 'EVM Wallet Integration',
+      'Phantom': 'Solana & Multi-chain Wallet',
+      'Business Development': 'Partnerships & Ecosystem Growth',
+      'Product Strategy': 'Roadmaps, MVP & User Journeys',
+      'Market Research': 'User Research & Competitor Analysis',
+      'User Research': 'Customer Interviews & Personas',
+      'Go-to-Market Strategy': 'GTM Roadmaps & Adoption',
+      'Partnerships': 'Web3 & Industry Collaborations',
+      'Community Building': 'Channel Growth & Engagement',
+      'Community Growth': '2,500+ Member Communities',
+      'Operations': 'Day-to-day Operations Management',
+      'Project Management': 'Milestones & Delivery',
+      'Stakeholder Management': 'Cross-functional Coordination',
+      'Event Management': 'ETHGlobal, IBW & Hackathons',
+      'Public Speaking': 'Workshops & Presentations',
+      'Customer Support': 'User Onboarding & Support',
+      'User Onboarding': 'Developer & Attendee Onboarding',
+      'Issue Resolution': 'User Problem Solving',
+      'Customer Communication': 'Community Channels & Support',
+      'Community Support': 'Discord, Telegram & X Support',
+      'Workflow Management': 'Process Optimization',
+      'Process Improvement': 'Operational Efficiency',
+      'Problem Solving': 'Systems & Technical Solutions',
+      'Notion': 'Product Docs & Knowledge Base',
+      'Canva': 'Visual Assets & Pitch Decks',
+      'Postman': 'API Testing & Debugging',
+      'VS Code': 'Code Editor & Dev Environment',
+      'ChatGPT': 'AI-Assisted Workflows',
+      'Claude': 'AI-Assisted Architecture & Code',
+      'Gemini': 'Multimodal AI Workflows',
+      'Discord': 'Community Moderation & Channels',
+      'Telegram': 'Community Channels & Announcements',
+      'Microsoft Office': 'Productivity & Analysis',
+      'Google Workspace': 'Collaboration & Cloud Docs',
+      'Hindi — Native': 'Native Language',
+      'English — Professional Working Proficiency': 'Professional Working Proficiency'
+    };
+
+    skillSpans.forEach((span) => {
+      if (span.querySelector('.skill-tooltip')) return;
+      const text = span.textContent.trim();
+      const tip = skillMap[text];
+      if (tip) {
+        const tooltip = document.createElement('span');
+        tooltip.className = 'skill-tooltip';
+        tooltip.textContent = tip;
+        span.appendChild(tooltip);
+      }
+    });
+  }
+
+  /* ==========================================================================
+     11. SUBTLE FOUNDER EASTER EGG
+     ========================================================================== */
+  function initEasterEgg() {
+    const navLogo = document.querySelector('.nav-logo');
+    if (!navLogo) return;
+
+    let toast = document.getElementById('easter-egg-toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'easter-egg-toast';
+      toast.className = 'easter-egg-toast';
+      toast.innerHTML = '<span>⚡</span> <span>Still building &middot; Turning ideas into systems.</span>';
+      document.body.appendChild(toast);
+    }
+
+    let hideTimeout = null;
+
+    navLogo.addEventListener('click', (e) => {
+      clearTimeout(hideTimeout);
+      toast.classList.add('show');
+      hideTimeout = setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2500);
+    });
   }
 
   /* ==========================================================================
