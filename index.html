@@ -1,3044 +1,515 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-   <title>Mayank Yadav — Engineer, Founder & Builder</title>
-
-<meta
-    name="description"
-    content="Mayank Yadav is an engineer, founder and builder exploring AI, Web3, blockchain and technology while building products and startups."
->
-
-<meta
-    name="author"
-    content="Mayank Yadav"
->
-
-<meta
-    name="robots"
-    content="index, follow"
->
-
-<meta
-    name="theme-color"
-    content="#000000"
->
-
-<link
-    rel="icon"
-    type="image/png"
-    href="assets/icons/favicon.png"
->
-
-<link
-    rel="canonical"
-    href="https://itsmayank.me/"
->
-
-<!-- Open Graph -->
-<meta
-    property="og:type"
-    content="website"
->
-
-<meta
-    property="og:url"
-    content="https://itsmayank.me/"
->
-
-<meta
-    property="og:title"
-    content="Mayank Yadav — Engineer, Founder & Builder"
->
-
-<meta
-    property="og:description"
-    content="Engineer, founder and builder exploring AI, Web3, blockchain and technology."
->
-
-<meta
-    property="og:image"
-    content="https://itsmayank.me/assets/photos/mayank.jpg"
->
-
-<meta
-    property="og:site_name"
-    content="Mayank Yadav"
->
-
-<!-- X / Twitter -->
-<meta
-    name="twitter:card"
-    content="summary_large_image"
->
-
-<meta
-    name="twitter:title"
-    content="Mayank Yadav — Engineer, Founder & Builder"
->
-
-<meta
-    name="twitter:description"
-    content="Engineer, founder and builder exploring AI, Web3, blockchain and technology."
->
-
-<meta
-    name="twitter:image"
-    content="https://itsmayank.me/assets/photos/mayank.jpg"
->
-
-    <style>
-
-        /* ========================================
-           RESET
-        ======================================== */
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            width: 100%;
-            min-height: 100%;
-            scroll-behavior: smooth;
-            background: #000;
-        }
-
-        body {
-            width: 100%;
-            min-height: 100%;
-            background: #000;
-            color: #fff;
-
-            font-family:
-                Arial,
-                Helvetica,
-                sans-serif;
-
-            overflow-x: hidden;
-            overflow-y: auto;
-        }
-
-
-        /* ========================================
-           PARTICLE BACKGROUND
-        ======================================== */
-
-        #particleBackground {
-            position: fixed;
-            inset: 0;
-
-            width: 100vw;
-            height: 100vh;
-
-            z-index: 0;
-
-            pointer-events: none;
-
-            overflow: hidden;
-
-            background: #000;
-        }
-
-        #particleCanvas {
-            display: block;
-
-            width: 100%;
-            height: 100%;
-        }
-
-
-        /* ========================================
-           SITE CONTENT
-        ======================================== */
-
-        #siteContent {
-            position: relative;
-
-            z-index: 2;
-
-            width: 100%;
-
-            min-height: 100vh;
-
-            pointer-events: none;
-        }
-
-        #siteContent a,
-        #siteContent button {
-            pointer-events: auto;
-        }
-
-
-        /* ========================================
-           TOP NAVIGATION
-        ======================================== */
-
-        .topbar {
-            position: fixed;
-
-            top: 0;
-            left: 0;
-
-            width: 100%;
-
-            padding:
-                34px
-                3vw;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: space-between;
-
-            z-index: 20;
-
-            pointer-events: none;
-        }
-
-        .brand {
-            color: #fff;
-
-            text-decoration: none;
-
-            font-size: 13px;
-
-            font-weight: 700;
-
-            letter-spacing: 3px;
-
-            pointer-events: auto;
-        }
-
-        .brand span {
-            color:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.35
-                );
-        }
-
-        .nav-links {
-            display: flex;
-
-            align-items: center;
-
-            gap: 28px;
-        }
-
-        .nav-links a {
-            color:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.45
-                );
-
-            text-decoration: none;
-
-            font-size: 9px;
-
-            font-weight: 600;
-
-            letter-spacing: 1.5px;
-
-            transition:
-                color 0.2s ease;
-        }
-
-        .nav-links a:hover {
-            color: #fff;
-        }
-
-
-        /* ========================================
-           HERO
-        ======================================== */
-
-        .hero {
-            position: relative;
-
-            min-height: 100vh;
-
-            width: 100%;
-
-            display: flex;
-
-            align-items: center;
-
-            padding:
-                120px
-                7vw
-                100px;
-        }
-
-        .hero-content {
-            max-width: 680px;
-
-            position: relative;
-
-            z-index: 5;
-
-            animation:
-                heroReveal
-                1.2s
-                ease-out
-                both;
-        }
-
-        @keyframes heroReveal {
-
-            from {
-                opacity: 0;
-
-                transform:
-                    translateY(25px);
-            }
-
-            to {
-                opacity: 1;
-
-                transform:
-                    translateY(0);
-            }
-
-        }
-
-
-        /* ========================================
-           HERO EYEBROW
-        ======================================== */
-
-        .eyebrow {
-            display: flex;
-
-            align-items: center;
-
-            gap: 12px;
-
-            margin-bottom: 30px;
-
-            font-size: 10px;
-
-            letter-spacing: 4px;
-
-            color:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.45
-                );
-
-            text-transform: uppercase;
-        }
-
-        .eyebrow::before {
-            content: "";
-
-            width: 30px;
-
-            height: 1px;
-
-            background:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.35
-                );
-        }
-
-
-        /* ========================================
-           HERO TITLE
-        ======================================== */
-
-        .hero-title {
-            position: relative;
-
-            font-size:
-                clamp(
-                    58px,
-                    7vw,
-                    108px
-                );
-
-            line-height: 0.92;
-
-            font-weight: 600;
-
-            letter-spacing: -5px;
-
-            margin-bottom: 38px;
-
-            text-shadow:
-                0 0 40px
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.04
-                );
-        }
-
-        .hero-title::after {
-            content: "";
-
-            position: absolute;
-
-            left: -20px;
-
-            bottom: -25px;
-
-            width: 180px;
-
-            height: 80px;
-
-            background:
-                radial-gradient(
-                    ellipse,
-                    rgba(
-                        255,
-                        255,
-                        255,
-                        0.08
-                    ),
-                    transparent 70%
-                );
-
-            filter: blur(25px);
-
-            pointer-events: none;
-        }
-
-        .hero-title .muted {
-            color:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.20
-                );
-        }
-
-
-        /* ========================================
-           HERO DESCRIPTION
-        ======================================== */
-
-        .hero-description {
-            max-width: 540px;
-
-            font-size: 15px;
-
-            line-height: 1.8;
-
-            letter-spacing: 0.1px;
-
-            color:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.48
-                );
-
-            margin-bottom: 38px;
-        }
-
-
-        /* ========================================
-           HERO BUTTONS
-        ======================================== */
-
-        .hero-buttons {
-            display: flex;
-
-            gap: 12px;
-
-            flex-wrap: wrap;
-        }
-
-        .hero-button {
-            display: inline-flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            min-width: 125px;
-
-            padding:
-                14px
-                23px;
-
-            border-radius: 999px;
-
-            border:
-                1px solid
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.18
-                );
-
-            background:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.03
-                );
-
-            color: #fff;
-
-            text-decoration: none;
-
-            font-size: 10px;
-
-            font-weight: 600;
-
-            letter-spacing: 1.5px;
-
-            transition:
-                transform 0.25s ease,
-                background 0.25s ease,
-                border-color 0.25s ease;
-        }
-
-        .hero-button:hover {
-            transform:
-                translateY(-3px);
-
-            background:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.10
-                );
-
-            border-color:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.45
-                );
-        }
-
-        .hero-button.primary {
-            background: #fff;
-
-            color: #000;
-
-            border-color: #fff;
-        }
-
-        .hero-button.primary:hover {
-            background:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.88
-                );
-        }
-
-
-        /* ========================================
-           HERO META
-        ======================================== */
-
-        .hero-meta {
-            display: flex;
-
-            gap: 18px;
-
-            margin-top: 28px;
-
-            flex-wrap: wrap;
-        }
-
-        .hero-meta span {
-            font-size: 8px;
-
-            letter-spacing: 2px;
-
-            color:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.22
-                );
-
-            position: relative;
-        }
-
-        .hero-meta span:not(:last-child)::after {
-            content: "·";
-
-            position: absolute;
-
-            right: -11px;
-
-            color:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.15
-                );
-        }
-
-
-        /* ========================================
-           SCROLL INDICATOR
-        ======================================== */
-
-        .scroll-indicator {
-            position: absolute;
-
-            left: 7vw;
-
-            bottom: 38px;
-
-            display: flex;
-
-            align-items: center;
-
-            gap: 14px;
-
-            z-index: 5;
-        }
-
-        .scroll-indicator span {
-            font-size: 8px;
-
-            letter-spacing: 2px;
-
-            color:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.22
-                );
-        }
-
-        .scroll-line {
-            width: 45px;
-
-            height: 1px;
-
-            background:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.18
-                );
-
-            position: relative;
-
-            overflow: hidden;
-        }
-
-        .scroll-line::after {
-            content: "";
-
-            position: absolute;
-
-            left: -100%;
-
-            top: 0;
-
-            width: 100%;
-
-            height: 100%;
-
-            background: #fff;
-
-            animation:
-                scrollLine
-                2s
-                ease-in-out
-                infinite;
-        }
-
-        @keyframes scrollLine {
-
-            0% {
-                left: -100%;
-            }
-
-            50% {
-                left: 0;
-            }
-
-            100% {
-                left: 100%;
-            }
-
-        }
-
-
-        /* ========================================
-           FIXED LOCATION
-        ======================================== */
-
-        .location {
-            position: fixed;
-
-            left: 3vw;
-
-            bottom: 34px;
-
-            z-index: 20;
-
-            font-size: 9px;
-
-            letter-spacing: 2px;
-
-            color:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.25
-                );
-
-            text-transform: uppercase;
-
-            pointer-events: none;
-        }
-
-        .location::before {
-            content: "";
-
-            display: inline-block;
-
-            width: 5px;
-
-            height: 5px;
-
-            margin-right: 8px;
-
-            border-radius: 50%;
-
-            background:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.35
-                );
-        }
-
-
-        /* ========================================
-           PARTICLE LABEL
-        ======================================== */
-
-        .particle-label {
-            position: fixed;
-
-            right: 4vw;
-
-            bottom: 34px;
-
-            z-index: 20;
-
-            font-size: 9px;
-
-            letter-spacing: 2px;
-
-            color:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.25
-                );
-
-            pointer-events: none;
-        }
-
-
-        /* ========================================
-           GENERAL SECTIONS
-        ======================================== */
-
-        .section {
-            position: relative;
-
-            min-height: 100vh;
-
-            width: 100%;
-
-            padding:
-                120px
-                7vw;
-        }
-
-        .section-inner {
-            max-width: 1200px;
-
-            margin: 0 auto;
-        }
-
-        .section-label {
-            font-size: 10px;
-
-            letter-spacing: 4px;
-
-            color:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.35
-                );
-
-            text-transform: uppercase;
-
-            margin-bottom: 20px;
-        }
-
-        .section-title {
-            font-size:
-                clamp(
-                    42px,
-                    5vw,
-                    72px
-                );
-
-            line-height: 1;
-
-            letter-spacing: -3px;
-
-            margin-bottom: 30px;
-        }
-
-        .section-text {
-            max-width: 650px;
-
-            font-size: 16px;
-
-            line-height: 1.8;
-
-            color:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.5
-                );
-        }
-
-
-        /* ========================================
-           ABOUT
-        ======================================== */
-
-        .about-layout {
-            display: grid;
-
-            grid-template-columns:
-                1fr
-                1fr;
-
-            gap: 80px;
-
-            align-items: center;
-
-            min-height: 70vh;
-        }
-
-        .about-large {
-            font-size:
-                clamp(
-                    38px,
-                    4vw,
-                    64px
-                );
-
-            line-height: 1.05;
-
-            letter-spacing: -3px;
-        }
-
-        .about-large span {
-            color:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.28
-                );
-        }
-
-        .about-details {
-            color:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.45
-                );
-
-            font-size: 14px;
-
-            line-height: 1.8;
-        }
-
-        .about-details strong {
-            color: #fff;
-        }
-
-
-        /* ========================================
-           PROJECTS
-        ======================================== */
-
-        .project-grid {
-            display: grid;
-
-            grid-template-columns:
-                repeat(
-                    2,
-                    minmax(
-                        0,
-                        1fr
-                    )
-                );
-
-            gap: 16px;
-
-            margin-top: 60px;
-        }
-
-        .project-card {
-            position: relative;
-
-            min-height: 280px;
-
-            padding: 30px;
-
-            border:
-                1px solid
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.1
-                );
-
-            border-radius: 20px;
-
-            background:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.025
-                );
-
-            backdrop-filter: blur(10px);
-
-            transition:
-                transform 0.3s ease,
-                border-color 0.3s ease,
-                background 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform:
-                translateY(-6px);
-
-            border-color:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.28
-                );
-
-            background:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.045
-                );
-        }
-
-        .project-status {
-            display: inline-block;
-
-            margin-bottom: 45px;
-
-            padding:
-                6px
-                10px;
-
-            border:
-                1px solid
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.12
-                );
-
-            border-radius: 999px;
-
-            font-size: 8px;
-
-            letter-spacing: 1.5px;
-
-            color:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.45
-                );
-
-            text-transform: uppercase;
-        }
-
-        .project-card h3 {
-            font-size: 28px;
-
-            letter-spacing: -1px;
-
-            margin-bottom: 12px;
-        }
-
-        .project-card p {
-            max-width: 480px;
-
-            font-size: 13px;
-
-            line-height: 1.7;
-
-            color:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.42
-                );
-        }
-
-        .project-link {
-            position: absolute;
-
-            right: 30px;
-
-            bottom: 30px;
-
-            color: #fff;
-
-            text-decoration: none;
-
-            font-size: 9px;
-
-            letter-spacing: 1.5px;
-        }
-
-
-        /* ========================================
-           SKILLS
-        ======================================== */
-
-        .skills-grid {
-            display: grid;
-
-            grid-template-columns:
-                repeat(
-                    2,
-                    minmax(
-                        0,
-                        1fr
-                    )
-                );
-
-            gap: 16px;
-
-            margin-top: 60px;
-        }
-
-        .skill-box {
-            padding: 30px;
-
-            min-height: 180px;
-
-            border:
-                1px solid
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.1
-                );
-
-            border-radius: 20px;
-
-            background:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.025
-                );
-        }
-
-        .skill-box h3 {
-            margin-bottom: 20px;
-
-            font-size: 12px;
-
-            letter-spacing: 2px;
-
-            text-transform: uppercase;
-        }
-
-        .skill-list {
-            display: flex;
-
-            flex-wrap: wrap;
-
-            gap: 8px;
-        }
-
-        .skill {
-            padding:
-                8px
-                11px;
-
-            border:
-                1px solid
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.1
-                );
-
-            border-radius: 999px;
-
-            font-size: 10px;
-
-            color:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.55
-                );
-        }
-
-
-        /* ========================================
-           CONTACT
-        ======================================== */
-
-        .contact {
-            min-height: 90vh;
-
-            display: flex;
-
-            align-items: center;
-        }
-
-        .contact-links {
-            display: flex;
-
-            flex-wrap: wrap;
-
-            gap: 12px;
-
-            margin-top: 40px;
-        }
-
-        .contact-link {
-            display: inline-flex;
-
-            padding:
-                14px
-                20px;
-
-            border:
-                1px solid
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.12
-                );
-
-            border-radius: 999px;
-
-            color: #fff;
-
-            text-decoration: none;
-
-            font-size: 10px;
-
-            letter-spacing: 1.2px;
-
-            transition:
-                background 0.25s ease,
-                transform 0.25s ease;
-        }
-
-        .contact-link:hover {
-            background:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.08
-                );
-
-            transform:
-                translateY(-2px);
-        }
-
-
-        /* ========================================
-           FOOTER
-        ======================================== */
-
-        footer {
-            position: relative;
-
-            z-index: 5;
-
-            padding:
-                40px
-                7vw
-                60px;
-
-            border-top:
-                1px solid
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.08
-                );
-        }
-
-        .footer-inner {
-            display: flex;
-
-            justify-content: space-between;
-
-            gap: 20px;
-
-            color:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.25
-                );
-
-            font-size: 9px;
-
-            letter-spacing: 2px;
-
-            text-transform: uppercase;
-        }
-
-
-        /* ========================================
-           MOBILE
-        ======================================== */
-
-        @media (max-width: 800px) {
-
-            .topbar {
-                padding:
-                    24px
-                    20px;
-            }
-
-            .nav-links {
-                gap: 12px;
-            }
-
-            .nav-links a {
-                font-size: 8px;
-            }
-
-            .hero {
-                padding:
-                    120px
-                    24px
-                    100px;
-            }
-
-            .hero-title {
-                font-size:
-                    clamp(
-                        48px,
-                        14vw,
-                        72px
-                    );
-
-                letter-spacing: -3px;
-            }
-
-            .hero-description {
-                font-size: 13px;
-            }
-
-            .hero-meta {
-                gap: 14px;
-            }
-
-            .scroll-indicator {
-                left: 24px;
-                bottom: 24px;
-            }
-
-            .scroll-indicator span {
-                font-size: 7px;
-            }
-
-            .scroll-line {
-                width: 30px;
-            }
-
-            .section {
-                padding:
-                    100px
-                    24px;
-            }
-
-            .project-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .about-layout {
-                grid-template-columns: 1fr;
-
-                gap: 40px;
-            }
-
-            .location {
-                left: 20px;
-                bottom: 22px;
-            }
-
-            .particle-label {
-                right: 20px;
-                bottom: 22px;
-            }
-
-            .footer-inner {
-                flex-direction: column;
-
-                gap: 12px;
-            }
-
-        }
-
-
-        /* ========================================
-           SMALL MOBILE
-        ======================================== */
-
-        @media (max-width: 480px) {
-
-            .nav-links a:nth-child(2) {
-                display: none;
-            }
-
-            .hero-buttons {
-                width: 100%;
-            }
-
-            .hero-button {
-                flex: 1;
-            }
-
-            .project-card {
-                min-height: 250px;
-            }
-
-        }
-
-/* =========================================================
-   STEP 31 — RESPONSIVE / MOBILE
-========================================================= */
-
-/* ---------- BASE ---------- */
-
-html,
-body {
-    width: 100%;
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
-body {
-    min-height: 100dvh;
-}
-
-/* Particle canvas must stay fixed */
-canvas#particleCanvas {
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    z-index: 0;
-    pointer-events: auto;
-}
-
-
-/* =========================================================
-   CONTENT LAYER
-========================================================= */
-
-/*
-   Your website content should remain ABOVE
-   the particle background.
-*/
-
-section,
-header,
-nav,
-main,
-footer,
-.container,
-.content {
-    position: relative;
-    z-index: 2;
-}
-
-
-/* =========================================================
-   TABLET
-========================================================= */
-
-@media (max-width: 1024px) {
-
-    canvas#particleCanvas {
-        transform: translate3d(0, 0, 0);
-    }
-
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 768px) {
-
-    html,
-    body {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-
-    canvas#particleCanvas {
-        position: fixed;
-        inset: 0;
-
-        width: 100vw;
-        height: 100dvh;
-
-        transform: translate3d(0, 0, 0);
-        backface-visibility: hidden;
-    }
-
-}
-
-
-/* =========================================================
-   SMALL PHONES
-========================================================= */
-
-@media (max-width: 480px) {
-
-    canvas#particleCanvas {
-        width: 100vw;
-        height: 100dvh;
-    }
-
-}
-
-
-/* =========================================================
-   REDUCED MOTION
-========================================================= */
-
-@media (prefers-reduced-motion: reduce) {
-
-    html {
-        scroll-behavior: auto !important;
-    }
-
-}
-/* =========================================================
-   STEP 33 — ACCESSIBILITY
-========================================================= */
-
-/* Visible keyboard focus */
-a:focus-visible,
-button:focus-visible {
-    outline: 2px solid #ffffff;
-    outline-offset: 4px;
-    border-radius: 4px;
-}
-
-/* Don't remove focus for keyboard users */
-a:focus,
-button:focus {
-    outline: none;
-}
-
-/* Restore a clear focus ring only when keyboard navigation is used */
-:focus-visible {
-    outline: 2px solid #ffffff;
-    outline-offset: 4px;
-}
-
-/* Respect reduced-motion preference */
-@media (prefers-reduced-motion: reduce) {
-
-    html {
-        scroll-behavior: auto !important;
-    }
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-}
-    </style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mayank Yadav — Engineer &middot; Founder &middot; Builder</title>
+  <meta name="description" content="Mayank Yadav — Engineer, Founder, Builder. Building at the intersection of AI, Web3 &amp; Technology.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
-
 <body>
 
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo">MY<span>.</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#building">Building</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-    <!-- ========================================
-         FIXED PARTICLE BACKGROUND
-    ======================================== -->
-
-    <div id="particleBackground">
-
-        <canvas
-            id="particleCanvas"
-            aria-hidden="true"
-        ></canvas>
-
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grain"></div>
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
     </div>
-
-
-    <!-- ========================================
-         NAVIGATION
-    ======================================== -->
-
-    <header class="topbar">
-
-        <a
-            class="brand"
-            href="#top"
-        >
-            MAYANK <span>YADAV</span>
-        </a>
-
-
-        <nav class="nav-links">
-
-            <a href="#about">
-                ABOUT
-            </a>
-
-            <a href="#projects">
-                PROJECTS
-            </a>
-
-            <a href="#contact">
-                CONTACT
-            </a>
-
-        </nav>
-
-    </header>
-
-
-    <!-- ========================================
-         SITE CONTENT
-    ======================================== -->
-
-    <main id="siteContent">
-
-
-        <!-- ====================================
-             HERO
-        ==================================== -->
-
-        <section
-            class="hero"
-            id="top"
-        >
-
-            <div class="hero-content">
-
-                <div class="eyebrow">
-                    ENGINEER · FOUNDER · BUILDER
-                </div>
-
-
-                <h1 class="hero-title">
-
-                    Building the<br>
-
-                    <span class="muted">
-                        future of
-                    </span><br>
-
-                    technology.
-
-                </h1>
-
-
-                <p class="hero-description">
-
-                    Exploring AI, Web3, blockchain and
-                    technology while building products
-                    at the intersection of ideas and
-                    execution.
-
-                </p>
-
-
-                <div class="hero-buttons">
-
-                    <a
-                        class="hero-button primary"
-                        href="https://github.com/mayankyadav89"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        VIEW GITHUB
-                    </a>
-
-
-                    <a
-                        class="hero-button"
-                        href="#projects"
-                    >
-                        PORTFOLIO
-                    </a>
-
-                </div>
-
-
-                <div class="hero-meta">
-
-                    <span>
-                        AI
-                    </span>
-
-                    <span>
-                        WEB3
-                    </span>
-
-                    <span>
-                        BLOCKCHAIN
-                    </span>
-
-                    <span>
-                        STARTUPS
-                    </span>
-
-                </div>
-
-            </div>
-
-
-            <!-- SCROLL -->
-
-            <div class="scroll-indicator">
-
-                <span>
-                    SCROLL TO EXPLORE
-                </span>
-
-                <div class="scroll-line"></div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ====================================
-             ABOUT
-        ==================================== -->
-
-        <section
-            class="section"
-            id="about"
-        >
-
-            <div class="section-inner">
-
-                <div class="section-label">
-                    01 · ABOUT
-                </div>
-
-
-                <div class="about-layout">
-
-                    <div class="about-large">
-
-                        Engineer.<br>
-
-                        <span>
-                            Founder.
-                        </span><br>
-
-                        Builder.
-
-                    </div>
-
-
-                    <div class="about-details">
-
-                        <p>
-
-                            I work at the intersection of
-                            AI, Web3, software and
-                            entrepreneurship — turning
-                            ideas into products,
-                            experiments and businesses.
-
-                        </p>
-
-                        <br>
-
-                        <p>
-
-                            Currently building
-                            <strong>MRIG</strong>
-                            and exploring new ideas across
-                            technology, careers and digital
-                            infrastructure.
-
-                        </p>
-
-                        <br>
-
-                        <p>
-
-                            <strong>
-                                B.Tech — Computer Science &
-                                Engineering (AI & ML)
-                            </strong>
-
-                            <br>
-
-                            University Institute of Technology,
-                            RGPV, Bhopal
-
-                            <br>
-
-                            2021 — 2026
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ====================================
-             PROJECTS
-        ==================================== -->
-
-        <section
-            class="section"
-            id="projects"
-        >
-
-            <div class="section-inner">
-
-                <div class="section-label">
-                    02 · PROJECTS & VENTURES
-                </div>
-
-
-                <h2 class="section-title">
-                    Things I'm building.
-                </h2>
-
-
-                <div class="project-grid">
-
-
-                    <!-- MRIG -->
-
-                    <article class="project-card">
-
-                        <span class="project-status">
-                            BUILDING
-                        </span>
-
-                        <h3>
-                            MRIG
-                        </h3>
-
-                        <p>
-
-                            Building the
-                            <strong>
-                                Amazon of Physical Assets
-                            </strong>
-                            — a marketplace designed to
-                            unlock the value of physical
-                            assets.
-
-                        </p>
-
-                        <a
-                            class="project-link"
-                            href="https://mrig.tech"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            MRIG.TECH →
-                        </a>
-
-                    </article>
-
-
-                    <!-- RAS -->
-
-                    <article class="project-card">
-
-                        <span class="project-status">
-                            BUILDING
-                        </span>
-
-                        <h3>
-                            RAS
-                        </h3>
-
-                        <p>
-
-                            AI-powered career and
-                            recruitment ecosystem covering
-                            screening, job matching,
-                            auto-apply, AI interviews,
-                            evaluation and career guidance.
-
-                        </p>
-
-                        <a
-                            class="project-link"
-                            href="https://mrig.tech"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            EXPLORE →
-                        </a>
-
-                    </article>
-
-
-                    <!-- AEGISVAULT -->
-
-                    <article class="project-card">
-
-                        <span class="project-status">
-                            EXPERIMENTAL
-                        </span>
-
-                        <h3>
-                            SVG AegisVault
-                        </h3>
-
-                        <p>
-
-                            A hybrid wallet and Web3
-                            security experiment focused on
-                            secure digital asset infrastructure.
-
-                        </p>
-
-                        <a
-                            class="project-link"
-                            href="https://github.com/mayankyadav89/svg-aegisvault"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            GITHUB →
-                        </a>
-
-                    </article>
-
-
-                    <!-- CRYPTICARD -->
-
-                    <article class="project-card">
-
-                        <span class="project-status">
-                            IDEA
-                        </span>
-
-                        <h3>
-                            Crypticard
-                        </h3>
-
-                        <p>
-
-                            An early-stage Web3 / crypto
-                            product concept currently
-                            being explored.
-
-                        </p>
-
-                    </article>
-
-
-                    <!-- ECOTIES -->
-
-                    <article class="project-card">
-
-                        <span class="project-status">
-                            IDEA
-                        </span>
-
-                        <h3>
-                            Ecoties
-                        </h3>
-
-                        <p>
-
-                            An early-stage startup concept
-                            currently in the idea and
-                            exploration phase.
-
-                        </p>
-
-                    </article>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ====================================
-             SKILLS
-        ==================================== -->
-
-        <section
-            class="section"
-            id="skills"
-        >
-
-            <div class="section-inner">
-
-                <div class="section-label">
-                    03 · SKILLS
-                </div>
-
-
-                <h2 class="section-title">
-                    Tools of the trade.
-                </h2>
-
-
-                <div class="skills-grid">
-
-
-                    <div class="skill-box">
-
-                        <h3>
-                            Languages
-                        </h3>
-
-                        <div class="skill-list">
-
-                            <span class="skill">
-                                Python
-                            </span>
-
-                            <span class="skill">
-                                SQL
-                            </span>
-
-                            <span class="skill">
-                                Solidity
-                            </span>
-
-                            <span class="skill">
-                                DSA
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill-box">
-
-                        <h3>
-                            Technology
-                        </h3>
-
-                        <div class="skill-list">
-
-                            <span class="skill">
-                                AI / ML
-                            </span>
-
-                            <span class="skill">
-                                Web3
-                            </span>
-
-                            <span class="skill">
-                                Blockchain
-                            </span>
-
-                            <span class="skill">
-                                Git
-                            </span>
-
-                            <span class="skill">
-                                GitHub
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill-box">
-
-                        <h3>
-                            Business
-                        </h3>
-
-                        <div class="skill-list">
-
-                            <span class="skill">
-                                Market Research
-                            </span>
-
-                            <span class="skill">
-                                Business Development
-                            </span>
-
-                            <span class="skill">
-                                Product Strategy
-                            </span>
-
-                            <span class="skill">
-                                Partnerships
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill-box">
-
-                        <h3>
-                            Languages
-                        </h3>
-
-                        <div class="skill-list">
-
-                            <span class="skill">
-                                Hindi
-                            </span>
-
-                            <span class="skill">
-                                English
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ====================================
-             CONTACT
-        ==================================== -->
-
-        <section
-            class="section contact"
-            id="contact"
-        >
-
-            <div class="section-inner">
-
-                <div class="section-label">
-                    04 · CONTACT
-                </div>
-
-
-                <h2 class="section-title">
-                    Let's build something.
-                </h2>
-
-
-                <p class="section-text">
-
-                    Open to interesting conversations,
-                    collaborations, technology,
-                    startups and ambitious ideas.
-
-                </p>
-
-
-                <div class="contact-links">
-
-                    <a
-                        class="contact-link"
-                        href="mailto:hello@itsmayank.me"
-                    >
-                        EMAIL
-                    </a>
-
-
-                    <a
-                        class="contact-link"
-                        href="https://github.com/mayankyadav89"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        GITHUB
-                    </a>
-
-
-                    <a
-                        class="contact-link"
-                        href="https://www.linkedin.com/in/mayankyadav89/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        LINKEDIN
-                    </a>
-
-
-                    <a
-                        class="contact-link"
-                        href="https://instagram.com/itsmayank.me"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        INSTAGRAM
-                    </a>
-
-
-                    <a
-                        class="contact-link"
-                        href="mailto:mayankyadavv353@gmail.com"
-                    >
-                        SECONDARY EMAIL
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ====================================
-             FOOTER
-        ==================================== -->
-
-        <footer>
-
-            <div class="footer-inner">
-
-                <span>
-                    MAYANK YADAV
-                </span>
-
-                <span>
-                    BHOPAL · INDIA
-                </span>
-
-                <span>
-                    © 2026
-                </span>
-
-            </div>
-
-        </footer>
-
-
-    </main>
-
-
-    <!-- ========================================
-         FIXED LABELS
-    ======================================== -->
-
-    <div class="location">
-        BHOPAL · INDIA
+    <div class="hero-content">
+      <p class="hero-label">Engineer &middot; Founder &middot; Builder</p>
+      <h1 class="hero-name">Mayank Yadav</h1>
+      <p class="hero-tagline">Building at the intersection of <span class="typed-text" id="typed-text"></span><span class="cursor">|</span></p>
+      <p class="hero-sub">Building products, exploring emerging technology, and turning ideas into real-world systems.</p>
+      <div class="hero-cta">
+        <a href="#building" class="btn btn-primary">Explore Work</a>
+        <a href="https://github.com/mayankyadav89" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
     </div>
-
-
-    <div class="particle-label">
-        ● MAYANK
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
     </div>
-
-
-    <!-- ========================================
-         PARTICLE ENGINE
-    ======================================== -->
-
-    <script>
-
-        const canvas =
-            document.getElementById(
-                "particleCanvas"
-            );
-
-        const ctx =
-            canvas.getContext("2d");
-
-
-        /* ========================================
-           CONFIG
-        ======================================== */
-
-        const PARTICLE_COUNT = 12953;
-
-        const GRID_WIDTH = 300;
-
-        const GRID_HEIGHT = 340;
-
-        const MORPH_SPEED = 0.045;
-
-        const MOUSE_RADIUS = 120;
-
-
-        /* ========================================
-           STATE
-        ======================================== */
-
-        let particles = [];
-
-        let currentTarget = "mayank";
-
-        let animationStarted = false;
-
-
-        const targets = {
-
-            mayank: null,
-
-            ethereum: null,
-
-            mrig: null
-
-        };
-
-
-        const mouse = {
-
-            x: -1000,
-
-            y: -1000
-
-        };
-
-
-        /* ========================================
-           PIXEL RATIO
-        ======================================== */
-
-        function getPixelRatio() {
-
-            return Math.min(
-                window.devicePixelRatio || 1,
-                2
-            );
-
-        }
-
-
-        /* ========================================
-           RESIZE
-        ======================================== */
-
-        function resizeCanvas() {
-
-            const ratio =
-                getPixelRatio();
-
-
-            canvas.width =
-                window.innerWidth *
-                ratio;
-
-
-            canvas.height =
-                window.innerHeight *
-                ratio;
-
-
-            canvas.style.width =
-                window.innerWidth + "px";
-
-
-            canvas.style.height =
-                window.innerHeight + "px";
-
-
-            ctx.setTransform(
-                ratio,
-                0,
-                0,
-                ratio,
-                0,
-                0
-            );
-
-
-            if (
-                targets.mayank &&
-                targets.ethereum &&
-                targets.mrig
-            ) {
-
-                updateTargetPositions();
-
-            }
-
-        }
-
-
-        window.addEventListener(
-            "resize",
-            resizeCanvas
-        );
-
-
-        /* ========================================
-           MOUSE
-        ======================================== */
-
-        window.addEventListener(
-            "mousemove",
-            event => {
-
-                mouse.x =
-                    event.clientX;
-
-                mouse.y =
-                    event.clientY;
-
-            },
-            {
-                passive: true
-            }
-        );
-
-
-        window.addEventListener(
-            "mouseleave",
-            () => {
-
-                mouse.x = -1000;
-
-                mouse.y = -1000;
-
-            }
-        );
-
-
-        /* ========================================
-           LOAD TARGET
-        ======================================== */
-
-        async function loadTarget(path) {
-
-            const response =
-                await fetch(path);
-
-
-            if (!response.ok) {
-
-                throw new Error(
-                    `Failed to load ${path}`
-                );
-
-            }
-
-
-            const data =
-                await response.json();
-
-
-            if (
-                !data.particles ||
-                data.particles.length !==
-                    PARTICLE_COUNT
-            ) {
-
-                throw new Error(
-                    `${path} has ${
-                        data.particles
-                            ? data.particles.length
-                            : 0
-                    } particles. Expected ${PARTICLE_COUNT}.`
-                );
-
-            }
-
-
-            return data.particles;
-
-        }
-
-
-        /* ========================================
-           SCREEN POSITION
-        ======================================== */
-
-        function getScreenPosition(point) {
-
-            const width =
-                window.innerWidth;
-
-            const height =
-                window.innerHeight;
-
-
-            const scale =
-                Math.min(
-                    width / GRID_WIDTH,
-                    height / GRID_HEIGHT
-                ) * 0.78;
-
-
-            const offsetX =
-                (
-                    width -
-                    GRID_WIDTH * scale
-                ) / 2;
-
-
-            const offsetY =
-                (
-                    height -
-                    GRID_HEIGHT * scale
-                ) / 2;
-
-
-            return {
-
-                x:
-                    offsetX +
-                    point.x * scale,
-
-                y:
-                    offsetY +
-                    point.y * scale
-
-            };
-
-        }
-
-
-        /* ========================================
-           TARGET POSITIONS
-        ======================================== */
-
-        function updateTargetPositions() {
-
-            for (
-                const name of [
-                    "mayank",
-                    "ethereum",
-                    "mrig"
-                ]
-            ) {
-
-                if (!targets[name]) {
-
-                    continue;
-
-                }
-
-
-                targets[name].screen =
-                    targets[name].points.map(
-                        point =>
-                            getScreenPosition(
-                                point
-                            )
-                    );
-
-            }
-
-        }
-
-
-        /* ========================================
-           CREATE PARTICLES
-        ======================================== */
-
-        function createParticles() {
-
-            particles = [];
-
-
-            const initialTarget =
-                targets.mayank.screen;
-
-
-            for (
-                let i = 0;
-                i < PARTICLE_COUNT;
-                i++
-            ) {
-
-                const point =
-                    initialTarget[i];
-
-
-                particles.push({
-
-                    x: point.x,
-
-                    y: point.y,
-
-                    targetX: point.x,
-
-                    targetY: point.y,
-
-                    vx: 0,
-
-                    vy: 0,
-
-                    size:
-                        0.7 +
-                        Math.random() * 1.4,
-
-                    alpha:
-                        0.5 +
-                        Math.random() * 0.5,
-
-                    phase:
-                        Math.random() *
-                        Math.PI *
-                        2,
-
-                    speed:
-                        0.5 +
-                        Math.random() *
-                        1.2
-
-                });
-
-            }
-
-        }
-
-
-        /* ========================================
-           MORPH
-        ======================================== */
-
-        function morphTo(name) {
-
-            if (
-                !targets[name] ||
-                !particles.length
-            ) {
-
-                return;
-
-            }
-
-
-            currentTarget =
-                name;
-
-
-            const target =
-                targets[name].screen;
-
-
-            for (
-                let i = 0;
-                i < PARTICLE_COUNT;
-                i++
-            ) {
-
-                particles[i].targetX =
-                    target[i].x;
-
-                particles[i].targetY =
-                    target[i].y;
-
-            }
-
-
-            document
-                .querySelector(".particle-label")
-                .textContent =
-                    `● ${name.toUpperCase()}`;
-
-
-            console.log(
-                `Morphing → ${name.toUpperCase()}`
-            );
-
-        }
-
-
-        /* ========================================
-           DRAW PARTICLE
-        ======================================== */
-
-        function drawParticle(particle) {
-
-            const size = particle.size;
-
-            /*
-             * Performance optimization:
-             * Use a simple filled square instead of creating
-             * a new radial gradient for every particle on every frame.
-             */
-
-            ctx.fillStyle =
-                `rgba(
-                    255,
-                    255,
-                    255,
-                    ${particle.alpha}
-                )`;
-
-            ctx.fillRect(
-                particle.x - size / 2,
-                particle.y - size / 2,
-                size,
-                size
-            );
-        }
-
-
-        /* ========================================
-           ANIMATION
-        ======================================== */
-
-        function animate(time) {
-            const reducedMotion =
-                window.matchMedia(
-                    "(prefers-reduced-motion: reduce)"
-                ).matches;
-
-            if (!animationStarted) {
-
-                return;
-
-            }
-
-
-            ctx.clearRect(
-                0,
-                0,
-                window.innerWidth,
-                window.innerHeight
-            );
-
-
-            for (
-                const particle of particles
-            ) {
-
-
-                /* FLOAT */
-
-                const floatX =
-                    reducedMotion
-                        ? 0
-                        : Math.sin(
-                            time *
-                            0.0005 *
-                            particle.speed +
-                            particle.phase
-                        ) * 0.18;
-
-
-                const floatY =
-                    reducedMotion
-                        ? 0
-                        : Math.cos(
-                            time *
-                            0.0004 *
-                            particle.speed +
-                            particle.phase
-                        ) * 0.18;
-
-
-                /* MOUSE REPULSION */
-
-                const dx =
-                    particle.x -
-                    mouse.x;
-
-
-                const dy =
-                    particle.y -
-                    mouse.y;
-
-
-                const distance =
-                    Math.sqrt(
-                        dx * dx +
-                        dy * dy
-                    );
-
-
-                if (
-                    !reducedMotion &&
-                    distance > 0 &&
-                    distance < MOUSE_RADIUS
-                ) {
-
-                    const force =
-                        (
-                            MOUSE_RADIUS -
-                            distance
-                        ) /
-                        MOUSE_RADIUS;
-
-
-                    particle.vx +=
-                        (
-                            dx /
-                            distance
-                        ) *
-                        force *
-                        1.4;
-
-
-                    particle.vy +=
-                        (
-                            dy /
-                            distance
-                        ) *
-                        force *
-                        1.4;
-
-                }
-
-
-                /* DAMPING */
-
-                particle.vx *= 0.88;
-
-                particle.vy *= 0.88;
-
-
-                /* MORPH */
-
-                particle.x +=
-                    (
-                        particle.targetX +
-                        floatX -
-                        particle.x
-                    ) *
-                    MORPH_SPEED;
-
-
-                particle.y +=
-                    (
-                        particle.targetY +
-                        floatY -
-                        particle.y
-                    ) *
-                    MORPH_SPEED;
-
-
-                /* VELOCITY */
-
-                particle.x +=
-                    particle.vx;
-
-
-                particle.y +=
-                    particle.vy;
-
-
-                /* DRAW */
-
-                drawParticle(
-                    particle
-                );
-
-            }
-
-
-            requestAnimationFrame(
-                animate
-            );
-
-        }
-
-
-        /* ========================================
-           AUTOMATIC MORPH LOOP
-        ======================================== */
-
-        function startAutomaticSequence() {
-
-            if (
-                window.matchMedia(
-                    "(prefers-reduced-motion: reduce)"
-                ).matches
-            ) {
-                return;
-            }
-
-            setTimeout(
-                () => {
-
-                    morphTo(
-                        "ethereum"
-                    );
-
-                },
-                4000
-            );
-
-
-            setTimeout(
-                () => {
-
-                    morphTo(
-                        "mrig"
-                    );
-
-                },
-                10000
-            );
-
-
-            setTimeout(
-                () => {
-
-                    morphTo(
-                        "mayank"
-                    );
-
-                },
-                16000
-            );
-
-
-            setTimeout(
-                startAutomaticSequence,
-                16000
-            );
-
-        }
-
-
-        /* ========================================
-           KEYBOARD CONTROLS
-        ======================================== */
-
-        window.addEventListener(
-            "keydown",
-            event => {
-
-                if (
-                    event.key === "1"
-                ) {
-
-                    morphTo(
-                        "mayank"
-                    );
-
-                }
-
-                if (
-                    event.key === "2"
-                ) {
-
-                    morphTo(
-                        "ethereum"
-                    );
-
-                }
-
-                if (
-                    event.key === "3"
-                ) {
-
-                    morphTo(
-                        "mrig"
-                    );
-
-                }
-
-            }
-        );
-
-
-        /* ========================================
-           INITIALIZE
-        ======================================== */
-
-        async function init() {
-
-            resizeCanvas();
-
-
-            console.log(
-                "Loading particle system..."
-            );
-
-
-            try {
-
-                const [
-                    mayank,
-                    ethereum,
-                    mrig
-                ] =
-                    await Promise.all([
-
-                        loadTarget(
-                            "assets/banner/mayank_particles.json"
-                        ),
-
-                        loadTarget(
-                            "assets/banner/ethereum_particles.json"
-                        ),
-
-                        loadTarget(
-                            "assets/banner/mrig_particles.json"
-                        )
-
-                    ]);
-
-
-                targets.mayank = {
-                    points: mayank
-                };
-
-
-                targets.ethereum = {
-                    points: ethereum
-                };
-
-
-                targets.mrig = {
-                    points: mrig
-                };
-
-
-                updateTargetPositions();
-
-
-                createParticles();
-
-
-                animationStarted =
-                    true;
-
-
-                console.log(
-                    "Particle system ready."
-                );
-
-
-                requestAnimationFrame(
-                    animate
-                );
-
-
-                startAutomaticSequence();
-
-            }
-
-            catch (error) {
-
-                console.error(
-                    "Particle system error:",
-                    error
-                );
-
-            }
-
-        }
-
-
-        /* ========================================
-           START
-        ======================================== */
-
-        init();
-
-    </script>
-
-
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <div class="about-content">
+        <p class="about-lead">I'm Mayank Yadav, a Computer Science Engineer focused on building products, experimenting with emerging technology, and turning ideas into real-world systems.</p>
+        <p class="about-body">My interests sit at the intersection of Artificial Intelligence &amp; Machine Learning, Blockchain &amp; Web3, Software &amp; Product Development, Entrepreneurship &amp; Startups, Business Strategy, and Community Building.</p>
+        <div class="about-focus">
+          <div class="focus-item">
+            <span class="focus-label">AI &amp; ML</span>
+          </div>
+          <div class="focus-item">
+            <span class="focus-label">Web3 &amp; Blockchain</span>
+          </div>
+          <div class="focus-item">
+            <span class="focus-label">Product &amp; Strategy</span>
+          </div>
+          <div class="focus-item">
+            <span class="focus-label">Entrepreneurship</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Currently Building ===== -->
+  <section class="building" id="building">
+    <div class="container">
+      <h2 class="section-title">Currently Building</h2>
+      <div class="building-grid">
+
+        <article class="build-card build-card--featured">
+          <div class="build-card-header">
+            <div class="build-status"><span class="status-dot status-building"></span>Building</div>
+          </div>
+          <h3 class="build-name">Rentro &middot; MRIG</h3>
+          <p class="build-role">Founder &amp; CEO</p>
+          <p class="build-position">Unlock the Value of Every Asset</p>
+          <p class="build-desc">A marketplace vision focused on unlocking the value of underutilized physical assets through renting, buying, selling, financing, insurance and asset management.</p>
+          <ul class="build-points">
+            <li>Leading product strategy, market research and business model validation</li>
+            <li>Defining the MVP, user journeys, pricing strategy and go-to-market roadmap</li>
+            <li>Conducting customer interviews and competitor research</li>
+            <li>Driving partnership discussions and long-term ecosystem development</li>
+            <li>Leading day-to-day product and business operations</li>
+          </ul>
+        </article>
+
+        <article class="build-card build-card--featured">
+          <div class="build-card-header">
+            <div class="build-status"><span class="status-dot status-building"></span>Building</div>
+          </div>
+          <h3 class="build-name">GetNextIn &middot; MRIG</h3>
+          <p class="build-role">Founder &amp; CEO</p>
+          <p class="build-position">AI-Powered Career &amp; Recruitment Ecosystem</p>
+          <p class="build-desc">An AI-powered platform focused on improving the career and hiring journey through intelligent job matching, candidate screening, skill assessment, interviews, verification, portfolio building and career guidance.</p>
+          <ul class="build-points">
+            <li>Leading product strategy, market research and business model validation</li>
+            <li>Defining the MVP, user journeys, AI features and go-to-market roadmap</li>
+            <li>Conducting candidate, recruiter and employer research</li>
+            <li>Driving partnerships and long-term ecosystem development</li>
+            <li>Leading day-to-day product and business operations</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Rentro &middot; MRIG</h3>
+            <span class="project-status project-status--building">Building</span>
+          </div>
+          <p class="project-desc">Physical asset marketplace ecosystem</p>
+          <div class="project-tags">
+            <span>Marketplace</span><span>Product</span><span>Strategy</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3>GetNextIn &middot; MRIG</h3>
+            <span class="project-status project-status--building">Building</span>
+          </div>
+          <p class="project-desc">AI-powered career &amp; recruitment ecosystem</p>
+          <div class="project-tags">
+            <span>AI</span><span>Recruitment</span><span>Product</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3>SVG AegisVault</h3>
+            <span class="project-status project-status--experimental">Experimental</span>
+          </div>
+          <p class="project-desc">Experimental hybrid wallet exploring secure wallet architecture, smart account architecture, passkey-based authentication, ERC-4337 account abstraction, and Base Sepolia.</p>
+          <div class="project-tags">
+            <span>Web3</span><span>ERC-4337</span><span>Security</span><span>Solidity</span>
+          </div>
+          <a href="https://github.com/mayankyadav89/svg-aegisvault" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Crypticard</h3>
+            <span class="project-status project-status--idea">Early-Stage</span>
+          </div>
+          <p class="project-desc">Decentralized digital identity. Product ideation, market validation, business strategy, and Web3 ecosystem partnerships. Built the concept toward early development.</p>
+          <div class="project-tags">
+            <span>Web3</span><span>Identity</span><span>Startup</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Ecoties</h3>
+            <span class="project-status project-status--idea">Idea</span>
+          </div>
+          <p class="project-desc">Early-stage startup concept.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experience ===== -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">2026 &mdash; Present</span>
+              <span class="timeline-badge">Hybrid</span>
+            </div>
+            <h3>Founder &amp; CEO</h3>
+            <p class="timeline-org">MRIG</p>
+            <p class="timeline-desc">Building a technology platform focused on creating a marketplace for physical assets.</p>
+            <ul class="timeline-list">
+              <li>Conduct customer interviews and user research</li>
+              <li>Map user journeys and improve onboarding/user experience</li>
+              <li>Lead product strategy, market research and business model validation</li>
+              <li>Define MVP, pricing strategy and go-to-market roadmap</li>
+              <li>Drive partnership discussions and ecosystem development</li>
+              <li>Lead product and business operations</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">2024 &mdash; 2026</span>
+              <span class="timeline-badge">Hybrid</span>
+            </div>
+            <h3>Founder &amp; CEO</h3>
+            <p class="timeline-org">Crypticard</p>
+            <p class="timeline-desc">Web3 startup focused on decentralized digital identity.</p>
+            <ul class="timeline-list">
+              <li>Led product ideation, market validation and business strategy</li>
+              <li>Coordinated development, operations and marketing</li>
+              <li>Designed product roadmap</li>
+              <li>Explored partnerships within the Web3 ecosystem</li>
+              <li>Built the project from concept to early development</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">2024 &mdash; 2025</span>
+              <span class="timeline-badge">Remote</span>
+            </div>
+            <h3>India Lead &mdash; Business Development</h3>
+            <p class="timeline-org">Koii Network</p>
+            <ul class="timeline-list">
+              <li>Managed India-focused community channels across Discord, Telegram and X</li>
+              <li>Supported node-user acquisition and onboarding</li>
+              <li>Built relationships with Web3 communities, founders and student groups</li>
+              <li>Organized / supported meetups, hackathons and ecosystem events</li>
+              <li>Coordinated outreach, partnerships and community initiatives</li>
+              <li>Worked with the global team to strengthen regional adoption</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">2024 &mdash; 2025</span>
+              <span class="timeline-badge">Remote</span>
+            </div>
+            <h3>Business Development</h3>
+            <p class="timeline-org">Victus Global</p>
+            <ul class="timeline-list">
+              <li>Researched Web3 projects and token-based initiatives</li>
+              <li>Analyzed token metrics, market positioning and growth potential</li>
+              <li>Supported project evaluation and due diligence</li>
+              <li>Coordinated with the global team on evaluations, partnerships and ecosystem expansion</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Leadership & Community ===== -->
+  <section class="community" id="community">
+    <div class="container">
+      <h2 class="section-title">Leadership &amp; Community</h2>
+      <div class="community-grid">
+        <div class="community-card">
+          <h3>Decentralized Guild India</h3>
+          <p class="community-role">Core Member &middot; 2024 &mdash; 2025</p>
+          <ul>
+            <li>Contributed to community growth and engagement</li>
+            <li>Supported discussions and ecosystem activities</li>
+            <li>Helped onboard and assist developers entering the Web3 ecosystem</li>
+          </ul>
+        </div>
+        <div class="community-card">
+          <h3>ETHGlobal, IBW, W3C &amp; Web3 Events</h3>
+          <p class="community-role">Ecosystem Contributor &middot; 2024 &mdash; 2025</p>
+          <ul>
+            <li>Assisted with attendee onboarding</li>
+            <li>Supported community engagement and event operations</li>
+            <li>Helped participants navigate sessions and networking opportunities</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3>Technical</h3>
+          <div class="skill-tags">
+            <span>Python (Basic)</span><span>SQL (Basic)</span><span>Git</span><span>GitHub</span><span>AI/ML Fundamentals</span><span>Blockchain &amp; Web3 Fundamentals</span><span>Smart Contracts</span><span>Ethereum</span><span>Solana</span><span>Polygon</span><span>Base</span><span>Node Operations</span><span>Web3 Wallets</span><span>MetaMask</span><span>Phantom</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Business &amp; Product</h3>
+          <div class="skill-tags">
+            <span>Business Development</span><span>Product Strategy</span><span>Market Research</span><span>User Research</span><span>Go-to-Market Strategy</span><span>Partnerships</span><span>Community Building</span><span>Community Growth</span><span>Operations</span><span>Project Management</span><span>Stakeholder Management</span><span>Event Management</span><span>Public Speaking</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Customer &amp; Operations</h3>
+          <div class="skill-tags">
+            <span>Customer Support</span><span>User Onboarding</span><span>Issue Resolution</span><span>Customer Communication</span><span>Community Support</span><span>Workflow Management</span><span>Process Improvement</span><span>Problem Solving</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Tools</h3>
+          <div class="skill-tags">
+            <span>Git</span><span>GitHub</span><span>Notion</span><span>Canva</span><span>Postman</span><span>VS Code</span><span>ChatGPT</span><span>Claude</span><span>Gemini</span><span>Discord</span><span>Telegram</span><span>Microsoft Office</span><span>Google Workspace</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span>Hindi &mdash; Native</span><span>English &mdash; Professional Working Proficiency</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Achievements ===== -->
+  <section class="achievements" id="achievements">
+    <div class="container">
+      <h2 class="section-title">Achievements</h2>
+      <div class="achievements-list">
+        <div class="achievement-item">
+          <span class="achievement-icon">&bull;</span>
+          <p>Built and managed a 2,500+ member community across Discord, Telegram and X</p>
+        </div>
+        <div class="achievement-item">
+          <span class="achievement-icon">&bull;</span>
+          <p>Contributed to business opportunity identification and partnership development across early-stage Web3 projects</p>
+        </div>
+        <div class="achievement-item">
+          <span class="achievement-icon">&bull;</span>
+          <p>Hackathon Bounty Winner &mdash; Unfold 2023</p>
+        </div>
+        <div class="achievement-item">
+          <span class="achievement-icon">&bull;</span>
+          <p>B.Tech in Computer Science &amp; Engineering &mdash; Artificial Intelligence &amp; Machine Learning</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Education ===== -->
+  <section class="education" id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="education-grid">
+        <div class="edu-card">
+          <span class="edu-date">2021 &mdash; 2026</span>
+          <h3>B.Tech &mdash; Computer Science &amp; Engineering</h3>
+          <p class="edu-spec">Specialization: Artificial Intelligence &amp; Machine Learning</p>
+          <p class="edu-school">University Institute of Technology, RGPV &middot; Bhopal, India</p>
+          <p class="edu-score">CGPA: 6.69 / 10</p>
+        </div>
+        <div class="edu-card">
+          <span class="edu-date">2020 &mdash; 2021</span>
+          <h3>Higher Secondary (PCM)</h3>
+          <p class="edu-school">Madhya Pradesh Board of Secondary Education</p>
+          <p class="edu-score">Marks: 329 / 500</p>
+        </div>
+      </div>
+
+      <div class="coursework">
+        <h3>Relevant Coursework</h3>
+        <div class="skill-tags">
+          <span>Artificial Intelligence</span><span>Machine Learning</span><span>Data Structures &amp; Algorithms</span><span>Database Management Systems</span><span>Operating Systems</span><span>Computer Networks</span><span>Statistics</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Certification ===== -->
+  <section class="certification" id="certification">
+    <div class="container">
+      <h2 class="section-title">Certification</h2>
+      <div class="cert-card">
+        <h3>IBM Certified Developer &mdash; Cognos 10 BI Data Warehouses</h3>
+        <p class="cert-issuer">Cognitive Class &middot; January 2024</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Books & Writing ===== -->
+  <section class="books" id="books">
+    <div class="container">
+      <h2 class="section-title">Books &amp; Writing</h2>
+      <div class="books-content">
+        <p class="books-intro">I'm currently writing books and exploring ideas around technology, entrepreneurship, systems, and human experiences.</p>
+        <div class="books-badge">
+          <span class="status-dot status-building"></span>
+          <span>Currently Writing &mdash; Work in Progress</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Interests ===== -->
+  <section class="interests" id="interests">
+    <div class="container">
+      <h2 class="section-title">Interests</h2>
+      <div class="interests-tags">
+        <span>Entrepreneurship</span><span>Artificial Intelligence</span><span>Blockchain &amp; Web3</span><span>Product Management</span><span>Startups</span><span>Economics</span><span>Reading</span><span>Travel</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="contact-intro">Have a project idea, partnership opportunity, or just want to connect? I'd love to hear from you.</p>
+      <div class="contact-grid">
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+        <div class="social-grid">
+          <a href="mailto:hello@itsmayank.me" class="social-icon-link" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span class="social-handle">hello@itsmayank.me</span>
+          </a>
+          <a href="https://github.com/mayankyadav89" class="social-icon-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61a3.18 3.18 0 0 0-1.33-1.76c-1.09-.74.08-.73.08-.73a2.52 2.52 0 0 1 1.84 1.24 2.56 2.56 0 0 0 3.5 1 2.56 2.56 0 0 1 .76-1.61c-2.67-.3-5.47-1.33-5.47-5.93a4.64 4.64 0 0 1 1.24-3.22 4.3 4.3 0 0 1 .12-3.18s1-.33 3.3 1.23a11.4 11.4 0 0 1 6.02 0c2.28-1.56 3.29-1.23 3.29-1.23a4.3 4.3 0 0 1 .12 3.18 4.64 4.64 0 0 1 1.23 3.22c0 4.61-2.81 5.63-5.48 5.93a2.86 2.86 0 0 1 .82 2.23v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .3"/></svg>
+            <span class="social-handle">mayankyadav89</span>
+          </a>
+          <a href="https://www.linkedin.com/in/mayankyadav89/" class="social-icon-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77A1.75 1.75 0 0 0 0 1.73v20.54A1.75 1.75 0 0 0 1.77 24h20.45A1.75 1.75 0 0 0 24 22.27V1.73A1.75 1.75 0 0 0 22.22 0Z"/></svg>
+            <span class="social-handle">mayankyadav89</span>
+          </a>
+          <a href="https://x.com/maayankavy07" class="social-icon-link" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/></svg>
+            <span class="social-handle">@maayankavy07</span>
+          </a>
+          <a href="https://instagram.com/itsmayank.me" class="social-icon-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            <span class="social-handle">itsmayank.me</span>
+          </a>
+          <a href="https://www.facebook.com/itsmayank.me" class="social-icon-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073Z"/></svg>
+            <span class="social-handle">itsmayank.me</span>
+          </a>
+          <a href="https://farcaster.xyz/mayankyadav" class="social-icon-link" target="_blank" rel="noopener noreferrer" aria-label="Farcaster">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.24 2.4h13.52v1.92H24v3.84h-1.44v9.6h-.72a1.44 1.44 0 0 1-1.44-1.44v-3.36c0-2.12-1.56-3.87-3.6-4.2V8.4a4.8 4.8 0 0 0-9.6 0v.36c-2.04.33-3.6 2.08-3.6 4.2v3.36A1.44 1.44 0 0 1 2.16 17.76h-.72v-9.6H0V4.32h5.24V2.4Z"/></svg>
+            <span class="social-handle">mayankyadav</span>
+          </a>
+          <a href="https://www.reddit.com/u/maayankaydav/s/fWLZXcJXma" class="social-icon-link" target="_blank" rel="noopener noreferrer" aria-label="Reddit">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0Zm5.01 13.38c.15.27.23.57.23.89 0 1.81-2.35 3.28-5.24 3.28s-5.24-1.47-5.24-3.28a1.84 1.84 0 0 1 .84-1.54 1.76 1.76 0 0 1 2.41.44c.88-.55 2.01-.88 3.22-.92l.76-3.28.01-.03a.31.31 0 0 1 .37-.23l2.37.53a1.2 1.2 0 1 1-.13.56l-2.1-.47-.67 2.89c1.17.06 2.27.39 3.13.93a1.76 1.76 0 0 1 2.04.23Zm-7.92 1.37a1.2 1.2 0 1 0 2.4 0 1.2 1.2 0 0 0-2.4 0Zm6.56 0a1.2 1.2 0 1 0-2.4 0 1.2 1.2 0 0 0 2.4 0ZM12 17.04c1.09 0 2.06-.27 2.6-.82a.23.23 0 0 0-.31-.34c-.45.42-1.3.64-2.29.64s-1.84-.22-2.29-.64a.23.23 0 0 0-.31.34c.54.55 1.51.82 2.6.82Z"/></svg>
+            <span class="social-handle">maayankaydav</span>
+          </a>
+          <a href="https://discord.com/users/MAYANKYADAV" class="social-icon-link" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.11 13.11 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.893.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03ZM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.095 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.095 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"/></svg>
+            <span class="social-handle">mayankyadav</span>
+          </a>
+          <div class="social-icon-link social-icon-link--static" aria-label="Location">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span class="social-handle">Bhopal, Madhya Pradesh, India</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Mayank Yadav</p>
+      <div class="footer-links">
+        <a href="https://github.com/mayankyadav89" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/mayankyadav89/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://x.com/maayankavy07" target="_blank" rel="noopener noreferrer">X</a>
+        <a href="mailto:hello@itsmayank.me">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
