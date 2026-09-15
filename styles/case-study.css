@@ -1,0 +1,274 @@
+/**
+ * ============================================================================
+ * CASE STUDY ARCHITECTURE STYLES — Mayank Yadav Founder Digital HQ
+ * ============================================================================
+ */
+.case-study-hero {
+  padding: 8rem 0 4.5rem;
+  position: relative;
+  border-bottom: 1px solid var(--border-default);
+  background: radial-gradient(circle at 50% 0%, rgba(167, 139, 250, 0.08), transparent 70%);
+}
+
+.cs-meta-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+.cs-hero-title {
+  font-size: clamp(2.4rem, 5vw, 3.75rem);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.cs-hero-tagline {
+  font-size: 1.35rem;
+  color: var(--accent-violet);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.cs-hero-summary {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  max-width: 820px;
+  margin-bottom: 2.25rem;
+}
+
+.cs-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.cs-stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+}
+
+.cs-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.35rem;
+}
+
+.cs-stat-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* Case Study Content Layout */
+.cs-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 4rem;
+  padding: 5rem 0;
+  align-items: start;
+}
+
+/* Sticky Sidebar Table of Contents */
+.cs-toc-sidebar {
+  position: sticky;
+  top: 90px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+
+.cs-toc-title {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-violet);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.cs-toc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.cs-toc-link {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  transition: color var(--transition-fast), transform var(--transition-fast);
+  display: block;
+}
+
+.cs-toc-link:hover,
+.cs-toc-link.active {
+  color: var(--text-primary);
+  transform: translateX(4px);
+}
+
+.cs-toc-link.active {
+  color: var(--accent-violet);
+  font-weight: 600;
+}
+
+/* Main Section Blocks */
+.cs-body {
+  max-width: 820px;
+}
+
+.cs-section {
+  padding-bottom: 4.5rem;
+  margin-bottom: 4.5rem;
+  border-bottom: 1px solid var(--border-default);
+}
+
+.cs-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.cs-section-num {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-violet);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.cs-section h2 {
+  font-size: 1.85rem;
+  margin-bottom: 1.35rem;
+}
+
+.cs-section p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.cs-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1.25rem 0 1.75rem;
+}
+
+.cs-section li {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.cs-section li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent-violet);
+}
+
+/* Technical Architecture Box / Workflow Diagrams */
+.tech-diagram-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-hover);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: var(--shadow-md);
+}
+
+.tech-diagram-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.tech-diagram-title {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+}
+
+.workflow-steps-horizontal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1rem;
+  align-items: center;
+}
+
+.workflow-node-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  padding: 1rem 0.85rem;
+  text-align: center;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.workflow-node-box:hover {
+  border-color: var(--accent-violet);
+  transform: translateY(-2px);
+}
+
+.workflow-node-step {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--accent-violet);
+  margin-bottom: 0.25rem;
+}
+
+.workflow-node-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Callout Box */
+.cs-callout {
+  background: rgba(167, 139, 250, 0.06);
+  border: 1px solid rgba(167, 139, 250, 0.2);
+  border-left: 3px solid var(--accent-violet);
+  border-radius: var(--radius-sm);
+  padding: 1.35rem 1.5rem;
+  margin: 1.75rem 0;
+}
+
+.cs-callout p {
+  color: var(--text-primary);
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .cs-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .cs-toc-sidebar {
+    display: none;
+  }
+}

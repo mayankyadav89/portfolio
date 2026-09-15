@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mayank Yadav — Founder · Builder · AI · Web3</title>
+  <meta name="description" content="Mayank Yadav — Founder &amp; Product Architect. Building at the intersection of AI, Web3, and Real-World Physical Asset Infrastructure (MRIG, Rentro, GetNextIn, Crypticard).">
+  <meta name="keywords" content="Mayank Yadav, Founder, MRIG, Rentro, GetNextIn, Crypticard, Web3, AI, Account Abstraction, ERC-4337, Startup Builder">
+  <meta name="author" content="Mayank Yadav">
+  <link rel="canonical" href="https://itsmayank.me/">
+
+  <!-- OpenGraph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://itsmayank.me/">
+  <meta property="og:title" content="Mayank Yadav — Founder · Builder · AI · Web3">
+  <meta property="og:description" content="Founder Digital Headquarters of Mayank Yadav. Architecting physical asset marketplaces and frontier technology systems.">
+  <meta property="og:image" content="https://itsmayank.me/favicon.svg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@maayankavy07">
+  <meta name="twitter:creator" content="@maayankavy07">
+  <meta name="twitter:title" content="Mayank Yadav — Founder · Builder · AI · Web3">
+  <meta name="twitter:description" content="Building at the intersection of AI, Web3 &amp; Physical Asset Infrastructure.">
+  <meta name="twitter:image" content="https://itsmayank.me/favicon.svg">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+
+  <!-- JSON-LD Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://itsmayank.me/#person",
+        "name": "Mayank Yadav",
+        "jobTitle": "Founder & CEO",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "MRIG",
+          "url": "https://rentro.mrig.tech"
+        },
+        "description": "Founder & Product Architect building physical asset marketplace infrastructure (MRIG: Rentro & GetNextIn) and Web3 systems.",
+        "url": "https://itsmayank.me",
+        "sameAs": [
+          "https://github.com/mayankyadav89",
+          "https://www.linkedin.com/in/mayankyadav89/",
+          "https://x.com/maayankavy07",
+          "https://farcaster.xyz/mayankyadav"
+        ],
+        "knowsAbout": [
+          "Artificial Intelligence",
+          "Web3 & Blockchain Architecture",
+          "ERC-4337 Account Abstraction",
+          "Multi-Sided Marketplaces",
+          "Decentralized Identity"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://itsmayank.me/#website",
+        "url": "https://itsmayank.me/",
+        "name": "Mayank Yadav — Founder Digital Headquarters",
+        "publisher": { "@id": "https://itsmayank.me/#person" }
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="custom-cursor-active">
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-bar" id="scroll-progress-bar" aria-hidden="true" style="width: 0%;"></div>
+
+  <!-- ===== Global Navbar ===== -->
+  <header class="hq-navbar" id="navbar">
+    <div class="hq-navbar-inner">
+      <a href="index.html" class="hq-logo">
+        <span>MY</span>
+        <span class="hq-logo-badge">FOUNDER HQ</span>
+      </a>
+      <nav class="hq-nav-links" id="nav-links">
+        <a href="index.html" class="active">HQ</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="projects/mrig.html">MRIG</a>
+        <a href="experience.html">Experience</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="hq-nav-actions">
+        <button class="cmd-palette-btn" aria-label="Open Command Palette">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span class="cmd-text">Search</span>
+          <kbd class="cmd-key">⌘K</kbd>
+        </button>
+        <button class="hq-nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ===== Hero Section ===== -->
+    <section class="hero-hq" id="hero">
+      <div class="hero-bg">
+        <canvas id="hero-canvas" class="hero-canvas" width="481" height="1283" style="width: 481px; height: 1283px;"></canvas>
+        <div class="hero-grain"></div>
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        <div class="floating-orb orb-3"></div>
+      </div>
+
+      <div class="hero-content">
+        <a href="projects/mrig.html" class="hero-status-pill">
+          <span class="status-pulse-dot"></span>
+          <span><strong>Currently Building:</strong> MRIG · Rentro &amp; GetNextIn</span>
+          <span class="status-pill-arrow">→</span>
+        </a>
+
+        <h1 class="hero-name">Mayank Yadav</h1>
+        <p class="hero-tagline">Building at the intersection of <span class="typed-text" id="typed-text">Ph</span><span class="cursor">|</span></p>
+        <p class="hero-sub">Founder &amp; Technology Builder. Architecting multi-sided physical asset marketplaces, AI recruitment systems, and decentralized trust infrastructure.</p>
+
+        <div class="hero-cta">
+          <a href="projects/mrig.html" class="btn btn-primary">
+            <span>Explore Flagship: MRIG</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#ledger" class="btn btn-secondary">
+            <span>Living Blockchain Ledger</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+          </a>
+          <a href="contact.html" class="btn btn-outline">Encrypted Contact</a>
+        </div>
+
+        <!-- Metric Cards Strip -->
+        <div class="metrics-strip">
+          <div class="metric-card reveal reveal-delay-1 active">
+            <div class="metric-val">2</div>
+            <div class="metric-label">Ventures Founded</div>
+            <div class="metric-sub">MRIG &amp; Crypticard</div>
+          </div>
+          <div class="metric-card reveal reveal-delay-2 active">
+            <div class="metric-val">2,500+</div>
+            <div class="metric-label">Web3 Community</div>
+            <div class="metric-sub">Builders &amp; Node Operators</div>
+          </div>
+          <div class="metric-card reveal reveal-delay-3">
+            <div class="metric-val">Unfold '23</div>
+            <div class="metric-label">Hackathon Bounty</div>
+            <div class="metric-sub">Top Web3 Architecture</div>
+          </div>
+          <div class="metric-card reveal reveal-delay-4">
+            <div class="metric-val">AI &amp; ML</div>
+            <div class="metric-label">Engineering Focus</div>
+            <div class="metric-sub">B.Tech CSE UIT RGPV</div>
+          </div>
+        </div>
+
+        <!-- Embedded Interactive Terminal -->
+        <div class="terminal-window" id="founder-terminal">
+          <div class="terminal-header">
+            <div class="terminal-controls">
+              <span class="terminal-dot terminal-dot-red"></span>
+              <span class="terminal-dot terminal-dot-yellow"></span>
+              <span class="terminal-dot terminal-dot-green"></span>
+            </div>
+            <span class="terminal-title">mayank@founder-hq: ~ (bash)</span>
+            <span class="terminal-status">• NODE ACTIVE</span>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-output">
+              <div class="terminal-line accent">Mayank Yadav Founder Terminal [Version 2.5.0]</div>
+              <div class="terminal-line dim">Type 'help' to inspect active commands or 'mrig' to load venture architecture.</div>
+              <div class="terminal-line success">Session connected to Base Sepolia / Decentralized Data Bus.</div>
+            </div>
+            <div class="terminal-input-row">
+              <span class="terminal-prompt">mayank@founder-hq:~$</span>
+              <input type="text" class="terminal-input" placeholder="type 'help', 'bio', 'mrig', 'stack'..." spellcheck="false" autocomplete="off">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== Living Blockchain Ledger Section ===== -->
+    <section class="ledger-section" id="ledger">
+      <div class="container">
+        <div class="ledger-header">
+          <div>
+            <span class="section-label">Verifiable Provenance</span>
+            <h2 class="section-title">Living Blockchain Ledger</h2>
+            <p class="section-subtitle" style="margin-bottom: 0;">An interactive, chronological block sequence tracing verified milestones, startup ventures, smart contract architectures, and ecosystem leadership.</p>
+          </div>
+        </div>
+
+        <!-- Horizontal Node Ribbon -->
+        <div class="blockchain-ribbon-container" id="blockchain-ribbon-container">
+        <div class="blockchain-ribbon">
+          
+            <div class="ribbon-node" data-id="BLOCK-000">
+              <span class="ribbon-node-num">#000</span>
+              <span class="ribbon-node-title">Genesis Block</span>
+            </div>
+            <span class="ribbon-node-arrow">→</span>
+          
+            <div class="ribbon-node" data-id="BLOCK-001">
+              <span class="ribbon-node-num">#001</span>
+              <span class="ribbon-node-title">Block 001</span>
+            </div>
+            <span class="ribbon-node-arrow">→</span>
+          
+            <div class="ribbon-node" data-id="BLOCK-002">
+              <span class="ribbon-node-num">#002</span>
+              <span class="ribbon-node-title">Block 002</span>
+            </div>
+            <span class="ribbon-node-arrow">→</span>
+          
+            <div class="ribbon-node" data-id="BLOCK-003">
+              <span class="ribbon-node-num">#003</span>
+              <span class="ribbon-node-title">Block 003</span>
+            </div>
+            <span class="ribbon-node-arrow">→</span>
+          
+            <div class="ribbon-node" data-id="BLOCK-004">
+              <span class="ribbon-node-num">#004</span>
+              <span class="ribbon-node-title">Block 004</span>
+            </div>
+            <span class="ribbon-node-arrow">→</span>
+          
+            <div class="ribbon-node" data-id="BLOCK-005">
+              <span class="ribbon-node-num">#005</span>
+              <span class="ribbon-node-title">Block 005</span>
+            </div>
+            <span class="ribbon-node-arrow">→</span>
+          
+            <div class="ribbon-node" data-id="CURRENT-HEAD">
+              <span class="ribbon-node-num">#006</span>
+              <span class="ribbon-node-title">Active Head</span>
+            </div>
+            
+          
+        </div>
+      </div>
+
+        <!-- Controls Row (Search + Filter Tabs) -->
+        <div class="ledger-controls-row">
+          <div class="ledger-search-box">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--text-muted);"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="ledger-search-input" class="ledger-search-input" placeholder="Search blocks by name, tech or tag..." autocomplete="off">
+          </div>
+          <div class="ledger-filters">
+            <button class="ledger-filter-btn active" data-filter="ALL">ALL BLOCKS</button>
+            <button class="ledger-filter-btn" data-filter="STARTUP">STARTUPS</button>
+            <button class="ledger-filter-btn" data-filter="PROTOCOL">PROTOCOLS</button>
+            <button class="ledger-filter-btn" data-filter="MILESTONE">MILESTONES</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Blockchain Stream Container -->
+        <div class="blockchain-stream" id="blockchain-stream-container">
+        <div class="blockchain-chain-line">
+          <div class="blockchain-chain-packet"></div>
+        </div>
+      <div class="block-node " data-id="BLOCK-000">
+          <div class="block-node-left">
+            <div class="block-badge-icon">
+              <span class="block-num-label">BLK</span>
+              <span class="block-num-val">000</span>
+            </div>
+          </div>
+          <div class="block-card">
+            <div class="block-card-header">
+              <div class="block-title-group">
+                <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.35rem; flex-wrap: wrap;">
+                  <span class="badge badge-cyan">GENESIS</span>
+                  <span class="badge" style="background: rgba(255,255,255,0.04); border-color: var(--border-subtle); color: var(--text-muted);">
+                    Verified / Completed
+                  </span>
+                </div>
+                <h3>AI &amp; Computer Science Engineering Foundation</h3>
+              </div>
+              <button class="block-hash-chip" title="Click to copy block hash" data-hash="0x8f3c7a92b01e4d58a1c3e7f2b904d6a8e1b5c3a7f920d4e6c8a1b3e5f7a9c2d1">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>0x8f3c7a92...a9c2d1</span>
+              </button>
+            </div>
+
+            <div class="block-summary">B.Tech in Computer Science &amp; Engineering with formal specialization in Artificial Intelligence &amp; Machine Learning at UIT RGPV. Established foundations in algorithms, neural networks, data structures, and distributed systems.</div>
+
+            <div class="block-tech-tags"><span class="block-tech-tag">AI/ML Fundamentals</span><span class="block-tech-tag">Neural Networks</span><span class="block-tech-tag">Data Structures &amp; Algorithms</span><span class="block-tech-tag">Python</span><span class="block-tech-tag">Database Systems</span></div>
+
+            <div class="block-txs-list"><div class="block-tx-item">Initialized Computer Science &amp; Engineering Curriculum at UIT RGPV</div><div class="block-tx-item">Specialized in Artificial Intelligence &amp; Machine Learning Algorithms</div><div class="block-tx-item">Completed IBM Certified Developer — Cognos 10 BI Data Warehouses</div></div>
+
+            <div class="block-action-bar">
+              <button class="block-inspect-btn" data-id="BLOCK-000">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <span>Cryptographic Inspection</span>
+              </button>
+              
+                <a href="about.html" class="block-link">
+                  <span>Explore Foundation &amp; Background →</span>
+                </a>
+              
+            </div>
+          </div>
+        </div><div class="block-node " data-id="BLOCK-001">
+          <div class="block-node-left">
+            <div class="block-badge-icon">
+              <span class="block-num-label">BLK</span>
+              <span class="block-num-val">001</span>
+            </div>
+          </div>
+          <div class="block-card">
+            <div class="block-card-header">
+              <div class="block-title-group">
+                <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.35rem; flex-wrap: wrap;">
+                  <span class="badge badge-amber">MILESTONE</span>
+                  <span class="badge" style="background: rgba(255,255,255,0.04); border-color: var(--border-subtle); color: var(--text-muted);">
+                    Verified Accolade
+                  </span>
+                </div>
+                <h3>Unfold '23 Hackathon Bounty Winner</h3>
+              </div>
+              <button class="block-hash-chip" title="Click to copy block hash" data-hash="0x1a8f3c7e92b01d4a58a1c3e7f2b904d6a8e1b5c3a7f920d4e6c8a1b3e5f7a9c2">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>0x1a8f3c7e...f7a9c2</span>
+              </button>
+            </div>
+
+            <div class="block-summary">Awarded competitive track bounty at Unfold 2023 Hackathon. Rapidly prototyped functional Web3 smart contract architectures and presented decentralized solutions under strict hackathon evaluation.</div>
+
+            <div class="block-tech-tags"><span class="block-tech-tag">Smart Contracts</span><span class="block-tech-tag">Solidity</span><span class="block-tech-tag">Web3 Systems</span><span class="block-tech-tag">Rapid Prototyping</span></div>
+
+            <div class="block-txs-list"><div class="block-tx-item">Engineered competitive Web3 prototype during Unfold 2023 Hackathon</div><div class="block-tx-item">Awarded official track bounty by technical evaluation panel</div><div class="block-tx-item">Strengthened developer peer network across national Web3 builder ecosystem</div></div>
+
+            <div class="block-action-bar">
+              <button class="block-inspect-btn" data-id="BLOCK-001">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <span>Cryptographic Inspection</span>
+              </button>
+              
+                <a href="experience.html" class="block-link">
+                  <span>View Hackathon &amp; Track Record →</span>
+                </a>
+              
+            </div>
+          </div>
+        </div><div class="block-node " data-id="BLOCK-002">
+          <div class="block-node-left">
+            <div class="block-badge-icon">
+              <span class="block-num-label">BLK</span>
+              <span class="block-num-val">002</span>
+            </div>
+          </div>
+          <div class="block-card">
+            <div class="block-card-header">
+              <div class="block-title-group">
+                <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.35rem; flex-wrap: wrap;">
+                  <span class="badge badge-emerald">IDENTITY</span>
+                  <span class="badge" style="background: rgba(255,255,255,0.04); border-color: var(--border-subtle); color: var(--text-muted);">
+                    Early-Stage Concept / R&amp;D
+                  </span>
+                </div>
+                <h3>Crypticard: Decentralized Digital Identity</h3>
+              </div>
+              <button class="block-hash-chip" title="Click to copy block hash" data-hash="0x3a9f1b2c4d6e8f0a2b4c6d8e0f1a3b5c7d9e1f3a5b7c9d1e3f5a7b9c1d3e5f7a">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>0x3a9f1b2c...3e5f7a</span>
+              </button>
+            </div>
+
+            <div class="block-summary">Founded Crypticard as CEO. Spearheaded product ideation, market validation interviews with 40+ Web3 developers, and architectural design for self-sovereign digital identity credentials, Soulbound verification, and Web3 ecosystem integrations.</div>
+
+            <div class="block-tech-tags"><span class="block-tech-tag">Decentralized Identifiers (DIDs)</span><span class="block-tech-tag">Verifiable Credentials</span><span class="block-tech-tag">Zero-Knowledge</span><span class="block-tech-tag">Solidity</span><span class="block-tech-tag">IPFS</span></div>
+
+            <div class="block-txs-list"><div class="block-tx-item">Designed self-sovereign digital identity &amp; credential schemas</div><div class="block-tx-item">Conducted 40+ user validation interviews with Web3 developers and DAO contributors</div><div class="block-tx-item">Formulated product roadmap and explored EVM ecosystem integrations</div></div>
+
+            <div class="block-action-bar">
+              <button class="block-inspect-btn" data-id="BLOCK-002">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <span>Cryptographic Inspection</span>
+              </button>
+              
+                <a href="projects/crypticard.html" class="block-link">
+                  <span>Read Identity Case Study →</span>
+                </a>
+              
+            </div>
+          </div>
+        </div><div class="block-node " data-id="BLOCK-003">
+          <div class="block-node-left">
+            <div class="block-badge-icon">
+              <span class="block-num-label">BLK</span>
+              <span class="block-num-val">003</span>
+            </div>
+          </div>
+          <div class="block-card">
+            <div class="block-card-header">
+              <div class="block-title-group">
+                <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.35rem; flex-wrap: wrap;">
+                  <span class="badge badge-cyan">LEADERSHIP</span>
+                  <span class="badge" style="background: rgba(255,255,255,0.04); border-color: var(--border-subtle); color: var(--text-muted);">
+                    Verified Track Record
+                  </span>
+                </div>
+                <h3>Koii Network India Lead &amp; 2,500+ Community</h3>
+              </div>
+              <button class="block-hash-chip" title="Click to copy block hash" data-hash="0x5e7a9b1c3d5f7a9b1c3d5f7a9b1c3d5f7a9b1c3d5f7a9b1c3d5f7a9b1c3d5f7a">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>0x5e7a9b1c...3d5f7a</span>
+              </button>
+            </div>
+
+            <div class="block-summary">Led India Business Development for Koii Network. Built and moderated an active 2,500+ member developer and node operator community across Discord, Telegram, and X. Additionally supported token analysis and protocol due diligence at Victus Global.</div>
+
+            <div class="block-tech-tags"><span class="block-tech-tag">Compute Nodes</span><span class="block-tech-tag">Community Architecture</span><span class="block-tech-tag">Developer Relations</span><span class="block-tech-tag">Due Diligence</span></div>
+
+            <div class="block-txs-list"><div class="block-tx-item">Built and scaled 2,500+ member developer community across Discord, Telegram, and X</div><div class="block-tx-item">Supported node user onboarding and regional computing capacity growth</div><div class="block-tx-item">Conducted Web3 project due diligence and token analysis at Victus Global</div></div>
+
+            <div class="block-action-bar">
+              <button class="block-inspect-btn" data-id="BLOCK-003">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <span>Cryptographic Inspection</span>
+              </button>
+              
+                <a href="experience.html" class="block-link">
+                  <span>Inspect Leadership &amp; BD Track Record →</span>
+                </a>
+              
+            </div>
+          </div>
+        </div><div class="block-node " data-id="BLOCK-004">
+          <div class="block-node-left">
+            <div class="block-badge-icon">
+              <span class="block-num-label">BLK</span>
+              <span class="block-num-val">004</span>
+            </div>
+          </div>
+          <div class="block-card">
+            <div class="block-card-header">
+              <div class="block-title-group">
+                <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.35rem; flex-wrap: wrap;">
+                  <span class="badge badge-amber">PROTOCOL</span>
+                  <span class="badge" style="background: rgba(255,255,255,0.04); border-color: var(--border-subtle); color: var(--text-muted);">
+                    Open Source / GitHub
+                  </span>
+                </div>
+                <h3>SVG AegisVault: ERC-4337 Smart Wallet</h3>
+              </div>
+              <button class="block-hash-chip" title="Click to copy block hash" data-hash="0x7b1c3d5f7a9b1c3d5f7a9b1c3d5f7a9b1c3d5f7a9b1c3d5f7a9b1c3d5f7a9b1c">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>0x7b1c3d5f...7a9b1c</span>
+              </button>
+            </div>
+
+            <div class="block-summary">Engineered experimental hybrid smart account wallet on Base Sepolia. Implemented ERC-4337 Account Abstraction, Passkey (WebAuthn) hardware signature verification, Paymaster gas sponsorship, and modular recovery.</div>
+
+            <div class="block-tech-tags"><span class="block-tech-tag">ERC-4337</span><span class="block-tech-tag">WebAuthn / Passkeys</span><span class="block-tech-tag">Solidity</span><span class="block-tech-tag">Base Sepolia</span><span class="block-tech-tag">Paymasters</span><span class="block-tech-tag">Bundlers</span></div>
+
+            <div class="block-txs-list"><div class="block-tx-item">Deployed ERC-4337 smart account contracts on Base Sepolia</div><div class="block-tx-item">Integrated WebAuthn biometric passkey authentication</div><div class="block-tx-item">Configured UserOperation bundling and Paymaster gasless execution</div></div>
+
+            <div class="block-action-bar">
+              <button class="block-inspect-btn" data-id="BLOCK-004">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <span>Cryptographic Inspection</span>
+              </button>
+              
+                <a href="projects/svg-aegisvault.html" class="block-link">
+                  <span>View Smart Account Architecture →</span>
+                </a>
+              
+            </div>
+          </div>
+        </div><div class="block-node " data-id="BLOCK-005">
+          <div class="block-node-left">
+            <div class="block-badge-icon">
+              <span class="block-num-label">BLK</span>
+              <span class="block-num-val">005</span>
+            </div>
+          </div>
+          <div class="block-card">
+            <div class="block-card-header">
+              <div class="block-title-group">
+                <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.35rem; flex-wrap: wrap;">
+                  <span class="badge badge-violet">VENTURE</span>
+                  <span class="badge" style="background: rgba(255,255,255,0.04); border-color: var(--border-subtle); color: var(--text-muted);">
+                    Actively Building / MVP Staging
+                  </span>
+                </div>
+                <h3>MRIG: Physical Asset Marketplace &amp; AI Career</h3>
+              </div>
+              <button class="block-hash-chip" title="Click to copy block hash" data-hash="0x9c3d5e7f1a3b5c7d9e1f3a5b7c9d1e3f5a7b9c1d3e5f7a9b1c3d5e7f1a3b5c7d">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>0x9c3d5e7f...3b5c7d</span>
+              </button>
+            </div>
+
+            <div class="block-summary">Serving as Founder &amp; CEO of MRIG. Architecting the physical asset marketplace model via Rentro (asset rental, sale, financing, and insurance lifecycle) and GetNextIn (AI career &amp; candidate screening infrastructure).</div>
+
+            <div class="block-tech-tags"><span class="block-tech-tag">Marketplace Architecture</span><span class="block-tech-tag">Dynamic Pricing AI</span><span class="block-tech-tag">Escrow Protocols</span><span class="block-tech-tag">Asset Lifecycle Graph</span><span class="block-tech-tag">AI Screening</span></div>
+
+            <div class="block-txs-list"><div class="block-tx-item">Formulated 6-stage physical asset lifecycle model for Rentro</div><div class="block-tx-item">Architected AI candidate screening &amp; matching workflow for GetNextIn</div><div class="block-tx-item">Conducted 50+ user interviews to validate unit economics and MVP roadmaps</div></div>
+
+            <div class="block-action-bar">
+              <button class="block-inspect-btn" data-id="BLOCK-005">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <span>Cryptographic Inspection</span>
+              </button>
+              
+                <a href="projects/mrig.html" class="block-link">
+                  <span>Inspect 10-Section MRIG Architecture →</span>
+                </a>
+              
+            </div>
+          </div>
+        </div><div class="block-node active-head" data-id="CURRENT-HEAD">
+          <div class="block-node-left">
+            <div class="block-badge-icon">
+              <span class="block-num-label">HEAD</span>
+              <span class="block-num-val">006</span>
+            </div>
+          </div>
+          <div class="block-card">
+            <div class="block-card-header">
+              <div class="block-title-group">
+                <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.35rem; flex-wrap: wrap;">
+                  <span class="badge badge-green">FOUNDER_OS</span>
+                  <span class="badge" style="background: rgba(255,255,255,0.04); border-color: var(--border-subtle); color: var(--text-muted);">
+                    Active Head / Building
+                  </span>
+                </div>
+                <h3>Mayank Yadav — Founder Digital Operating System</h3>
+              </div>
+              <button class="block-hash-chip" title="Click to copy block hash" data-hash="0x7f4e92a10c85b63d7e12f4890a3c572b89d41e6c38290fa5b4c192e873d61a4f">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>0x7f4e92a1...d61a4f</span>
+              </button>
+            </div>
+
+            <div class="block-summary">Continuously executing at the intersection of AI, Web3, and real-world physical systems. Building products that unlock latent capital and bring economic utility to the frontier.</div>
+
+            <div class="block-tech-tags"><span class="block-tech-tag">AI Systems</span><span class="block-tech-tag">Physical Asset Marketplaces</span><span class="block-tech-tag">Distributed Ledgers</span><span class="block-tech-tag">Venture Execution</span></div>
+
+            <div class="block-txs-list"><div class="block-tx-item">Scoping MRIG physical asset marketplace &amp; AI recruitment pipelines</div><div class="block-tx-item">Synthesizing next-gen Web3 &amp; AI architectural frameworks</div><div class="block-tx-item">Open to strategic founder collaborations &amp; early seed discussions</div></div>
+
+            <div class="block-action-bar">
+              <button class="block-inspect-btn" data-id="CURRENT-HEAD">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <span>Cryptographic Inspection</span>
+              </button>
+              
+                <a href="contact.html" class="block-link">
+                  <span>Establish Direct Contact →</span>
+                </a>
+              
+            </div>
+          </div>
+        </div></div>
+      </div>
+    </section>
+
+    <!-- ===== Featured Flagship Showcase: MRIG ===== -->
+    <section class="featured-venture-section" id="ventures">
+      <div class="container">
+        <span class="section-label">Flagship Venture</span>
+        <h2 class="section-title">MRIG Ecosystem</h2>
+        <p class="section-subtitle">Unlocking latent economic value across multi-trillion dollar physical asset and AI recruitment markets.</p>
+
+        <div class="venture-hero-card reveal">
+          <div class="venture-hero-header">
+            <div>
+              <div class="venture-badge-row">
+                <span class="badge badge-violet"><span class="pulse-dot"></span> Active Startup</span>
+                <span class="badge" style="background: rgba(255,255,255,0.04); border-color: var(--border-default); color: var(--text-muted);">2026 — Present</span>
+                <span class="badge badge-emerald">Founder &amp; CEO</span>
+              </div>
+              <h3 class="venture-title">MRIG</h3>
+              <p class="venture-tagline">“The Amazon of Physical Assets”</p>
+            </div>
+            <a href="projects/mrig.html" class="btn btn-primary">
+              <span>Read 10-Section Case Study</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+
+          <p class="venture-desc">
+            Trillions of dollars in high-utility physical machinery, vehicles, and equipment remain idle over 80% of their operational lifespan. MRIG is pioneering the full lifecycle infrastructure for physical assets — combining dynamic pricing algorithms, collateralized escrow, micro-insurance underwriting, and AI-driven human capital matchmaking.
+          </p>
+
+          <!-- Dual Product Engine Grid -->
+          <div class="venture-duo-grid">
+            <div class="venture-sub-card reveal-delay-1">
+              <div class="venture-sub-title">Rentro</div>
+              <div class="venture-sub-domain">rentro.mrig.tech</div>
+              <p class="venture-sub-desc">Physical asset marketplace ecosystem unlocking underutilized equipment through renting, buying, selling, financing, and embedded micro-insurance.</p>
+              <div class="card-flow-badge">
+                <span class="flow-label">Asset Lifecycle Flow:</span>
+                <div class="flow-steps">
+                  <span class="flow-step">Asset Intake</span><span class="flow-sep">→</span>
+                  <span class="flow-step">Rent</span><span class="flow-sep">→</span>
+                  <span class="flow-step">Buy</span><span class="flow-sep">→</span>
+                  <span class="flow-step">Finance</span><span class="flow-sep">→</span>
+                  <span class="flow-step">Insure</span>
+                </div>
+              </div>
+              <div style="margin-top: 1.25rem;">
+                <a href="https://rentro.mrig.tech" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <span>Visit Rentro Portal</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="venture-sub-card reveal-delay-2">
+              <div class="venture-sub-title">GetNextIn</div>
+              <div class="venture-sub-domain">getnextin.mrig.tech</div>
+              <p class="venture-sub-desc">AI-powered career &amp; recruitment platform delivering automated candidate skill screening, simulation interviews, verified portfolios, and algorithmic talent matching.</p>
+              <div class="card-flow-badge">
+                <span class="flow-label">AI Recruitment Flow:</span>
+                <div class="flow-steps">
+                  <span class="flow-step">Candidate</span><span class="flow-sep">→</span>
+                  <span class="flow-step">AI Screen</span><span class="flow-sep">→</span>
+                  <span class="flow-step">Skill Match</span><span class="flow-sep">→</span>
+                  <span class="flow-step">Interview</span><span class="flow-sep">→</span>
+                  <span class="flow-step">Placement</span>
+                </div>
+              </div>
+              <div style="margin-top: 1.25rem;">
+                <a href="https://getnextin.mrig.tech" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <span>Visit GetNextIn Portal</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact Hub ===== -->
+    <section class="contact-section" id="contact" style="padding: 6.5rem 0;">
+      <div class="container">
+        <span class="section-label">Direct Communication Line</span>
+        <h2 class="section-title">Establish Connection</h2>
+        <p class="section-subtitle">Open for high-signal founder collaborations, strategic advisory, seed discussions, and frontier engineering dialogues.</p>
+
+        <div class="contact-hub-grid">
+          <div class="contact-form-card">
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Send Encrypted Dispatch</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.75rem;">Messages are routed directly to Mayank Yadav's priority communication queue.</p>
+            <form id="contact-form" class="hq-contact-form">
+              <div class="form-group">
+                <label class="form-label" for="contact-name">FULL NAME // IDENTITY</label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Alex Vance" required="" autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-email">COMMUNICATION ENDPOINT // EMAIL</label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="alex@venture.xyz" required="" autocomplete="email">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-message">DISPATCH PAYLOAD // MESSAGE</label>
+                <textarea id="contact-message" name="message" rows="5" class="form-textarea" placeholder="Detail your project, partnership inquiry, or architectural discussion..." required=""></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                <span>Transmit Message</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+
+          <div>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Verified Network Channels</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Cryptographically verified social profiles and official communication links.</p>
+
+            <div class="social-platforms-grid">
+              <a href="mailto:hello@itsmayank.me" class="social-channel-card reveal-delay-1">
+                <div class="scc-header">
+                  <span class="scc-name">Email</span>
+                  <span class="badge badge-emerald">Direct</span>
+                </div>
+                <span class="scc-handle">hello@itsmayank.me</span>
+                <span class="scc-badge">Official Founder Inbox</span>
+              </a>
+
+              <a href="https://github.com/mayankyadav89" target="_blank" rel="noopener noreferrer" class="social-channel-card reveal-delay-2">
+                <div class="scc-header">
+                  <span class="scc-name">GitHub</span>
+                  <span class="badge badge-cyan">OSS</span>
+                </div>
+                <span class="scc-handle">mayankyadav89</span>
+                <span class="scc-badge">Code &amp; Repositories</span>
+              </a>
+
+              <a href="https://www.linkedin.com/in/mayankyadav89/" target="_blank" rel="noopener noreferrer" class="social-channel-card reveal-delay-3">
+                <div class="scc-header">
+                  <span class="scc-name">LinkedIn</span>
+                  <span class="badge badge-violet">Network</span>
+                </div>
+                <span class="scc-handle">mayankyadav89</span>
+                <span class="scc-badge">Founder &amp; Executive</span>
+              </a>
+
+              <a href="https://x.com/maayankavy07" target="_blank" rel="noopener noreferrer" class="social-channel-card reveal-delay-4">
+                <div class="scc-header">
+                  <span class="scc-name">X / Twitter</span>
+                  <span class="badge badge-amber">Frontier</span>
+                </div>
+                <span class="scc-handle">@maayankavy07</span>
+                <span class="scc-badge">Tech &amp; Web3 Thoughts</span>
+              </a>
+
+              <a href="https://farcaster.xyz/mayankyadav" target="_blank" rel="noopener noreferrer" class="social-channel-card reveal-delay-5">
+                <div class="scc-header">
+                  <span class="scc-name">Farcaster</span>
+                  <span class="badge badge-violet">Web3</span>
+                </div>
+                <span class="scc-handle">mayankyadav</span>
+                <span class="scc-badge">Decentralized Social</span>
+              </a>
+
+              <a href="https://discord.com/users/MAYANKYADAV" target="_blank" rel="noopener noreferrer" class="social-channel-card reveal-delay-1">
+                <div class="scc-header">
+                  <span class="scc-name">Discord</span>
+                  <span class="badge badge-emerald">2.5K+</span>
+                </div>
+                <span class="scc-handle">MAYANKYADAV</span>
+                <span class="scc-badge">Community Engineering</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Global Rich Footer ===== -->
+  <footer class="hq-footer">
+    <div class="container">
+      <div class="hq-footer-grid">
+        <div class="footer-brand">
+          <h3>Mayank Yadav</h3>
+          <p>Founder &amp; Product Architect building at the intersection of Artificial Intelligence, Web3, and physical asset ecosystems.</p>
+          <div class="footer-status">
+            <span class="pulse-dot"></span>
+            <span>SYSTEM STATUS: OPERATIONAL</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Ventures &amp; Work</h4>
+          <div class="footer-links-list">
+            <a href="projects/mrig.html">MRIG Case Study</a>
+            <a href="https://rentro.mrig.tech" target="_blank" rel="noopener noreferrer">Rentro Portal ↗</a>
+            <a href="https://getnextin.mrig.tech" target="_blank" rel="noopener noreferrer">GetNextIn Portal ↗</a>
+            <a href="projects/crypticard.html">Crypticard Protocol</a>
+            <a href="projects/svg-aegisvault.html">SVG AegisVault</a>
+            <a href="projects.html">All Projects Archive</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <div class="footer-links-list">
+            <a href="about.html">Founder Story &amp; Thesis</a>
+            <a href="experience.html">Experience &amp; Track Record</a>
+            <a href="skills.html">Technical Skills Matrix</a>
+            <a href="resume.html">Verifiable Dossier (CV)</a>
+            <a href="contact.html">Encrypted Contact Hub</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Verified Channels</h4>
+          <div class="footer-links-list">
+            <a href="https://github.com/mayankyadav89" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/mayankyadav89/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="https://x.com/maayankavy07" target="_blank" rel="noopener noreferrer">X / Twitter ↗</a>
+            <a href="https://farcaster.xyz/mayankyadav" target="_blank" rel="noopener noreferrer">Farcaster ↗</a>
+            <a href="mailto:hello@itsmayank.me">hello@itsmayank.me</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Mayank Yadav · All Rights Reserved.</div>
+        <div class="footer-telemetry">
+          <span>TIMEZONE: IST (UTC+05:30)</span>
+          <span>·</span>
+          <span>LOCATION: BHOPAL, INDIA</span>
+          <span>·</span>
+          <span>NETWORK: BASE SEPOLIA</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data/profile.js"></script>
+  <script src="data/projects.js"></script>
+  <script src="data/experience.js"></script>
+  <script src="data/skills.js"></script>
+  <script src="data/social.js"></script>
+  <script src="data/blocks.js"></script>
+  <script src="data/data-loader.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/blockchain-explorer.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="script.js"></script>
+  <script src="animations.js"></script>
+
+
+<div id="cmd-overlay" class="cmd-overlay">
+        <div class="cmd-modal" role="dialog" aria-modal="true" aria-label="Command Palette">
+          <div class="cmd-header">
+            <svg class="cmd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="cmd-input" class="cmd-input" placeholder="Type a command or search (e.g. MRIG, Genesis, Contact)..." autocomplete="off" spellcheck="false">
+          </div>
+          <div class="cmd-results" id="cmd-results"></div>
+          <div class="cmd-footer">
+            <div class="cmd-shortcuts">
+              <span><kbd class="cmd-key">↑↓</kbd> Navigate</span>
+              <span><kbd class="cmd-key">↵</kbd> Open</span>
+              <span><kbd class="cmd-key">ESC</kbd> Close</span>
+            </div>
+            <span>Founder HQ v2.5</span>
+          </div>
+        </div>
+      </div><div id="inspector-overlay" class="inspector-overlay">
+        <div class="inspector-modal" role="dialog" aria-modal="true" aria-label="Cryptographic Block Inspector">
+          <div class="inspector-header">
+            <div style="display: flex; align-items: center; gap: 0.65rem;">
+              <span class="pulse-dot" style="background: var(--accent-cyan); box-shadow: 0 0 8px var(--accent-cyan);"></span>
+              <span style="font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700; color: var(--text-primary);" id="inspector-modal-title">CRYPTOGRAPHIC BLOCK INSPECTOR</span>
+            </div>
+            <button id="inspector-close-btn" style="background: transparent; border: none; color: var(--text-muted); cursor: pointer; font-size: 1.25rem;">×</button>
+          </div>
+          <div class="inspector-body" id="inspector-modal-body"></div>
+        </div>
+      </div><div class="cursor-dot" style="left: -100px; top: -100px;"></div><div class="cursor-ring" style="left: -100px; top: -100px;"></div><div id="easter-egg-toast" class="easter-egg-toast"><span>⚡</span> <span>Mayank Yadav Founder OS · Still Building.</span></div></body></html>

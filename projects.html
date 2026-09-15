@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects &middot; Ecosystem Archive — Mayank Yadav</title>
+  <meta name="description" content="Explore startup ventures, decentralized protocols, and smart account architectures built and architected by Mayank Yadav (MRIG, Crypticard, SVG AegisVault, Ecoties).">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="scroll-progress-bar" id="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- ===== Global Navbar ===== -->
+  <header class="hq-navbar" id="navbar">
+    <div class="hq-navbar-inner">
+      <a href="index.html" class="hq-logo">
+        <span>MY</span>
+        <span class="hq-logo-badge">FOUNDER HQ</span>
+      </a>
+      <nav class="hq-nav-links" id="nav-links">
+        <a href="index.html">HQ</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="projects/mrig.html">MRIG</a>
+        <a href="experience.html">Experience</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="hq-nav-actions">
+        <button class="cmd-palette-btn" aria-label="Open Command Palette">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span class="cmd-text">Search</span>
+          <kbd class="cmd-key">⌘K</kbd>
+        </button>
+        <button class="hq-nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" style="padding-top: 6rem;">
+    <section style="padding: 4rem 0 2.5rem; border-bottom: 1px solid var(--border-default);">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">HQ</a>
+          <span class="breadcrumb-sep">/</span>
+          <span class="breadcrumb-current">Projects Archive</span>
+        </div>
+
+        <span class="section-label">Venture &amp; Protocol Portfolio</span>
+        <h1 class="section-title">Projects &amp; Ecosystem</h1>
+        <p class="section-subtitle" style="margin-bottom: 2rem;">
+          A comprehensive repository of venture architectures, smart account systems, decentralized identity protocols, and experimental prototypes.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Projects Grid Archive ===== -->
+    <section style="padding: 4.5rem 0;">
+      <div class="container">
+        <div class="projects-archive-grid">
+
+          <!-- MRIG -->
+          <article class="archive-project-card" style="border-color: rgba(167, 139, 250, 0.35);">
+            <div class="archive-card-header">
+              <div>
+                <span class="badge badge-violet" style="margin-bottom: 0.4rem;"><span class="pulse-dot"></span> Active Startup</span>
+                <h2 class="archive-card-title">MRIG</h2>
+              </div>
+              <span class="badge" style="background: rgba(255,255,255,0.05); color: var(--text-muted);">2026</span>
+            </div>
+            <div class="archive-card-category">Physical Asset Marketplace &amp; AI Recruitment</div>
+            <p class="archive-card-desc">
+              &ldquo;The Amazon of Physical Assets&rdquo; — Unified multi-sided lifecycle platform unlocking underutilized physical machinery (Rentro) and AI-driven human capital matchmaking (GetNextIn).
+            </p>
+            <div class="block-tech-tags">
+              <span class="block-tech-tag">Marketplace Architecture</span>
+              <span class="block-tech-tag">Dynamic Pricing AI</span>
+              <span class="block-tech-tag">Escrow Protocols</span>
+            </div>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: auto; padding-top: 1.25rem; border-top: 1px solid var(--border-subtle);">
+              <a href="projects/mrig.html" class="btn btn-primary btn-sm">Read Case Study (10 Sections) &rarr;</a>
+              <a href="https://rentro.mrig.tech" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Rentro &nearr;</a>
+              <a href="https://getnextin.mrig.tech" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">GetNextIn &nearr;</a>
+            </div>
+          </article>
+
+          <!-- Crypticard -->
+          <article class="archive-project-card">
+            <div class="archive-card-header">
+              <div>
+                <span class="badge badge-emerald" style="margin-bottom: 0.4rem;">Early-Stage Concept</span>
+                <h2 class="archive-card-title">Crypticard</h2>
+              </div>
+              <span class="badge" style="background: rgba(255,255,255,0.05); color: var(--text-muted);">2024 — 2026</span>
+            </div>
+            <div class="archive-card-category">Decentralized Digital Identity &amp; VCs</div>
+            <p class="archive-card-desc">
+              Self-sovereign cryptographic passport empowering users with portable credentials, Zero-Knowledge verification, and Sybil-resistant reputation scoring across multi-chain ecosystems.
+            </p>
+            <div class="block-tech-tags">
+              <span class="block-tech-tag">W3C DIDs &amp; VCs</span>
+              <span class="block-tech-tag">Zero-Knowledge</span>
+              <span class="block-tech-tag">Solidity</span>
+            </div>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: auto; padding-top: 1.25rem; border-top: 1px solid var(--border-subtle);">
+              <a href="projects/crypticard.html" class="btn btn-secondary btn-sm">Read Identity Case Study &rarr;</a>
+            </div>
+          </article>
+
+          <!-- SVG AegisVault -->
+          <article class="archive-project-card">
+            <div class="archive-card-header">
+              <div>
+                <span class="badge badge-cyan" style="margin-bottom: 0.4rem;">Experimental Wallet</span>
+                <h2 class="archive-card-title">SVG AegisVault</h2>
+              </div>
+              <span class="badge" style="background: rgba(255,255,255,0.05); color: var(--text-muted);">2024</span>
+            </div>
+            <div class="archive-card-category">ERC-4337 Account Abstraction</div>
+            <p class="archive-card-desc">
+              Hybrid smart account wallet on Base Sepolia. Implements WebAuthn Passkeys for hardware biometric authentication, UserOperation bundlers, and sponsored gasless Paymasters.
+            </p>
+            <div class="block-tech-tags">
+              <span class="block-tech-tag">ERC-4337</span>
+              <span class="block-tech-tag">WebAuthn / Passkeys</span>
+              <span class="block-tech-tag">Base Sepolia</span>
+            </div>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: auto; padding-top: 1.25rem; border-top: 1px solid var(--border-subtle);">
+              <a href="projects/svg-aegisvault.html" class="btn btn-secondary btn-sm">Smart Account Architecture &rarr;</a>
+              <a href="https://github.com/mayankyadav89/svg-aegisvault" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">GitHub &nearr;</a>
+            </div>
+          </article>
+
+          <!-- Ecoties -->
+          <article class="archive-project-card">
+            <div class="archive-card-header">
+              <div>
+                <span class="badge badge-amber" style="margin-bottom: 0.4rem;">Concept</span>
+                <h2 class="archive-card-title">Ecoties</h2>
+              </div>
+              <span class="badge" style="background: rgba(255,255,255,0.05); color: var(--text-muted);">2023 — 2024</span>
+            </div>
+            <div class="archive-card-category">Green Tech &amp; Provenance Ledger</div>
+            <p class="archive-card-desc">
+              Strategic exploration into transparent ecological provenance tracking, carbon offset verification, and circular economy incentive tokenization.
+            </p>
+            <div class="block-tech-tags">
+              <span class="block-tech-tag">Carbon Provenance</span>
+              <span class="block-tech-tag">IoT Ingestion</span>
+            </div>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: auto; padding-top: 1.25rem; border-top: 1px solid var(--border-subtle);">
+              <a href="projects/ecoties.html" class="btn btn-secondary btn-sm">Inspect Concept &rarr;</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Global Rich Footer ===== -->
+  <footer class="hq-footer">
+    <div class="container">
+      <div class="hq-footer-grid">
+        <div class="footer-brand">
+          <h3>Mayank Yadav</h3>
+          <p>Founder &amp; Product Architect building at the intersection of Artificial Intelligence, Web3, and physical asset ecosystems.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Ventures</h4>
+          <div class="footer-links-list">
+            <a href="projects/mrig.html">MRIG Case Study</a>
+            <a href="https://rentro.mrig.tech" target="_blank" rel="noopener noreferrer">Rentro Portal &nearr;</a>
+            <a href="https://getnextin.mrig.tech" target="_blank" rel="noopener noreferrer">GetNextIn Portal &nearr;</a>
+            <a href="projects/crypticard.html">Crypticard Protocol</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <div class="footer-links-list">
+            <a href="about.html">Founder Story</a>
+            <a href="projects.html">Projects Archive</a>
+            <a href="experience.html">Experience</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact Hub</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Channels</h4>
+          <div class="footer-links-list">
+            <a href="https://github.com/mayankyadav89" target="_blank" rel="noopener noreferrer">GitHub &nearr;</a>
+            <a href="https://x.com/maayankavy07" target="_blank" rel="noopener noreferrer">X &nearr;</a>
+            <a href="mailto:hello@itsmayank.me">hello@itsmayank.me</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Mayank Yadav &middot; All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data/profile.js"></script>
+  <script src="data/projects.js"></script>
+  <script src="data/experience.js"></script>
+  <script src="data/skills.js"></script>
+  <script src="data/social.js"></script>
+  <script src="data/blocks.js"></script>
+  <script src="data/data-loader.js"></script>
+  <script src="js/core.js"></script>
+  <script src="animations.js"></script>
+</body>
+</html>

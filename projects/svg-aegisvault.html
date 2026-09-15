@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG AegisVault Case Study — ERC-4337 Smart Account Wallet | Mayank Yadav</title>
+  <meta name="description" content="SVG AegisVault: Experimental hybrid smart wallet exploring ERC-4337 account abstraction, WebAuthn Passkeys, and Paymaster gas sponsorship on Base Sepolia.">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="scroll-progress-bar" id="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- ===== Global Navbar ===== -->
+  <header class="hq-navbar" id="navbar">
+    <div class="hq-navbar-inner">
+      <a href="../index.html" class="hq-logo">
+        <span>MY</span>
+        <span class="hq-logo-badge">FOUNDER HQ</span>
+      </a>
+      <nav class="hq-nav-links" id="nav-links">
+        <a href="../index.html">HQ</a>
+        <a href="../about.html">About</a>
+        <a href="../projects.html" class="active">Projects</a>
+        <a href="mrig.html">MRIG</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../skills.html">Skills</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+      <div class="hq-nav-actions">
+        <button class="cmd-palette-btn" aria-label="Open Command Palette">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span class="cmd-text">Search</span>
+          <kbd class="cmd-key">⌘K</kbd>
+        </button>
+        <button class="hq-nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="case-study-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html">HQ</a>
+          <span class="breadcrumb-sep">/</span>
+          <a href="../projects.html">Projects</a>
+          <span class="breadcrumb-sep">/</span>
+          <span class="breadcrumb-current">SVG AegisVault</span>
+        </div>
+
+        <div class="cs-meta-bar">
+          <span class="badge badge-cyan">Smart Account Protocol</span>
+          <span class="badge badge-amber">ERC-4337</span>
+          <span class="badge" style="background: rgba(255,255,255,0.05); border-color: var(--border-default); color: var(--text-muted);">Base Sepolia</span>
+          <span class="badge badge-emerald">Open Source</span>
+        </div>
+
+        <h1 class="cs-hero-title">SVG AegisVault: Smart Account Architecture</h1>
+        <p class="cs-hero-tagline">Experimental hybrid smart account exploring passkey-based biometric authentication, Paymaster gas sponsorship, and modular security.</p>
+        <p class="cs-hero-summary">
+          SVG AegisVault investigates how Account Abstraction (ERC-4337) and WebAuthn hardware enclaves eliminate the UX friction of Web3. By replacing fragile 24-word seed phrases with device-native biometric Passkeys and automated UserOperation bundlers, it showcases the future of consumer Web3 onboarding.
+        </p>
+
+        <div class="cs-stats-grid">
+          <div class="cs-stat-card">
+            <div class="cs-stat-label">Standard</div>
+            <div class="cs-stat-value" style="font-size: 1.15rem; color: var(--accent-cyan);">ERC-4337 Account Abstraction</div>
+          </div>
+          <div class="cs-stat-card">
+            <div class="cs-stat-label">Signer Auth</div>
+            <div class="cs-stat-value">WebAuthn / Passkeys</div>
+          </div>
+          <div class="cs-stat-card">
+            <div class="cs-stat-label">Network</div>
+            <div class="cs-stat-value" style="font-size: 1.15rem;">Base Sepolia</div>
+          </div>
+          <div class="cs-stat-card">
+            <div class="cs-stat-label">Gas Protocol</div>
+            <div class="cs-stat-value" style="font-size: 1.15rem; color: var(--accent-emerald);">Verifying Paymaster</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="cs-layout">
+        <aside class="cs-toc-sidebar">
+          <div class="cs-toc-title">Table of Contents</div>
+          <nav class="cs-toc-list">
+            <a href="#overview" class="cs-toc-link">Overview &amp; Motivation</a>
+            <a href="#pipeline" class="cs-toc-link">UserOp Execution Pipeline</a>
+            <a href="#passkeys" class="cs-toc-link">WebAuthn Passkey Security</a>
+            <a href="#paymaster" class="cs-toc-link">Paymaster &amp; Gas Sponsorship</a>
+            <a href="#code" class="cs-toc-link">Repository &amp; Contracts</a>
+          </nav>
+        </aside>
+
+        <article class="cs-body">
+          <section class="cs-section" id="overview">
+            <span class="cs-section-num">OVERVIEW</span>
+            <h2>Overview &amp; Motivation</h2>
+            <p>
+              Externally Owned Accounts (EOAs) like standard MetaMask accounts require users to manage private keys and seed phrases manually. Losing a seed phrase means total asset loss; signing malicious transactions drains accounts instantly; and users must always hold volatile native tokens (ETH) just to pay gas.
+            </p>
+            <p>
+              SVG AegisVault was built to test and demonstrate programmable smart accounts: transforming wallets into smart contracts that can enforce custom validation logic, multisig rules, social recovery, and gas sponsorship.
+            </p>
+          </section>
+
+          <section class="cs-section" id="pipeline">
+            <span class="cs-section-num">PIPELINE</span>
+            <h2>UserOperation Execution Pipeline</h2>
+            <div class="tech-diagram-card">
+              <div class="tech-diagram-header">
+                <span class="tech-diagram-title">ERC-4337 EXECUTION FLOW</span>
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-cyan);">BASE SEPOLIA</span>
+              </div>
+              <div class="workflow-steps-horizontal">
+                <div class="workflow-node-box">
+                  <div class="workflow-node-step">01. CLIENT</div>
+                  <div class="workflow-node-title">UserOp Created</div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 4px;">Passkey Signed</div>
+                </div>
+                <div style="text-align: center; color: var(--accent-cyan); font-size: 1.2rem;">&rarr;</div>
+                <div class="workflow-node-box">
+                  <div class="workflow-node-step">02. BUNDLER</div>
+                  <div class="workflow-node-title">Mempool Bundle</div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 4px;">P2P Bundler</div>
+                </div>
+                <div style="text-align: center; color: var(--accent-violet); font-size: 1.2rem;">&rarr;</div>
+                <div class="workflow-node-box">
+                  <div class="workflow-node-step">03. CONTRACT</div>
+                  <div class="workflow-node-title">EntryPoint.sol</div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 4px;">Smart Account Exec</div>
+                </div>
+              </div>
+            </div>
+            <p>
+              Instead of broadcasting a raw transaction directly, the user signs an off-chain `UserOperation` struct using their device's hardware enclave (TouchID / FaceID). Bundlers batch multiple UserOperations into a single on-chain transaction calling the universal `EntryPoint.sol` contract.
+            </p>
+          </section>
+
+          <section class="cs-section" id="passkeys">
+            <span class="cs-section-num">SECURITY</span>
+            <h2>WebAuthn Passkey Security Architecture</h2>
+            <p>
+              Passkeys utilize the `secp256r1` (P-256) elliptic curve supported natively by Apple Secure Enclave, Android Keystore, and Windows Hello. SVG AegisVault verifies these hardware signatures directly on Base Sepolia using optimized modular precompiles, ensuring the private key never leaves user hardware.
+            </p>
+          </section>
+
+          <section class="cs-section" id="paymaster">
+            <span class="cs-section-num">GASLESS</span>
+            <h2>Paymaster &amp; Gas Sponsorship Model</h2>
+            <p>
+              A custom Verifying Paymaster smart contract is integrated to sponsor gas fees or permit payment in ERC-20 stablecoins (e.g. USDC), removing the necessity for users to acquire native testnet or mainnet ETH before interacting with applications.
+            </p>
+          </section>
+
+          <section class="cs-section" id="code">
+            <span class="cs-section-num">REPOSITORY</span>
+            <h2>Verified Codebase &amp; Contracts</h2>
+            <p>
+              The smart contracts and client integration are open-sourced on GitHub:
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+              <a href="https://github.com/mayankyadav89/svg-aegisvault" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <span>View Repository on GitHub &nearr;</span>
+              </a>
+              <a href="../projects.html" class="btn btn-secondary">
+                <span>&larr; Return to Projects</span>
+              </a>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== Global Rich Footer ===== -->
+  <footer class="hq-footer">
+    <div class="container">
+      <div class="hq-footer-grid">
+        <div class="footer-brand">
+          <h3>Mayank Yadav</h3>
+          <p>Founder &amp; Product Architect building at the intersection of Artificial Intelligence, Web3, and physical asset ecosystems.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Ventures</h4>
+          <div class="footer-links-list">
+            <a href="mrig.html">MRIG Case Study</a>
+            <a href="crypticard.html">Crypticard Protocol</a>
+            <a href="svg-aegisvault.html">SVG AegisVault</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <div class="footer-links-list">
+            <a href="../about.html">Founder Story</a>
+            <a href="../experience.html">Experience</a>
+            <a href="../skills.html">Skills</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Channels</h4>
+          <div class="footer-links-list">
+            <a href="https://github.com/mayankyadav89" target="_blank" rel="noopener noreferrer">GitHub &nearr;</a>
+            <a href="https://x.com/maayankavy07" target="_blank" rel="noopener noreferrer">X &nearr;</a>
+            <a href="mailto:hello@itsmayank.me">hello@itsmayank.me</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Mayank Yadav &middot; All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../data/profile.js"></script>
+  <script src="../data/projects.js"></script>
+  <script src="../data/experience.js"></script>
+  <script src="../data/skills.js"></script>
+  <script src="../data/social.js"></script>
+  <script src="../data/blocks.js"></script>
+  <script src="../data/data-loader.js"></script>
+  <script src="../js/core.js"></script>
+  <script src="../js/case-study.js"></script>
+  <script src="../animations.js"></script>
+</body>
+</html>
