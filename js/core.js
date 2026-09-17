@@ -90,9 +90,9 @@
     // Search Index Data
     const searchIndex = [
       { title: "Home / Founder Digital HQ", category: "Navigation", badge: "Page", url: "index.html" },
-      { title: "MRIG: The Amazon of Physical Assets", category: "Case Study", badge: "Flagship", url: "projects/mrig.html" },
-      { title: "Rentro (rentro.mrig.tech)", category: "Venture", badge: "External", url: "https://rentro.mrig.tech", external: true },
-      { title: "GetNextIn (getnextin.mrig.tech)", category: "Venture", badge: "External", url: "https://getnextin.mrig.tech", external: true },
+      { title: "MRIG Ecosystem (Parent Architecture)", category: "Case Study", badge: "Ecosystem", url: "projects/mrig.html" },
+      { title: "Rentro: Physical Asset Marketplace (rentro.mrig.tech)", category: "Product", badge: "Marketplace", url: "https://rentro.mrig.tech", external: true },
+      { title: "GetNextIn: AI Career Platform (getnextin.mrig.tech)", category: "Product", badge: "AI Platform", url: "https://getnextin.mrig.tech", external: true },
       { title: "Crypticard: Decentralized Identity", category: "Case Study", badge: "Web3", url: "projects/crypticard.html" },
       { title: "SVG AegisVault: ERC-4337 Smart Account", category: "Case Study", badge: "Protocol", url: "projects/svg-aegisvault.html" },
       { title: "Ecoties: Green Tech Ledger", category: "Case Study", badge: "Concept", url: "projects/ecoties.html" },

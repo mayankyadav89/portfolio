@@ -9,16 +9,28 @@ const PROFILE_DATA = {
     shortName: "MY",
     handle: "mayankyadav89",
     domain: "itsmayank.me",
-    title: "Founder & Product Architect",
+    avatar: "assets/founder-mayank.png",
+    title: "Technology Founder & Product Architect",
     tagline: "Building at the intersection of AI, Web3 & Physical Asset Infrastructure",
-    subtitle: "Founder & CEO at MRIG (Rentro & GetNextIn) & Crypticard. Turning frontier technologies into scalable real-world operating systems.",
+    subtitle: "Founder & CEO at MRIG Ecosystem (Rentro & GetNextIn) & Crypticard. Turning frontier technologies into scalable real-world operating systems.",
     location: "Bhopal, Madhya Pradesh, India",
     status: {
-      text: "Building the Amazon of Physical Assets & AI Career Infrastructure",
+      text: "Building MRIG (Rentro & GetNextIn) & Exploring Frontier Web3",
       active: true,
-      venture: "MRIG",
-      subVentures: ["Rentro", "GetNextIn"],
-      mode: "Active Builder"
+      venture: "MRIG Ecosystem",
+      subVentures: ["Rentro (Physical Asset Marketplace)", "GetNextIn (AI Career Platform)"],
+      mode: "Active Founder & Builder"
+    },
+    web3: {
+      ens: "Maayankyadav.base.eth",
+      ensUrl: "https://basescan.org/name/Maayankyadav.base.eth",
+      evm: "0x8b99d1ace44d52659bbe65f7f4c7f5d59afc2b7e",
+      evmUrl: "https://etherscan.io/address/0x8b99d1ace44d52659bbe65f7f4c7f5d59afc2b7e",
+      solana: "EjpYgeXXXnnpcwSq82qFDJneVY1U5zPW9L1kyDKbtpbX",
+      solanaUrl: "https://solscan.io/account/EjpYgeXXXnnpcwSq82qFDJneVY1U5zPW9L1kyDKbtpbX",
+      bitcoin: "Bc1pe5f0hrr0er7gd3zha0wknlw45x5mu4y5mzw87clqzjprg0mtfp0qh9y2dq",
+      bitcoinUrl: "https://mempool.space/address/Bc1pe5f0hrr0er7gd3zha0wknlw45x5mu4y5mzw87clqzjprg0mtfp0qh9y2dq",
+      devfolio: "https://devfolio.co/@Mayankyadav"
     },
     metrics: [
       { label: "Active Ventures", value: "2", sub: "MRIG & Crypticard" },
@@ -31,7 +43,7 @@ const PROFILE_DATA = {
     lead: "Mayank Yadav is a technology founder and computer science engineer dedicated to architecting systems that unlock economic utility through emerging technology.",
     story: [
       "Operating at the convergence of Artificial Intelligence, Machine Learning, and Web3 architectures, Mayank designs products that bridge digital infrastructure with physical economies.",
-      "As Founder & CEO of MRIG, he is pioneering the physical asset marketplace model with Rentro (unlocking underutilized physical assets) and GetNextIn (AI-driven recruitment and skill verification ecosystem).",
+      "As Founder & CEO of MRIG, he is pioneering the physical asset marketplace model with Rentro (unlocking underutilized physical assets, rentro.mrig.tech) and GetNextIn (AI-driven recruitment and skill verification ecosystem, getnextin.mrig.tech).",
       "Previously, Mayank founded Crypticard (decentralized digital identity), led India Business Development for Koii Network scaling user adoption, and researched tokenomics and due diligence with Victus Global."
     ],
     principles: [

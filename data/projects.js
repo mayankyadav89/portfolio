@@ -5,16 +5,66 @@
  */
 const PROJECTS_DATA = [
   {
-    id: "mrig",
-    name: "MRIG",
+    id: "rentro",
+    name: "Rentro",
     featured: true,
+    role: "Founder & Product Architect",
+    year: "2026 — Present",
+    stage: "Actively Building / MVP Staging",
+    category: "Physical Asset Marketplace (Product under MRIG)",
+    tagline: "Rent Anything. Earn Anytime",
+    oneLiner: "Physical asset marketplace transforming underutilized mobility, commercial fleets, and equipment into liquid yield.",
+    summary: "Rentro is the verified physical asset marketplace built under parent company MRIG. Starting with mobility fleets in commercial corridors before expanding to machinery, Rentro provides 16-angle condition verification, dynamic pricing, and escrow settlements.",
+    parentEcosystem: "MRIG Ecosystem",
+    links: {
+      website: "https://rentro.mrig.tech",
+      caseStudy: "projects/mrig.html",
+      github: "https://github.com/mayankyadav89"
+    },
+    techStack: [
+      "Next.js 15",
+      "PostGIS Radius Search",
+      "Redis Distributed Locks (15-min TTL)",
+      "16-Angle Handover Engine",
+      "Razorpay Split Escrow",
+      "DigiLocker KYC"
+    ]
+  },
+  {
+    id: "getnextin",
+    name: "GetNextIn",
+    featured: true,
+    role: "Founder & Product Architect",
+    year: "2026 — Present",
+    stage: "Building / Staging",
+    category: "AI Career & Skill Platform (Product under MRIG)",
+    tagline: "AI-Powered Technical Assessment & Talent Matching",
+    oneLiner: "Intelligent career infrastructure combining automated technical screening, skill verification, and precision workforce pipelines.",
+    summary: "GetNextIn is an AI-driven recruitment and candidate skill assessment platform incubated under MRIG Ecosystem. It automates technical evaluations, portfolio validation, and precision talent matching for engineering teams.",
+    parentEcosystem: "MRIG Ecosystem",
+    links: {
+      website: "https://getnextin.mrig.tech",
+      caseStudy: "projects/mrig.html",
+      github: "https://github.com/mayankyadav89"
+    },
+    techStack: [
+      "AI Screening Pipeline",
+      "Skill Verification Models",
+      "NLP Evaluation Engine",
+      "Precision Matching Engine"
+    ]
+  },
+  {
+    id: "mrig",
+    name: "MRIG Ecosystem",
+    featured: false,
     role: "Founder & CEO",
     year: "2026 — Present",
-    stage: "Active Startup / Building",
-    category: "Physical Asset Marketplace & AI Infrastructure",
-    tagline: "The Amazon of Physical Assets",
-    oneLiner: "Pioneering the lifecycle infrastructure for underutilized real-world physical assets and AI-powered workforce intelligence.",
-    summary: "MRIG is a multi-tier technology ecosystem addressing capital inefficiency and asset illiquidity. Through flagship products Rentro (physical asset marketplace) and GetNextIn (AI career ecosystem), MRIG unlocks latent economic potential across consumer and enterprise markets.",
+    stage: "Parent Ecosystem Entity",
+    category: "Parent Company & Asset Infrastructure",
+    tagline: "Parent Company housing Rentro & GetNextIn",
+    oneLiner: "Parent entity and shared architecture housing physical asset marketplace Rentro and AI platform GetNextIn.",
+    summary: "MRIG is the parent company and ecosystem entity that incubates and houses specialized venture products: Rentro (physical asset marketplace) and GetNextIn (AI career engine).",
     links: {
       caseStudy: "projects/mrig.html",
       website: "https://rentro.mrig.tech",
@@ -25,39 +75,21 @@ const PROJECTS_DATA = [
       {
         name: "Rentro",
         domain: "rentro.mrig.tech",
-        title: "Physical Asset Marketplace Lifecycle",
-        desc: "A unified platform to rent, buy, sell, finance, and insure underutilized physical assets with trust-minimized escrow and dynamic verification.",
-        workflow: ["Asset Intake", "Verification", "Smart Escrow", "Dynamic Rental / Trade", "Insurance Layer", "Settlement"]
+        title: "Physical Asset Marketplace",
+        desc: "A unified platform to rent and monetize underutilized physical assets with trust-minimized escrow and dynamic condition verification."
       },
       {
         name: "GetNextIn",
         domain: "getnextin.mrig.tech",
-        title: "AI-Powered Career & Recruitment Ecosystem",
-        desc: "Intelligent hiring infrastructure combining AI screening, verified credential evaluation, interview automation, and precision talent matching.",
-        workflow: ["Candidate Profile", "AI Skill Assessment", "Algorithmic Match", "Simulated Interview", "Verification", "Direct Onboarding"]
+        title: "AI Career & Recruitment Platform",
+        desc: "Intelligent hiring infrastructure combining AI screening, verified credential evaluation, and precision talent matching."
       }
     ],
     techStack: [
-      "AI/ML Pipelines",
-      "Dynamic Pricing Algorithms",
-      "Smart Contract Escrow",
-      "Asset Lifecycle Graph",
-      "Identity Verification",
-      "Distributed Cloud"
-    ],
-    deepSections: {
-      origin: "Modern economies suffer from massive capital lockup: trillions of dollars in high-utility physical machinery, vehicles, equipment, and consumer hardware sit idle over 80% of their operational lifespan. MRIG was founded to unlock this trapped capital.",
-      problem: "Fragmented rental markets, lack of standardized asset insurance, untrusted P2P escrow, high friction in asset financing, and opaque verification systems prevent physical assets from achieving fluid transactional velocity.",
-      solution: "A full-stack ecosystem offering end-to-end asset lifecycle governance: onboarding verification, dynamic algorithmic pricing, collateralized escrow, micro-insurance underwriting, and frictionless liquidity channels.",
-      marketplaceModel: "Multi-sided network facilitating P2P and B2B asset transactions. Suppliers earn recurring yield on owned inventory while demand-side participants gain flexible on-demand access without capex burdens.",
-      businessModel: "Commission on successful transactions, value-added financing & insurance brokerage, premium enterprise inventory management APIs, and institutional verification fees.",
-      roadmap: [
-        { phase: "Phase 1: Architecture & Validation", milestone: "Completed in-depth market interviews, user journey mapping, and core MVP workflow definition." },
-        { phase: "Phase 2: Pilot Deployment", milestone: "Targeted rollout of Rentro marketplace beta and GetNextIn candidate assessment modules across priority metropolitan nodes." },
-        { phase: "Phase 3: Liquidity & Financial Layer", milestone: "Integration of real-world asset financing, automated damage insurance protocols, and multi-asset cross-border settlement." },
-        { phase: "Phase 4: Global Physical Asset Network", milestone: "Scaling into an open physical asset protocol powering enterprise supply chains and sovereign sharing economies." }
-      ]
-    }
+      "Parent Ecosystem Architecture",
+      "Asset Infrastructure",
+      "Multi-Product Venture Model"
+    ]
   },
   {
     id: "crypticard",

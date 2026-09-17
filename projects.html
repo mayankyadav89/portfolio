@@ -25,7 +25,6 @@
         <a href="index.html">HQ</a>
         <a href="about.html">About</a>
         <a href="projects.html" class="active">Projects</a>
-        <a href="projects/mrig.html">MRIG</a>
         <a href="experience.html">Experience</a>
         <a href="skills.html">Skills</a>
         <a href="contact.html">Contact</a>
@@ -65,48 +64,112 @@
       <div class="container">
         <div class="projects-archive-grid">
 
-          <!-- MRIG -->
-          <article class="archive-project-card" style="border-color: rgba(167, 139, 250, 0.35);">
+          <!-- Rentro (Product under MRIG) -->
+          <article class="archive-project-card" style="border-color: rgba(249, 115, 22, 0.35);">
             <div class="archive-card-header">
-              <div>
-                <span class="badge badge-violet" style="margin-bottom: 0.4rem;"><span class="pulse-dot"></span> Active Startup</span>
-                <h2 class="archive-card-title">MRIG</h2>
+              <div style="display: flex; align-items: center; gap: 0.9rem;">
+                <img src="assets/rentro-icon.png" alt="Rentro App Icon" width="44" height="44" style="filter: drop-shadow(0 4px 12px rgba(249,115,22,0.35)); flex-shrink: 0; border-radius: 10px;">
+                <div>
+                  <span class="badge badge-amber" style="margin-bottom: 0.2rem;"><span class="pulse-dot"></span> Product under MRIG</span>
+                  <h2 class="archive-card-title">Rentro</h2>
+                </div>
               </div>
               <span class="badge" style="background: rgba(255,255,255,0.05); color: var(--text-muted);">2026</span>
             </div>
-            <div class="archive-card-category">Physical Asset Marketplace &amp; AI Recruitment</div>
+            <div class="archive-card-category">Physical Asset Marketplace &middot; rentro.mrig.tech</div>
             <p class="archive-card-desc">
-              &ldquo;The Amazon of Physical Assets&rdquo; — Unified multi-sided lifecycle platform unlocking underutilized physical machinery (Rentro) and AI-driven human capital matchmaking (GetNextIn).
+              Physical asset marketplace starting with high-demand mobility and commercial transport fleets before expanding to heavy machinery. Tagline: &lsquo;Rent Anything. Earn Anytime&rsquo;. Features 16-angle condition handover, PostGIS radius search, and split escrow.
             </p>
             <div class="block-tech-tags">
-              <span class="block-tech-tag">Marketplace Architecture</span>
-              <span class="block-tech-tag">Dynamic Pricing AI</span>
-              <span class="block-tech-tag">Escrow Protocols</span>
+              <span class="block-tech-tag">Next.js 15</span>
+              <span class="block-tech-tag">PostGIS Radius Search</span>
+              <span class="block-tech-tag">Redis Locks (15-min TTL)</span>
+              <span class="block-tech-tag">16-Angle Handover</span>
+              <span class="block-tech-tag">Split Escrow</span>
             </div>
             <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: auto; padding-top: 1.25rem; border-top: 1px solid var(--border-subtle);">
-              <a href="projects/mrig.html" class="btn btn-primary btn-sm">Read Case Study (10 Sections) &rarr;</a>
+              <a href="https://rentro.mrig.tech" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Launch Rentro Portal (rentro.mrig.tech) &nearr;</a>
+              <a href="projects/mrig.html" class="btn btn-secondary btn-sm">Inspect Architecture &rarr;</a>
+            </div>
+          </article>
+
+          <!-- GetNextIn (Product under MRIG) -->
+          <article class="archive-project-card" style="border-color: rgba(56, 189, 248, 0.35);">
+            <div class="archive-card-header">
+              <div style="display: flex; align-items: center; gap: 0.9rem;">
+                <img src="assets/getnextin-icon.png" alt="GetNextIn Icon" width="44" height="44" style="filter: drop-shadow(0 4px 12px rgba(56,189,248,0.35)); flex-shrink: 0; border-radius: 10px;">
+                <div>
+                  <span class="badge badge-cyan" style="margin-bottom: 0.2rem;"><span class="pulse-dot"></span> Product under MRIG</span>
+                  <h2 class="archive-card-title">GetNextIn</h2>
+                </div>
+              </div>
+              <span class="badge" style="background: rgba(255,255,255,0.05); color: var(--text-muted);">2026</span>
+            </div>
+            <div class="archive-card-category">AI Career &amp; Skill Platform &middot; getnextin.mrig.tech</div>
+            <p class="archive-card-desc">
+              AI-driven candidate screening, automated technical assessment, and skill verification platform under parent entity MRIG. Tagline: &lsquo;YOUR NEXT OPPORTUNITY AWAITS&rsquo;. Connects high-growth engineering teams with verified talent.
+            </p>
+            <div class="block-tech-tags">
+              <span class="block-tech-tag">AI Screening Pipeline</span>
+              <span class="block-tech-tag">Skill Verification Models</span>
+              <span class="block-tech-tag">NLP Evaluation</span>
+              <span class="block-tech-tag">Talent Matching</span>
+            </div>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: auto; padding-top: 1.25rem; border-top: 1px solid var(--border-subtle);">
+              <a href="https://getnextin.mrig.tech" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Launch GetNextIn Portal (getnextin.mrig.tech) &nearr;</a>
+              <a href="projects/mrig.html" class="btn btn-secondary btn-sm">Inspect Architecture &rarr;</a>
+            </div>
+          </article>
+
+          <!-- MRIG Ecosystem (Parent Entity) -->
+          <article class="archive-project-card" style="border-color: rgba(245, 158, 11, 0.25);">
+            <div class="archive-card-header">
+              <div style="display: flex; align-items: center; gap: 0.9rem;">
+                <img src="assets/mrig-emblem.png" alt="MRIG Emblem" width="44" height="44" style="border-radius: 10px; border: 1px solid rgba(245,158,11,0.3); background: rgba(245,158,11,0.06); padding: 4px; flex-shrink: 0;">
+                <div>
+                  <span class="badge badge-amber" style="margin-bottom: 0.2rem;">Parent Ecosystem Entity</span>
+                  <h2 class="archive-card-title">MRIG Ecosystem</h2>
+                </div>
+              </div>
+              <span class="badge" style="background: rgba(255,255,255,0.05); color: var(--text-muted);">2026</span>
+            </div>
+            <div class="archive-card-category">Parent Company &amp; Shared Infrastructure</div>
+            <p class="archive-card-desc">
+              Parent company entity providing technical infrastructure, escrow governance, and shared venture architecture for Rentro and GetNextIn.
+            </p>
+            <div class="block-tech-tags">
+              <span class="block-tech-tag">Parent Venture Model</span>
+              <span class="block-tech-tag">Asset Infrastructure</span>
+              <span class="block-tech-tag">Shared Architecture</span>
+            </div>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: auto; padding-top: 1.25rem; border-top: 1px solid var(--border-subtle);">
+              <a href="projects/mrig.html" class="btn btn-secondary btn-sm">Ecosystem Architecture &rarr;</a>
               <a href="https://rentro.mrig.tech" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Rentro &nearr;</a>
               <a href="https://getnextin.mrig.tech" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">GetNextIn &nearr;</a>
             </div>
           </article>
 
           <!-- Crypticard -->
-          <article class="archive-project-card">
+          <article class="archive-project-card" style="border-color: rgba(16, 185, 129, 0.25);">
             <div class="archive-card-header">
-              <div>
-                <span class="badge badge-emerald" style="margin-bottom: 0.4rem;">Early-Stage Concept</span>
-                <h2 class="archive-card-title">Crypticard</h2>
+              <div style="display: flex; align-items: center; gap: 0.9rem;">
+                <img src="assets/crypticard-icon.png" alt="Crypticard Icon" width="44" height="44" style="filter: drop-shadow(0 4px 12px rgba(16,185,129,0.35)); flex-shrink: 0; border-radius: 10px;">
+                <div>
+                  <span class="badge badge-emerald" style="margin-bottom: 0.2rem;">Protocol Architecture</span>
+                  <h2 class="archive-card-title">Crypticard</h2>
+                </div>
               </div>
               <span class="badge" style="background: rgba(255,255,255,0.05); color: var(--text-muted);">2024 — 2026</span>
             </div>
             <div class="archive-card-category">Decentralized Digital Identity &amp; VCs</div>
             <p class="archive-card-desc">
-              Self-sovereign cryptographic passport empowering users with portable credentials, Zero-Knowledge verification, and Sybil-resistant reputation scoring across multi-chain ecosystems.
+              Self-sovereign cryptographic passport empowering users with portable credentials, Zero-Knowledge verification, and Sybil-resistant reputation scoring across multi-chain ecosystems. Tagline: &lsquo;SPEND &middot; EARN &middot; OWN&rsquo;.
             </p>
             <div class="block-tech-tags">
               <span class="block-tech-tag">W3C DIDs &amp; VCs</span>
               <span class="block-tech-tag">Zero-Knowledge</span>
               <span class="block-tech-tag">Solidity</span>
+              <span class="block-tech-tag">EVM / Solana</span>
             </div>
             <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: auto; padding-top: 1.25rem; border-top: 1px solid var(--border-subtle);">
               <a href="projects/crypticard.html" class="btn btn-secondary btn-sm">Read Identity Case Study &rarr;</a>
@@ -213,6 +276,8 @@
   <script src="data/social.js"></script>
   <script src="data/blocks.js"></script>
   <script src="data/data-loader.js"></script>
+  <script src="js/founder-identity.js"></script>
+  <script src="js/profile-studio.js"></script>
   <script src="js/core.js"></script>
   <script src="animations.js"></script>
 </body>

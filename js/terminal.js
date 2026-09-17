@@ -25,11 +25,14 @@
     const commands = {
       help: () => [
         { type: 'accent', text: 'Mayank Yadav Founder OS — Interactive Shell Commands:' },
-        { type: 'dim', text: '  mrig       - Deep-dive into MRIG (Rentro & GetNextIn physical asset ecosystem)' },
+        { type: 'dim', text: '  mrig       - Inspect MRIG Ecosystem (Parent Company & Asset Lifecycle Capital)' },
+        { type: 'dim', text: '  rentro     - Inspect Rentro ("Rent Anything. Earn Anytime" - rentro.mrig.tech)' },
+        { type: 'dim', text: '  getnextin  - Inspect GetNextIn (AI Career Platform - getnextin.mrig.tech)' },
+        { type: 'dim', text: '  universe   - 3D WebGL Living Blockchain Universe status & node constellation' },
+        { type: 'dim', text: '  web3       - Display verified cryptographic identity & network addresses' },
         { type: 'dim', text: '  bio        - Founder overview, engineering background & operating principles' },
         { type: 'dim', text: '  projects   - Output directory of active ventures & smart contracts' },
         { type: 'dim', text: '  stack      - Technical architecture, AI/ML pipelines & Web3 standards' },
-        { type: 'dim', text: '  ledger     - Query Living Blockchain Ledger block heights & hashes' },
         { type: 'dim', text: '  contact    - Retrieve direct founder communication line & PGP identity' },
         { type: 'dim', text: '  cat <file> - Read system files (e.g. `cat vision.txt`, `cat genesis.hex`)' },
         { type: 'dim', text: '  clear      - Clear terminal screen' }
@@ -37,16 +40,41 @@
       bio: () => [
         { type: 'accent', text: 'MAYANK YADAV — FOUNDER & PRODUCT ARCHITECT' },
         { type: 'text', text: 'Focus: AI, Web3 & Real-World Physical Asset Infrastructure.' },
-        { type: 'text', text: 'Founder & CEO at MRIG (Rentro & GetNextIn) and Crypticard.' },
+        { type: 'text', text: 'Founder & CEO at MRIG Ecosystem (Rentro & GetNextIn) and Crypticard.' },
         { type: 'dim', text: 'Education: B.Tech CSE (AI & ML) at UIT RGPV, Bhopal, India.' },
         { type: 'success', text: 'Status: Actively building & unlocking latent capital in real-world assets.' }
       ],
       mrig: () => [
-        { type: 'accent', text: 'MRIG: "The Amazon of Physical Assets"' },
-        { type: 'text', text: 'Flagship dual-engine ecosystem unlocking multi-trillion dollar asset liquidity.' },
-        { type: 'cyan', text: '▸ Rentro (rentro.mrig.tech): Rent, buy, sell, finance & insure physical assets.' },
-        { type: 'cyan', text: '▸ GetNextIn (getnextin.mrig.tech): AI candidate screening & verifiable career matchmaking.' },
-        { type: 'dim', text: 'Explore full 10-part case study at /projects/mrig.html' }
+        { type: 'accent', text: 'MRIG ECOSYSTEM — Parent Venture Architecture' },
+        { type: 'text', text: 'Parent company & infrastructure housing physical asset marketplace (Rentro) and AI career platform (GetNextIn).' },
+        { type: 'cyan', text: '▸ Rentro (rentro.mrig.tech): Physical Asset Marketplace ("Rent Anything. Earn Anytime")' },
+        { type: 'cyan', text: '▸ GetNextIn (getnextin.mrig.tech): AI Career Platform & Skill Verification Engine' },
+        { type: 'dim', text: 'Ecosystem architecture at /projects/mrig.html' }
+      ],
+      rentro: () => [
+        { type: 'accent', text: 'RENTRO BY MRIG — Physical Asset Marketplace' },
+        { type: 'text', text: 'Tagline: "Rent Anything. Earn Anytime"' },
+        { type: 'text', text: 'Verified commercial transport & mobility fleet rentals with 16-angle digital handover & split escrow.' },
+        { type: 'cyan', text: 'Live Web Portal: https://rentro.mrig.tech' }
+      ],
+      getnextin: () => [
+        { type: 'accent', text: 'GETNEXTIN — AI Career & Skill Platform' },
+        { type: 'text', text: 'AI-driven candidate screening, simulated interviews, and verifiable talent matchmaking.' },
+        { type: 'cyan', text: 'Live Web Portal: https://getnextin.mrig.tech' }
+      ],
+      universe: () => [
+        { type: 'accent', text: '3D LIVING BLOCKCHAIN UNIVERSE STATUS:' },
+        { type: 'success', text: 'WebGL 3D Engine: ACTIVE (Three.js Spatial Node Graph)' },
+        { type: 'dim', text: 'Nodes: #000 Genesis Core, #001 Foundation, #002 Web3/Koii, #003 Crypticard, #004 MRIG HQ, #005 Rentro, #006 GetNextIn, #007 SVG AegisVault, HEAD Active State' },
+        { type: 'dim', text: 'Interactive features: 360° Orbit, Raycaster Hover, Node Focus, Fullscreen Spatial Mode.' }
+      ],
+      web3: () => [
+        { type: 'accent', text: 'VERIFIED CRYPTOGRAPHIC DIGITAL IDENTITY:' },
+        { type: 'cyan', text: '• ENS / Base:     Maayankyadav.base.eth' },
+        { type: 'cyan', text: '• Ethereum / EVM: 0x8b99d1ace44d52659bbe65f7f4c7f5d59afc2b7e' },
+        { type: 'cyan', text: '• Solana:         EjpYgeXXXnnpcwSq82qFDJneVY1U5zPW9L1kyDKbtpbX' },
+        { type: 'cyan', text: '• Bitcoin Taproot:Bc1pe5f0hrr0er7gd3zha0wknlw45x5mu4y5mzw87clqzjprg0mtfp0qh9y2dq' },
+        { type: 'dim', text: '• Devfolio:       https://devfolio.co/@Mayankyadav' }
       ],
       projects: () => [
         { type: 'accent', text: 'ACTIVE VENTURES & ARCHITECTURAL REPOSITORIES:' },
