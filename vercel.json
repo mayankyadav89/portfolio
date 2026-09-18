@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "routes": [
+    {
+      "src": "^/resume\\.pdf$",
+      "dest": "/resume.pdf",
+      "headers": {
+        "Content-Type": "application/pdf",
+        "Content-Disposition": "inline; filename=\"Resume_Mayank_Yadav.pdf\"",
+        "Cache-Control": "public, max-age=0, must-revalidate"
+      }
+    },
+    {
+      "src": "^/api/resume/download$",
+      "dest": "/api/resume/download"
+    },
+    {
+      "src": "^/api/resume/active$",
+      "dest": "/api/resume/active"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
