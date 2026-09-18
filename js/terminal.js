@@ -152,7 +152,7 @@
       contact: () => [
         { type: 'accent', text: 'FOUNDER DIRECT COMMUNICATION LINE:' },
         { type: 'cyan', text: '• Official Email : hello@itsmayank.me' },
-        { type: 'text', text: '• X / Twitter    : https://x.com/maayankavy07' },
+        { type: 'text', text: '• X / Twitter    : https://x.com/maayankyadav07' },
         { type: 'text', text: '• LinkedIn       : https://www.linkedin.com/in/mayankyadav89/' },
         { type: 'text', text: '• Farcaster      : https://farcaster.xyz/mayankyadav' },
         { type: 'dim', text: '• Location       : Bhopal, Madhya Pradesh, India & Global Remote (UTC+05:30)' }
