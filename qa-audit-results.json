@@ -1,0 +1,158 @@
+{
+  "hero": {
+    "titleFound": true,
+    "ariaLabel": "Mayank Yadav",
+    "charCount": 11,
+    "glyphCanvasFound": true,
+    "canvasWidth": 160,
+    "canvasHeight": 160
+  },
+  "cursor": {},
+  "threeD": {},
+  "hover": {},
+  "mobile": {
+    "390x844": {
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "hasHorizontalOverflow": false,
+      "hamburgerFound": true,
+      "cursorHiddenOnMobile": true
+    }
+  },
+  "projects": {},
+  "experience": {
+    "aiFilterFound": true,
+    "visibleItemsCount": 0
+  },
+  "capabilities": {
+    "rowCount": 0,
+    "toggled": false,
+    "activeCount": 4
+  },
+  "skills": {
+    "searchInputFound": true,
+    "filteredCardCount": 5
+  },
+  "connections": {
+    "baseCardFound": true,
+    "copyBtnsCount": 12,
+    "ensAddress": "Maayankyadav.base.eth",
+    "evmAddress": "0x8b99d1ace44d52659bbe65f7f4c7f5d59afc2b7e",
+    "solanaAddress": "EjpYgeXXXnnpcwSq82qFDJneVY1U5zPW9L1kyDKbtpbX"
+  },
+  "contact": {
+    "formFound": true,
+    "nameInput": true,
+    "emailInput": true,
+    "msgInput": true
+  },
+  "terminal": {
+    "terminalOpen": false,
+    "commandsRun": [
+      "help",
+      "about",
+      "mrig",
+      "rentro",
+      "getnextin",
+      "crypticard",
+      "web3",
+      "matrix"
+    ],
+    "outputLines": 60
+  },
+  "easterEggs": {},
+  "web3": {},
+  "brandAssets": [
+    {
+      "src": "http://localhost:3000/assets/mrig-emblem.png",
+      "alt": "MRIG Emblem",
+      "naturalWidth": 433,
+      "naturalHeight": 577,
+      "broken": false
+    },
+    {
+      "src": "http://localhost:3000/assets/rentro-icon.png",
+      "alt": "Rentro App Icon",
+      "naturalWidth": 0,
+      "naturalHeight": 0,
+      "broken": true
+    },
+    {
+      "src": "http://localhost:3000/assets/getnextin-icon.png",
+      "alt": "GetNextIn Neon App Icon",
+      "naturalWidth": 0,
+      "naturalHeight": 0,
+      "broken": true
+    },
+    {
+      "src": "http://localhost:3000/assets/crypticard-icon.png",
+      "alt": "Crypticard App Icon",
+      "naturalWidth": 0,
+      "naturalHeight": 0,
+      "broken": true
+    },
+    {
+      "src": "http://localhost:3000/assets/mrig-emblem.png",
+      "alt": "MRIG Emblem",
+      "naturalWidth": 433,
+      "naturalHeight": 577,
+      "broken": false
+    },
+    {
+      "src": "http://localhost:3000/assets/getnextin-icon.png",
+      "alt": "GetNextIn Product Icon",
+      "naturalWidth": 0,
+      "naturalHeight": 0,
+      "broken": true
+    },
+    {
+      "src": "http://localhost:3000/assets/rentro-icon.png",
+      "alt": "Rentro App Icon",
+      "naturalWidth": 0,
+      "naturalHeight": 0,
+      "broken": true
+    },
+    {
+      "src": "http://localhost:3000/assets/crypticard-icon.png",
+      "alt": "Crypticard App Icon",
+      "naturalWidth": 0,
+      "naturalHeight": 0,
+      "broken": true
+    },
+    {
+      "src": "http://localhost:3000/assets/koii-logo.png",
+      "alt": "Koii Network Logo",
+      "naturalWidth": 0,
+      "naturalHeight": 0,
+      "broken": true
+    },
+    {
+      "src": "http://localhost:3000/assets/victus-logo.png",
+      "alt": "Victus Global Logo",
+      "naturalWidth": 0,
+      "naturalHeight": 0,
+      "broken": true
+    }
+  ],
+  "urlAudit": {},
+  "personalPhoto": {},
+  "performance": {},
+  "accessibility": {},
+  "consoleErrors": [],
+  "screenshots": [
+    "qa-01-desktop-hero.png (1440x900 Desktop Hero & Interactive Typography)",
+    "qa-02-desktop-capabilities.png (1440x900 Capabilities Accordion)",
+    "qa-03-desktop-work.png (1440x900 Selected Work & Ventures)",
+    "qa-04-desktop-experience.png (1440x900 Experience Timeline & Filter)",
+    "qa-05-desktop-skills.png (1440x900 Skills Matrix & Filter)",
+    "qa-06-desktop-connections.png (1440x900 Web3 Digital Identity & Connections)",
+    "qa-07-desktop-contact.png (1440x900 Contact Section & Availability)",
+    "qa-08-desktop-cmd-palette.png (1440x900 Command Palette)",
+    "qa-09-desktop-terminal.png (1440x900 CLI Terminal Shell with Command Outputs)",
+    "qa-10-contact-page.png (1440x900 Dedicated Contact Page)",
+    "qa-11-mobile-390-hero.png (390x844 Mobile Hero & Layout)",
+    "qa-12-mobile-390-drawer.png (390x844 Mobile Navigation Drawer)",
+    "qa-13-mobile-390-work.png (390x844 Mobile Work Cards)",
+    "qa-14-mobile-412-hero.png (412x915 Mobile Hero)"
+  ]
+}

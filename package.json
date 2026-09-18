@@ -1,0 +1,23 @@
+{
+  "name": "mayank-yadav-portfolio",
+  "version": "1.0.0",
+  "description": "Personal Digital HQ & Founder Portfolio of Mayank Yadav",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "test": "node run-final-master-audit.js"
+  },
+  "keywords": [
+    "portfolio",
+    "founder",
+    "web3",
+    "ai",
+    "mrig",
+    "rentro",
+    "getnextin",
+    "crypticard"
+  ],
+  "author": "Mayank Yadav <hello@itsmayank.me>",
+  "license": "MIT"
+}

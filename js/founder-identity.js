@@ -22,7 +22,7 @@
     shortName: "MY",
     handle: "mayankyadav89",
     domain: "itsmayank.me",
-    avatar: "assets/founder-mayank.png",
+    avatar: null,
     title: "Technology Founder & Product Architect",
     tagline: "Building at the intersection of AI, Web3 & Physical Asset Infrastructure",
     subtitle: "Founder & CEO at MRIG Ecosystem (Rentro & GetNextIn) & Crypticard. Turning frontier technologies into scalable real-world operating systems.",
@@ -370,11 +370,13 @@
 
       const firstNameEls = document.querySelectorAll('[data-founder-first-name]');
       firstNameEls.forEach(el => {
+        if (el.dataset.charsSplit === 'true') return;
         el.textContent = firstName.toUpperCase();
       });
 
       const lastNameEls = document.querySelectorAll('[data-founder-last-name]');
       lastNameEls.forEach(el => {
+        if (el.dataset.charsSplit === 'true') return;
         el.textContent = lastName.toUpperCase();
       });
 

@@ -27,6 +27,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="styles/terminal.css">
 </head>
 <body>
 
@@ -36,11 +38,14 @@
   <div class="ambient-glow ambient-glow-3" aria-hidden="true"></div>
   <div class="grain-overlay" aria-hidden="true"></div>
 
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-bar" id="scroll-progress-bar" aria-hidden="true"></div>
+
   <!-- ===== NAVIGATION ===== -->
   <header class="hq-navbar" id="hq-navbar">
     <div class="container nav-container">
       <a href="#" class="nav-brand" aria-label="Mayank Yadav Home">
-        <span class="nav-brand-dot"></span>
+        <span class="nav-brand-dot" id="brand-logo-dot"></span>
         <span data-founder-name>Mayank Yadav</span>
       </a>
 
@@ -50,12 +55,18 @@
         <a href="#capabilities">Capabilities</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
-        <a href="#web3">Web3</a>
+        <a href="#connections">Web3 &amp; Ecosystem</a>
+        <a href="resume.html">Resume</a>
         <a href="#contact">Contact</a>
       </nav>
 
       <div class="nav-actions">
-        <a href="#contact" class="btn btn-outline" style="font-size: 0.82rem; padding: 0.45rem 1rem;">
+        <button type="button" class="cmd-palette-btn" aria-label="Open Command Palette (Cmd+K)">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span class="cmd-text">Search</span>
+          <kbd class="cmd-key">⌘K</kbd>
+        </button>
+        <a href="#contact" class="btn btn-outline" style="font-size: 0.82rem; padding: 0.45rem 0.9rem;">
           <span>Get in Touch</span>
         </a>
         <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle navigation menu">
@@ -73,7 +84,8 @@
     <a href="#capabilities" class="mobile-nav-link">Capabilities</a>
     <a href="#experience" class="mobile-nav-link">Experience</a>
     <a href="#skills" class="mobile-nav-link">Skills</a>
-    <a href="#web3" class="mobile-nav-link">Web3 Identity</a>
+    <a href="#connections" class="mobile-nav-link">Web3 &amp; Ecosystem</a>
+    <a href="resume.html" class="mobile-nav-link">Resume / Dossier</a>
     <a href="#contact" class="mobile-nav-link">Contact</a>
     <a href="mailto:hello@itsmayank.me" class="btn btn-primary" style="margin-top: 1.5rem; justify-content: center;">
       <span>hello@itsmayank.me</span>
@@ -87,12 +99,17 @@
         <div class="hero-editorial-grid">
           <!-- Text Column -->
           <div class="hero-editorial-text">
-            <div class="hero-status-tag">
-              <span class="status-indicator-dot"></span>
-              <span>Building MRIG (Rentro & GetNextIn)</span>
+            <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.75rem;">
+              <div class="hero-status-tag">
+                <span class="status-indicator-dot"></span>
+                <span>Building MRIG (Rentro &amp; GetNextIn)</span>
+              </div>
+              <div class="identity-glyph-container" id="identity-glyph-container" title="Interactive 3D Cryptographic Identity Glyph (Drag to rotate)">
+                <canvas class="identity-glyph-canvas" id="identity-glyph-canvas" width="80" height="80"></canvas>
+              </div>
             </div>
 
-            <h1 class="hero-main-title">
+            <h1 class="hero-main-title" aria-label="Mayank Yadav">
               <span data-founder-first-name>MAYANK</span>
               <span class="accent-text" data-founder-last-name>YADAV</span>
             </h1>
@@ -101,8 +118,13 @@
               Technology Founder &middot; Product Architect
             </div>
 
+            <div class="hero-hex-signature" title="ASCII HEX signature for MAYANK YADAV">
+              <span class="hex-label">HEX //</span>
+              <code>4D 41 59 41 4E 4B 20 59 41 44 41 56</code>
+            </div>
+
             <p class="hero-pitch">
-              Building at the intersection of <strong>AI, Web3 & Physical Asset Infrastructure</strong>. Founder & CEO at MRIG — turning frontier technologies into scalable real-world operating systems.
+              Building at the intersection of <strong>AI, Web3 &amp; Physical Asset Infrastructure</strong>. Founder &amp; CEO at MRIG — turning frontier technologies into scalable real-world operating systems.
             </p>
 
             <div class="hero-actions-row">
@@ -112,6 +134,14 @@
                   <line x1="12" y1="5" x2="12" y2="19"></line>
                   <polyline points="19 12 12 19 5 12"></polyline>
                 </svg>
+              </a>
+              <a href="/api/resume/download" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" title="Download Active PDF Resume" id="hero-download-resume-btn">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Resume (PDF)</span>
               </a>
               <a href="#contact" class="btn btn-outline">
                 <span>Let's Connect &rarr;</span>
@@ -128,7 +158,7 @@
                 <span class="hero-stat-label">Community Built</span>
               </div>
               <div class="hero-stat-item">
-                <span class="hero-stat-num">AI & ML</span>
+                <span class="hero-stat-num">AI &amp; ML</span>
                 <span class="hero-stat-label">CSE Specialization</span>
               </div>
               <div class="hero-stat-item">
@@ -171,7 +201,7 @@
                 <div>
                   <div class="hat-section-label">// ACTIVE PRODUCT ENGINES (02)</div>
                   <div class="hat-products-grid">
-                    <a href="https://rentro.mrig.tech" target="_blank" rel="noopener noreferrer" class="hat-product-card">
+                    <a href="https://rentro.mrig.tech" target="_blank" rel="noopener noreferrer" class="hat-product-card" data-project="rentro">
                       <div class="hat-p-header">
                         <span class="hat-p-name">Rentro</span>
                         <span class="hat-p-status">&bull; LIVE</span>
@@ -180,7 +210,7 @@
                       <div class="hat-p-url">rentro.mrig.tech &nearr;</div>
                     </a>
 
-                    <a href="https://getnextin.mrig.tech" target="_blank" rel="noopener noreferrer" class="hat-product-card">
+                    <a href="https://getnextin.mrig.tech" target="_blank" rel="noopener noreferrer" class="hat-product-card" data-project="getnextin">
                       <div class="hat-p-header">
                         <span class="hat-p-name">GetNextIn</span>
                         <span class="hat-p-status" style="color:var(--accent-cyan);">&bull; LIVE</span>
@@ -253,7 +283,7 @@
 
         <div class="products-showcase-list">
           <!-- 01 Rentro -->
-          <article class="product-showcase-card">
+          <article class="product-showcase-card" data-project="rentro">
             <div class="product-card-content">
               <div class="product-card-meta">
                 <span class="product-index-num">01</span>
@@ -290,7 +320,7 @@
           </article>
 
           <!-- 02 GetNextIn -->
-          <article class="product-showcase-card reverse">
+          <article class="product-showcase-card reverse" data-project="getnextin">
             <div class="product-card-content">
               <div class="product-card-meta">
                 <span class="product-index-num">02</span>
@@ -326,7 +356,7 @@
           </article>
 
           <!-- 03 Crypticard -->
-          <article class="product-showcase-card">
+          <article class="product-showcase-card" data-project="crypticard">
             <div class="product-card-content">
               <div class="product-card-meta">
                 <span class="product-index-num">03</span>
@@ -358,7 +388,7 @@
           </article>
 
           <!-- 04 SVG AegisVault -->
-          <article class="product-showcase-card reverse">
+          <article class="product-showcase-card reverse" data-project="svg-aegisvault">
             <div class="product-card-content">
               <div class="product-card-meta">
                 <span class="product-index-num">04</span>
@@ -429,7 +459,7 @@
               Operating at the convergence of Artificial Intelligence, Machine Learning, and Web3 architectures, I design systems that turn frontier technologies into scalable real-world operating systems.
             </p>
             <p>
-              As Founder & CEO of MRIG, I am pioneering the physical asset marketplace model with Rentro (<a href="https://rentro.mrig.tech" target="_blank" rel="noopener noreferrer" style="color:var(--accent-violet);">rentro.mrig.tech</a>) and GetNextIn (<a href="https://getnextin.mrig.tech" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan);">getnextin.mrig.tech</a>).
+              As Founder &amp; CEO of MRIG, I am pioneering the physical asset marketplace model with Rentro (<a href="https://rentro.mrig.tech" target="_blank" rel="noopener noreferrer" style="color:var(--accent-violet);">rentro.mrig.tech</a>) and GetNextIn (<a href="https://getnextin.mrig.tech" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan);">getnextin.mrig.tech</a>).
             </p>
             <p>
               Previously, I founded Crypticard (decentralized digital identity), led India Business Development for Koii Network scaling user adoption, and researched protocol due diligence with Victus Global.
@@ -457,7 +487,7 @@
             </div>
             <div class="principle-item">
               <div class="principle-title">Education Background</div>
-              <div class="principle-desc">B.Tech in Computer Science & Engineering (AI & ML Specialization), UIT RGPV.</div>
+              <div class="principle-desc">B.Tech in Computer Science &amp; Engineering (AI &amp; ML Specialization), UIT RGPV.</div>
             </div>
           </div>
         </div>
@@ -512,33 +542,96 @@
       </div>
     </section>
 
-    <!-- ===== CONTACT SECTION ===== -->
-    <section class="contact-hero-section" id="contact">
+    <!-- ===== CONTACT SECTION OVERHAUL ===== -->
+    <section class="contact-hero-section" id="contact" style="padding: 5rem 0; border-top: 1px solid var(--border-default);">
       <div class="container">
-        <div class="contact-cta-block">
-          <div class="section-eyebrow" style="margin-bottom:0;">
+        <div class="section-header-wrap" style="text-align: center; margin-bottom: 3rem;">
+          <div class="section-eyebrow" style="justify-content: center;">
             <span class="accent-dot"></span>
             <span>Direct Connection</span>
           </div>
-          <h2 class="contact-headline">LET'S BUILD SOMETHING.</h2>
-          <p class="contact-pitch">
-            Open to partnerships, founder discussions, and inquiries regarding physical asset liquidity and AI career infrastructure.
+          <h2 class="section-title-large" style="font-size: clamp(2rem, 5vw, 3.2rem); letter-spacing: -0.02em;">LET'S BUILD SOMETHING WORTH SHIPPING.</h2>
+          <p style="color: var(--text-muted); max-width: 620px; margin: 0.75rem auto 0; font-size: 1rem;">
+            Open to technical partnerships, founder dialogues, and early-stage venture discussions regarding physical asset infrastructure and AI systems.
           </p>
-          <a href="mailto:hello@itsmayank.me" class="contact-email-btn">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
-            <span>hello@itsmayank.me</span>
-          </a>
+        </div>
 
-          <div class="contact-social-row">
-            <a href="https://github.com/mayankyadav89" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/mayankyadav89/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://x.com/maayankavy07" target="_blank" rel="noopener noreferrer">X / Twitter</a>
-            <a href="https://farcaster.xyz/mayankyadav" target="_blank" rel="noopener noreferrer">Farcaster</a>
-            <a href="https://discord.com/users/MAYANKYADAV" target="_blank" rel="noopener noreferrer">Discord</a>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; align-items: start; max-width: 1040px; margin: 0 auto;">
+
+          <!-- Interactive Transmission Form -->
+          <div class="contact-form-card" style="background: #09090f; border: 1px solid rgba(167, 139, 250, 0.25); border-radius: 14px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+              <h3 style="font-size: 1.15rem; font-weight: 700; color: #fff;">Direct Transmission</h3>
+              <span class="badge badge-emerald" style="font-size: 0.7rem; padding: 0.2rem 0.6rem; border-radius: 20px; background: rgba(52,211,153,0.1); color: var(--accent-emerald); border: 1px solid rgba(52,211,153,0.3);">
+                <span class="pulse-dot" style="display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--accent-emerald); margin-right:4px;"></span> Open to Building
+              </span>
+            </div>
+
+            <form id="hero-contact-form" style="display: flex; flex-direction: column; gap: 1.25rem;">
+              <div>
+                <label for="form-name" style="display: block; font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted); margin-bottom: 0.4rem; letter-spacing: 0.05em;">YOUR NAME</label>
+                <input type="text" id="form-name" required placeholder="e.g. Alex Vance" style="width: 100%; background: rgba(15,15,22,0.8); border: 1px solid var(--border-default); border-radius: 8px; padding: 0.7rem 1rem; color: #fff; font-family: inherit; font-size: 0.9rem; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='var(--accent-violet)'" onblur="this.style.borderColor='var(--border-default)'" />
+              </div>
+
+              <div>
+                <label for="form-email" style="display: block; font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted); margin-bottom: 0.4rem; letter-spacing: 0.05em;">YOUR EMAIL</label>
+                <input type="email" id="form-email" required placeholder="name@domain.com" style="width: 100%; background: rgba(15,15,22,0.8); border: 1px solid var(--border-default); border-radius: 8px; padding: 0.7rem 1rem; color: #fff; font-family: inherit; font-size: 0.9rem; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='var(--accent-violet)'" onblur="this.style.borderColor='var(--border-default)'" />
+              </div>
+
+              <div>
+                <label for="form-message" style="display: block; font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted); margin-bottom: 0.4rem; letter-spacing: 0.05em;">MESSAGE</label>
+                <textarea id="form-message" rows="4" required placeholder="Detail your proposal, project, or inquiry..." style="width: 100%; background: rgba(15,15,22,0.8); border: 1px solid var(--border-default); border-radius: 8px; padding: 0.7rem 1rem; color: #fff; font-family: inherit; font-size: 0.9rem; outline: none; resize: vertical; transition: border-color 0.2s;" onfocus="this.style.borderColor='var(--accent-violet)'" onblur="this.style.borderColor='var(--border-default)'"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 0.8rem 1.5rem; font-size: 0.9rem;">
+                <span>Compose Email (hello@itsmayank.me)</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
           </div>
+
+          <!-- Signal & Telemetry Card -->
+          <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+            <!-- Dedicated One-Click Copy Hub -->
+            <div style="background: #09090f; border: 1px solid rgba(167, 139, 250, 0.25); border-radius: 14px; padding: 1.75rem; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+              <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-violet); letter-spacing: 0.08em; margin-bottom: 0.5rem;">// DIRECT FOUNDER INBOX</div>
+              <div style="display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; background: rgba(15,15,22,0.9); border: 1px solid var(--border-default); border-radius: 10px; padding: 0.8rem 1.1rem;">
+                <span style="font-family: var(--font-mono); font-size: 0.92rem; color: #fff; font-weight: 600;">hello@itsmayank.me</span>
+                <button type="button" class="btn btn-outline" id="copy-email-hero-btn" data-copy-val="hello@itsmayank.me" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" title="Copy email address">
+                  <span>Copy</span>
+                </button>
+              </div>
+              <div style="margin-top: 1rem; font-size: 0.8rem; color: var(--text-muted); line-height: 1.5;">
+                Direct communication channel for venture collaborations, technical advisory, and protocol engineering dialogues.
+              </div>
+            </div>
+
+            <!-- Operating Base & Availability -->
+            <div style="background: #09090f; border: 1px solid var(--border-default); border-radius: 14px; padding: 1.75rem;">
+              <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-cyan); letter-spacing: 0.08em; margin-bottom: 0.85rem;">// OPERATING BASE &amp; AVAILABILITY</div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.86rem; color: var(--text-muted); margin-bottom: 0.6rem; border-bottom: 1px dashed rgba(255,255,255,0.06); padding-bottom: 0.4rem;">
+                <span>Current Status:</span>
+                <span style="color: var(--accent-emerald); font-weight: 600;">Available for technical discussions</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.86rem; color: var(--text-muted); margin-bottom: 0.6rem; border-bottom: 1px dashed rgba(255,255,255,0.06); padding-bottom: 0.4rem;">
+                <span>Location Base:</span>
+                <span style="color: #fff; font-weight: 500;">Bhopal, MP, India (UTC+05:30)</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.86rem; color: var(--text-muted);">
+                <span>Base ENS:</span>
+                <a href="https://basescan.org/name/Maayankyadav.base.eth" target="_blank" rel="noopener noreferrer" style="color: var(--accent-violet); font-family: var(--font-mono); font-size: 0.8rem;">Maayankyadav.base.eth &nearr;</a>
+              </div>
+            </div>
+
+            <!-- Social Links Strip -->
+            <div style="display: flex; flex-wrap: wrap; gap: 0.6rem;">
+              <a href="https://github.com/mayankyadav89" target="_blank" rel="noopener noreferrer" class="social-channel-card" style="flex: 1; min-width: 90px; padding: 0.65rem 0.8rem; text-align: center; font-size: 0.82rem;">GitHub &nearr;</a>
+              <a href="https://www.linkedin.com/in/mayankyadav89/" target="_blank" rel="noopener noreferrer" class="social-channel-card" style="flex: 1; min-width: 90px; padding: 0.65rem 0.8rem; text-align: center; font-size: 0.82rem;">LinkedIn &nearr;</a>
+              <a href="https://x.com/maayankavy07" target="_blank" rel="noopener noreferrer" class="social-channel-card" style="flex: 1; min-width: 90px; padding: 0.65rem 0.8rem; text-align: center; font-size: 0.82rem;">X / Twitter &nearr;</a>
+              <a href="/api/resume/download" target="_blank" rel="noopener noreferrer" class="social-channel-card" style="flex: 1; min-width: 120px; padding: 0.65rem 0.8rem; text-align: center; font-size: 0.82rem; color: var(--accent-violet); border-color: rgba(167,139,250,0.35);">Resume (PDF) &darr;</a>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -562,49 +655,51 @@
   <script src="data/skills.js"></script>
   <script src="data/capabilities.js"></script>
   <script src="data/social.js"></script>
+  <script src="data/blocks.js"></script>
+  <script src="data/data-loader.js"></script>
   <script src="js/founder-identity.js"></script>
   <script src="js/skills-explorer.js"></script>
   <script src="js/capabilities-accordion.js"></script>
   <script src="js/connections-experience.js"></script>
   <script src="js/core.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="animations.js"></script>
 
   <script>
     (function () {
       'use strict';
-      // Navbar scroll effect
-      const nav = document.getElementById('hq-navbar');
-      window.addEventListener('scroll', function () {
-        if (nav) {
-          nav.classList.toggle('scrolled', window.scrollY > 40);
-        }
-      }, { passive: true });
-
-      // Mobile drawer
-      const hamburger = document.getElementById('nav-hamburger');
-      const drawer = document.getElementById('mobile-nav-drawer');
-      const closeBtn = document.getElementById('mobile-nav-close');
-      if (hamburger && drawer) {
-        hamburger.addEventListener('click', () => drawer.classList.add('open'));
-      }
-      if (closeBtn && drawer) {
-        closeBtn.addEventListener('click', () => drawer.classList.remove('open'));
-      }
-      if (drawer) {
-        drawer.querySelectorAll('a').forEach(a => {
-          a.addEventListener('click', () => drawer.classList.remove('open'));
-        });
-      }
-
-      // Smooth scroll for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          const target = document.querySelector(this.getAttribute('href'));
-          if (target) {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // Copy email helper
+      const copyBtn = document.getElementById('copy-email-hero-btn');
+      if (copyBtn) {
+        copyBtn.addEventListener('click', () => {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText('hello@itsmayank.me').then(() => {
+              if (window.playTactileChime) window.playTactileChime('copy');
+              const toast = document.getElementById('hq-global-toast');
+              if (toast) {
+                toast.textContent = 'Copied hello@itsmayank.me to clipboard! ✓';
+                toast.classList.add('show');
+                clearTimeout(toast.timer);
+                toast.timer = setTimeout(() => toast.classList.remove('show'), 2800);
+              }
+            });
           }
         });
-      });
+      }
+
+      // Contact form dispatcher
+      const form = document.getElementById('hero-contact-form');
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const name = document.getElementById('form-name').value;
+          const email = document.getElementById('form-email').value;
+          const msg = document.getElementById('form-message').value;
+          const subject = encodeURIComponent(`[Founder Inquiry] from ${name}`);
+          const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${msg}`);
+          window.location.href = `mailto:hello@itsmayank.me?subject=${subject}&body=${body}`;
+        });
+      }
     })();
   </script>
 </body>

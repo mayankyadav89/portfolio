@@ -11,15 +11,16 @@
     initMobileNav();
     initCommandPalette();
     initSmoothAnchors();
+    initContactForms();
   });
 
   /* ===== Navbar Scroll Effects ===== */
   function initNavScroll() {
-    const nav = document.querySelector('.hq-navbar');
+    const nav = document.querySelector('.hq-navbar') || document.getElementById('hq-navbar');
     if (!nav) return;
 
     function onScroll() {
-      if (window.scrollY > 40) {
+      if (window.scrollY > 30) {
         nav.classList.add('scrolled');
       } else {
         nav.classList.remove('scrolled');
@@ -32,19 +33,30 @@
 
   /* ===== Mobile Nav Drawer ===== */
   function initMobileNav() {
-    const toggle = document.querySelector('.hq-nav-toggle');
-    const links = document.querySelector('.hq-nav-links');
+    const toggle = document.querySelector('.hq-nav-toggle') || document.getElementById('nav-hamburger');
+    const links = document.querySelector('.hq-nav-links') || document.getElementById('mobile-nav-drawer');
+    const closeBtn = document.getElementById('mobile-nav-close');
     if (!toggle || !links) return;
 
     toggle.addEventListener('click', () => {
       links.classList.toggle('active');
-      const expanded = links.classList.contains('active');
+      links.classList.toggle('open');
+      const expanded = links.classList.contains('active') || links.classList.contains('open');
       toggle.setAttribute('aria-expanded', expanded);
     });
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => {
+        links.classList.remove('active');
+        links.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    }
 
     links.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         links.classList.remove('active');
+        links.classList.remove('open');
         toggle.setAttribute('aria-expanded', 'false');
       });
     });
@@ -64,14 +76,15 @@
               <circle cx="11" cy="11" r="8"></circle>
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
-            <input type="text" id="cmd-input" class="cmd-input" placeholder="Type a command or search (e.g. MRIG, Genesis, Contact)..." autocomplete="off" spellcheck="false" />
+            <input type="text" id="cmd-input" class="cmd-input" placeholder="Type a command or search (e.g. Rentro, CLI, Base ENS, Contact)..." autocomplete="off" spellcheck="false" />
           </div>
           <div class="cmd-results" id="cmd-results"></div>
           <div class="cmd-footer">
             <div class="cmd-shortcuts">
               <span><kbd class="cmd-key">&uarr;&darr;</kbd> Navigate</span>
-              <span><kbd class="cmd-key">&crarr;</kbd> Open</span>
+              <span><kbd class="cmd-key">&crarr;</kbd> Select</span>
               <span><kbd class="cmd-key">ESC</kbd> Close</span>
+              <span><kbd class="cmd-key">~</kbd> CLI Shell</span>
             </div>
             <span>Founder HQ v2.5</span>
           </div>
@@ -87,32 +100,38 @@
     let selectedIndex = 0;
     let items = [];
 
-    // Search Index Data
+    // Comprehensive Verified Search Index Data
     const searchIndex = [
-      { title: "Home / Founder Digital HQ", category: "Navigation", badge: "Page", url: "index.html" },
-      { title: "MRIG Ecosystem (Parent Architecture)", category: "Case Study", badge: "Ecosystem", url: "projects/mrig.html" },
-      { title: "Rentro: Physical Asset Marketplace (rentro.mrig.tech)", category: "Product", badge: "Marketplace", url: "https://rentro.mrig.tech", external: true },
-      { title: "GetNextIn: AI Career Platform (getnextin.mrig.tech)", category: "Product", badge: "AI Platform", url: "https://getnextin.mrig.tech", external: true },
-      { title: "Crypticard: Decentralized Identity", category: "Case Study", badge: "Web3", url: "projects/crypticard.html" },
-      { title: "SVG AegisVault: ERC-4337 Smart Account", category: "Case Study", badge: "Protocol", url: "projects/svg-aegisvault.html" },
-      { title: "Ecoties: Green Tech Ledger", category: "Case Study", badge: "Concept", url: "projects/ecoties.html" },
+      { title: "Download Official Resume (PDF)", category: "Actions", badge: "PDF", url: "/api/resume/download", external: true },
+      { title: "Founder Profile & Executive Dossier", category: "Navigation", badge: "Dossier", url: "resume.html" },
+      { title: "Open Hacker CLI Terminal (~ / backtick)", category: "System Commands", badge: "CLI Shell", action: "terminal" },
+      { title: "Copy Founder Email: hello@itsmayank.me", category: "Actions", badge: "Copy", action: "copy-email" },
+      { title: "Rentro: Physical Asset Marketplace (rentro.mrig.tech)", category: "Ventures", badge: "Product", url: "https://rentro.mrig.tech", external: true },
+      { title: "GetNextIn: AI Career & Skill Platform (getnextin.mrig.tech)", category: "Ventures", badge: "AI Engine", url: "https://getnextin.mrig.tech", external: true },
+      { title: "MRIG Ecosystem Architecture & Core", category: "Ventures", badge: "Case Study", url: "projects/mrig.html" },
+      { title: "Crypticard: Decentralized Digital Identity", category: "Protocols", badge: "Case Study", url: "projects/crypticard.html" },
+      { title: "SVG AegisVault: ERC-4337 Smart Account", category: "Protocols", badge: "OSS", url: "projects/svg-aegisvault.html" },
+      { title: "Base ENS: Maayankyadav.base.eth", category: "Web3 Identity", badge: "On-Chain", url: "https://basescan.org/name/Maayankyadav.base.eth", external: true },
+      { title: "EVM Address (0x8b99d1ace44d52659bbe65f7f4c7f5d59afc2b7e)", category: "Web3 Identity", badge: "Copy", action: "copy-evm" },
+      { title: "Solana Address (EjpYgeXXXnnpcwSq82qFDJneVY1U5zPW9L1kyDKbtpbX)", category: "Web3 Identity", badge: "Copy", action: "copy-sol" },
+      { title: "Home / Founder Digital HQ", category: "Navigation", badge: "HQ", url: "index.html" },
       { title: "About Mayank Yadav & Philosophy", category: "Navigation", badge: "Story", url: "about.html" },
-      { title: "All Projects & Archive", category: "Navigation", badge: "Archive", url: "projects.html" },
+      { title: "All Projects & Architecture Archive", category: "Navigation", badge: "Archive", url: "projects.html" },
       { title: "Experience & Track Record", category: "Navigation", badge: "Leadership", url: "experience.html" },
-      { title: "Technical Skills & Matrix", category: "Navigation", badge: "Skills", url: "skills.html" },
+      { title: "Technical Skills & Competency Matrix", category: "Navigation", badge: "Skills", url: "skills.html" },
       { title: "Direct Contact & Encrypted Hub", category: "Navigation", badge: "Contact", url: "contact.html" },
-      { title: "Founder Dossier / CV", category: "Navigation", badge: "CV", url: "resume.html" },
-      { title: "Genesis Block (#000)", category: "Living Ledger", badge: "Milestone", url: "index.html#ledger" },
-      { title: "GitHub: @mayankyadav89", category: "Social", badge: "OSS", url: "https://github.com/mayankyadav89", external: true },
-      { title: "LinkedIn: @mayankyadav89", category: "Social", badge: "Network", url: "https://www.linkedin.com/in/mayankyadav89/", external: true },
-      { title: "X / Twitter: @maayankavy07", category: "Social", badge: "Updates", url: "https://x.com/maayankavy07", external: true },
-      { title: "Farcaster: @mayankyadav", category: "Social", badge: "Web3", url: "https://farcaster.xyz/mayankyadav", external: true }
+      { title: "Koii Network (India BD Lead - 2,500+ Community)", category: "Experience", badge: "Leadership", url: "https://koii.network", external: true },
+      { title: "Victus Global (Web3 Venture & Protocol Due Diligence)", category: "Experience", badge: "Advisory", url: "https://victusglobal.com", external: true },
+      { title: "GitHub: @mayankyadav89", category: "Channels", badge: "OSS", url: "https://github.com/mayankyadav89", external: true },
+      { title: "LinkedIn: @mayankyadav89", category: "Channels", badge: "Executive", url: "https://www.linkedin.com/in/mayankyadav89/", external: true },
+      { title: "X / Twitter: @maayankavy07", category: "Channels", badge: "Updates", url: "https://x.com/maayankavy07", external: true },
+      { title: "Devfolio Profile: @Mayankyadav", category: "Channels", badge: "Hackathons", url: "https://devfolio.co/@Mayankyadav", external: true }
     ];
 
     function openPalette() {
       overlay.classList.add('active');
       input.value = '';
-      input.focus();
+      setTimeout(() => input.focus(), 40);
       renderResults('');
     }
 
@@ -174,6 +193,29 @@
     function executeAction(item) {
       if (!item) return;
       closePalette();
+
+      if (item.action === 'terminal') {
+        if (window.openFounderTerminal) {
+          window.openFounderTerminal();
+        }
+        return;
+      }
+
+      if (item.action === 'copy-email') {
+        copyText('hello@itsmayank.me', 'Founder email (hello@itsmayank.me)');
+        return;
+      }
+
+      if (item.action === 'copy-evm') {
+        copyText('0x8b99d1ace44d52659bbe65f7f4c7f5d59afc2b7e', 'EVM Address');
+        return;
+      }
+
+      if (item.action === 'copy-sol') {
+        copyText('EjpYgeXXXnnpcwSq82qFDJneVY1U5zPW9L1kyDKbtpbX', 'Solana Address');
+        return;
+      }
+
       if (item.external) {
         window.open(item.url, '_blank', 'noopener,noreferrer');
       } else {
@@ -183,6 +225,25 @@
           targetUrl = '../' + targetUrl;
         }
         window.location.href = targetUrl;
+      }
+    }
+
+    function copyText(text, label) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => {
+          if (window.playTactileChime) window.playTactileChime('copy');
+          showToastFeedback(`Copied ${label} to clipboard! ✓`);
+        });
+      }
+    }
+
+    function showToastFeedback(msg) {
+      let toast = document.getElementById('hq-global-toast');
+      if (toast) {
+        toast.textContent = msg;
+        toast.classList.add('show');
+        clearTimeout(toast.timer);
+        toast.timer = setTimeout(() => toast.classList.remove('show'), 2800);
       }
     }
 
@@ -260,6 +321,47 @@
           e.preventDefault();
           target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
+      });
+    });
+  }
+
+  /* ===== Contact Form Mailto Dispatcher ===== */
+  function initContactForms() {
+    const forms = [
+      document.getElementById('hero-contact-form'),
+      document.getElementById('contact-form')
+    ].filter(Boolean);
+
+    forms.forEach(form => {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const nameInput = form.querySelector('#form-name, #contact-name, input[name="name"]');
+        const emailInput = form.querySelector('#form-email, #contact-email, input[name="email"]');
+        const messageInput = form.querySelector('#form-message, #contact-message, textarea[name="message"]');
+
+        const name = nameInput ? nameInput.value.trim() : '';
+        const email = emailInput ? emailInput.value.trim() : '';
+        const message = messageInput ? messageInput.value.trim() : '';
+
+        if (!name || !email || !message) return;
+
+        const subject = encodeURIComponent(`Inquiry from ${name} via Founder HQ`);
+        const body = encodeURIComponent(`Hi Mayank,\n\n${message}\n\n---\nSender: ${name}\nEmail: ${email}`);
+        const mailtoUrl = `mailto:hello@itsmayank.me?subject=${subject}&body=${body}`;
+
+        showToastFeedback('Opening your email client to dispatch to hello@itsmayank.me...');
+        if (window.playTactileChime) window.playTactileChime('unlock');
+
+        setTimeout(() => {
+          window.location.href = mailtoUrl;
+        }, 300);
+      });
+    });
+
+    // Wire up one-click copy email buttons
+    document.querySelectorAll('#copy-email-hero-btn, #contact-copy-email-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        copyText('hello@itsmayank.me', 'Founder email (hello@itsmayank.me)');
       });
     });
   }

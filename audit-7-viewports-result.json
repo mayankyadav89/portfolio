@@ -1,0 +1,3584 @@
+{
+  "timestamp": "2026-09-18T05:10:18.426Z",
+  "viewports": {
+    "desktop-1280x720": {
+      "config": {
+        "name": "desktop-1280x720",
+        "width": 1280,
+        "height": 720,
+        "mobile": false
+      },
+      "checkpoints": {
+        "100": {
+          "checkpointMs": 100,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 1280,
+              "height": 1038,
+              "bottom": 1038,
+              "right": 1280
+            },
+            "textLength": 1087,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 176,
+              "left": 88,
+              "width": 587,
+              "height": 156,
+              "bottom": 332,
+              "right": 675
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 431,
+              "left": 88,
+              "width": 560,
+              "height": 86,
+              "bottom": 517,
+              "right": 648
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 545,
+              "left": 88,
+              "width": 385,
+              "height": 47,
+              "bottom": 591,
+              "right": 473
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 623,
+              "left": 88,
+              "width": 587,
+              "height": 74,
+              "bottom": 697,
+              "right": 675
+            },
+            "textLength": 92,
+            "textSnippet": "2 Active Ventures 2,500+ Community Built AI & ML CSE Special"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 88,
+              "width": 587,
+              "height": 613,
+              "bottom": 697,
+              "right": 675
+            },
+            "textLength": 434,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 720,
+              "width": 472,
+              "height": 475,
+              "bottom": 559,
+              "right": 1192
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        },
+        "500": {
+          "checkpointMs": 500,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 1280,
+              "height": 1038,
+              "bottom": 1038,
+              "right": 1280
+            },
+            "textLength": 1084,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 176,
+              "left": 88,
+              "width": 587,
+              "height": 156,
+              "bottom": 332,
+              "right": 675
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 431,
+              "left": 88,
+              "width": 560,
+              "height": 86,
+              "bottom": 517,
+              "right": 648
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 545,
+              "left": 88,
+              "width": 385,
+              "height": 47,
+              "bottom": 591,
+              "right": 473
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 623,
+              "left": 88,
+              "width": 587,
+              "height": 74,
+              "bottom": 697,
+              "right": 675
+            },
+            "textLength": 89,
+            "textSnippet": "0 Active Ventures 574 Community Built AI & ML CSE Specializa"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 88,
+              "width": 587,
+              "height": 613,
+              "bottom": 697,
+              "right": 675
+            },
+            "textLength": 431,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 720,
+              "width": 472,
+              "height": 475,
+              "bottom": 559,
+              "right": 1192
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        },
+        "1000": {
+          "checkpointMs": 1000,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 1280,
+              "height": 1038,
+              "bottom": 1038,
+              "right": 1280
+            },
+            "textLength": 1086,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 176,
+              "left": 88,
+              "width": 587,
+              "height": 156,
+              "bottom": 332,
+              "right": 675
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 431,
+              "left": 88,
+              "width": 560,
+              "height": 86,
+              "bottom": 517,
+              "right": 648
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 545,
+              "left": 88,
+              "width": 385,
+              "height": 47,
+              "bottom": 591,
+              "right": 473
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 623,
+              "left": 88,
+              "width": 587,
+              "height": 74,
+              "bottom": 697,
+              "right": 675
+            },
+            "textLength": 91,
+            "textSnippet": "1 Active Ventures 2,236 Community Built AI & ML CSE Speciali"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 88,
+              "width": 587,
+              "height": 613,
+              "bottom": 697,
+              "right": 675
+            },
+            "textLength": 433,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 720,
+              "width": 472,
+              "height": 475,
+              "bottom": 559,
+              "right": 1192
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        },
+        "2000": {
+          "checkpointMs": 2000,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 1280,
+              "height": 1038,
+              "bottom": 1038,
+              "right": 1280
+            },
+            "textLength": 1087,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 176,
+              "left": 88,
+              "width": 587,
+              "height": 156,
+              "bottom": 332,
+              "right": 675
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 431,
+              "left": 88,
+              "width": 560,
+              "height": 86,
+              "bottom": 517,
+              "right": 648
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 545,
+              "left": 88,
+              "width": 385,
+              "height": 47,
+              "bottom": 591,
+              "right": 473
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 623,
+              "left": 88,
+              "width": 587,
+              "height": 74,
+              "bottom": 697,
+              "right": 675
+            },
+            "textLength": 92,
+            "textSnippet": "2 Active Ventures 2,500+ Community Built AI & ML CSE Special"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 88,
+              "width": 587,
+              "height": 613,
+              "bottom": 697,
+              "right": 675
+            },
+            "textLength": 434,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 720,
+              "width": 472,
+              "height": 475,
+              "bottom": 559,
+              "right": 1192
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        }
+      }
+    },
+    "desktop-1366x768": {
+      "config": {
+        "name": "desktop-1366x768",
+        "width": 1366,
+        "height": 768,
+        "mobile": false
+      },
+      "checkpoints": {
+        "100": {
+          "checkpointMs": 100,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 1366,
+              "height": 1043,
+              "bottom": 1043,
+              "right": 1366
+            },
+            "textLength": 1087,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 176,
+              "left": 131,
+              "width": 586,
+              "height": 160,
+              "bottom": 336,
+              "right": 717
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 436,
+              "left": 131,
+              "width": 560,
+              "height": 86,
+              "bottom": 522,
+              "right": 691
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 550,
+              "left": 131,
+              "width": 385,
+              "height": 47,
+              "bottom": 596,
+              "right": 516
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 628,
+              "left": 131,
+              "width": 586,
+              "height": 74,
+              "bottom": 702,
+              "right": 717
+            },
+            "textLength": 92,
+            "textSnippet": "2 Active Ventures 2,500+ Community Built AI & ML CSE Special"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 131,
+              "width": 586,
+              "height": 618,
+              "bottom": 702,
+              "right": 717
+            },
+            "textLength": 434,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 765,
+              "width": 471,
+              "height": 475,
+              "bottom": 559,
+              "right": 1235
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        },
+        "500": {
+          "checkpointMs": 500,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 1366,
+              "height": 1043,
+              "bottom": 1043,
+              "right": 1366
+            },
+            "textLength": 1086,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 176,
+              "left": 131,
+              "width": 586,
+              "height": 160,
+              "bottom": 336,
+              "right": 717
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 436,
+              "left": 131,
+              "width": 560,
+              "height": 86,
+              "bottom": 522,
+              "right": 691
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 550,
+              "left": 131,
+              "width": 385,
+              "height": 47,
+              "bottom": 596,
+              "right": 516
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 628,
+              "left": 131,
+              "width": 586,
+              "height": 74,
+              "bottom": 702,
+              "right": 717
+            },
+            "textLength": 91,
+            "textSnippet": "1 Active Ventures 1,758 Community Built AI & ML CSE Speciali"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 131,
+              "width": 586,
+              "height": 618,
+              "bottom": 702,
+              "right": 717
+            },
+            "textLength": 433,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 765,
+              "width": 471,
+              "height": 475,
+              "bottom": 559,
+              "right": 1235
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        },
+        "1000": {
+          "checkpointMs": 1000,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 1366,
+              "height": 1043,
+              "bottom": 1043,
+              "right": 1366
+            },
+            "textLength": 1086,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 176,
+              "left": 131,
+              "width": 586,
+              "height": 160,
+              "bottom": 336,
+              "right": 717
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 436,
+              "left": 131,
+              "width": 560,
+              "height": 86,
+              "bottom": 522,
+              "right": 691
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 550,
+              "left": 131,
+              "width": 385,
+              "height": 47,
+              "bottom": 596,
+              "right": 516
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 628,
+              "left": 131,
+              "width": 586,
+              "height": 74,
+              "bottom": 702,
+              "right": 717
+            },
+            "textLength": 91,
+            "textSnippet": "1 Active Ventures 2,460 Community Built AI & ML CSE Speciali"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 131,
+              "width": 586,
+              "height": 618,
+              "bottom": 702,
+              "right": 717
+            },
+            "textLength": 433,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 765,
+              "width": 471,
+              "height": 475,
+              "bottom": 559,
+              "right": 1235
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        },
+        "2000": {
+          "checkpointMs": 2000,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 1366,
+              "height": 1043,
+              "bottom": 1043,
+              "right": 1366
+            },
+            "textLength": 1087,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 176,
+              "left": 131,
+              "width": 586,
+              "height": 160,
+              "bottom": 336,
+              "right": 717
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 436,
+              "left": 131,
+              "width": 560,
+              "height": 86,
+              "bottom": 522,
+              "right": 691
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 550,
+              "left": 131,
+              "width": 385,
+              "height": 47,
+              "bottom": 596,
+              "right": 516
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 628,
+              "left": 131,
+              "width": 586,
+              "height": 74,
+              "bottom": 702,
+              "right": 717
+            },
+            "textLength": 92,
+            "textSnippet": "2 Active Ventures 2,500+ Community Built AI & ML CSE Special"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 131,
+              "width": 586,
+              "height": 618,
+              "bottom": 702,
+              "right": 717
+            },
+            "textLength": 434,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 765,
+              "width": 471,
+              "height": 475,
+              "bottom": 559,
+              "right": 1235
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        }
+      }
+    },
+    "desktop-1440x900": {
+      "config": {
+        "name": "desktop-1440x900",
+        "width": 1440,
+        "height": 900,
+        "mobile": false
+      },
+      "checkpoints": {
+        "100": {
+          "checkpointMs": 100,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 1440,
+              "height": 1043,
+              "bottom": 1043,
+              "right": 1440
+            },
+            "textLength": 1087,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 176,
+              "left": 168,
+              "width": 584,
+              "height": 160,
+              "bottom": 336,
+              "right": 752
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 436,
+              "left": 168,
+              "width": 560,
+              "height": 86,
+              "bottom": 522,
+              "right": 728
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 550,
+              "left": 168,
+              "width": 385,
+              "height": 47,
+              "bottom": 596,
+              "right": 553
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 628,
+              "left": 168,
+              "width": 584,
+              "height": 74,
+              "bottom": 702,
+              "right": 752
+            },
+            "textLength": 92,
+            "textSnippet": "2 Active Ventures 2,500+ Community Built AI & ML CSE Special"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 168,
+              "width": 584,
+              "height": 618,
+              "bottom": 702,
+              "right": 752
+            },
+            "textLength": 434,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 803,
+              "width": 469,
+              "height": 475,
+              "bottom": 559,
+              "right": 1272
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        },
+        "500": {
+          "checkpointMs": 500,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 1440,
+              "height": 1043,
+              "bottom": 1043,
+              "right": 1440
+            },
+            "textLength": 1086,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 176,
+              "left": 168,
+              "width": 584,
+              "height": 160,
+              "bottom": 336,
+              "right": 752
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 436,
+              "left": 168,
+              "width": 560,
+              "height": 86,
+              "bottom": 522,
+              "right": 728
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 550,
+              "left": 168,
+              "width": 385,
+              "height": 47,
+              "bottom": 596,
+              "right": 553
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 628,
+              "left": 168,
+              "width": 584,
+              "height": 74,
+              "bottom": 702,
+              "right": 752
+            },
+            "textLength": 91,
+            "textSnippet": "1 Active Ventures 1,758 Community Built AI & ML CSE Speciali"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 168,
+              "width": 584,
+              "height": 618,
+              "bottom": 702,
+              "right": 752
+            },
+            "textLength": 433,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 803,
+              "width": 469,
+              "height": 475,
+              "bottom": 559,
+              "right": 1272
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        },
+        "1000": {
+          "checkpointMs": 1000,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 1440,
+              "height": 1043,
+              "bottom": 1043,
+              "right": 1440
+            },
+            "textLength": 1086,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 176,
+              "left": 168,
+              "width": 584,
+              "height": 160,
+              "bottom": 336,
+              "right": 752
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 436,
+              "left": 168,
+              "width": 560,
+              "height": 86,
+              "bottom": 522,
+              "right": 728
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 550,
+              "left": 168,
+              "width": 385,
+              "height": 47,
+              "bottom": 596,
+              "right": 553
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 628,
+              "left": 168,
+              "width": 584,
+              "height": 74,
+              "bottom": 702,
+              "right": 752
+            },
+            "textLength": 91,
+            "textSnippet": "1 Active Ventures 2,467 Community Built AI & ML CSE Speciali"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 168,
+              "width": 584,
+              "height": 618,
+              "bottom": 702,
+              "right": 752
+            },
+            "textLength": 433,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 803,
+              "width": 469,
+              "height": 475,
+              "bottom": 559,
+              "right": 1272
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        },
+        "2000": {
+          "checkpointMs": 2000,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 1440,
+              "height": 1043,
+              "bottom": 1043,
+              "right": 1440
+            },
+            "textLength": 1087,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 176,
+              "left": 168,
+              "width": 584,
+              "height": 160,
+              "bottom": 336,
+              "right": 752
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 436,
+              "left": 168,
+              "width": 560,
+              "height": 86,
+              "bottom": 522,
+              "right": 728
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 550,
+              "left": 168,
+              "width": 385,
+              "height": 47,
+              "bottom": 596,
+              "right": 553
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 628,
+              "left": 168,
+              "width": 584,
+              "height": 74,
+              "bottom": 702,
+              "right": 752
+            },
+            "textLength": 92,
+            "textSnippet": "2 Active Ventures 2,500+ Community Built AI & ML CSE Special"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 168,
+              "width": 584,
+              "height": 618,
+              "bottom": 702,
+              "right": 752
+            },
+            "textLength": 434,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 803,
+              "width": 469,
+              "height": 475,
+              "bottom": 559,
+              "right": 1272
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        }
+      }
+    },
+    "desktop-1920x1080": {
+      "config": {
+        "name": "desktop-1920x1080",
+        "width": 1920,
+        "height": 1080,
+        "mobile": false
+      },
+      "checkpoints": {
+        "100": {
+          "checkpointMs": 100,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 1920,
+              "height": 1045,
+              "bottom": 1045,
+              "right": 1920
+            },
+            "textLength": 1087,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 178,
+              "left": 408,
+              "width": 581,
+              "height": 160,
+              "bottom": 338,
+              "right": 989
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 438,
+              "left": 408,
+              "width": 560,
+              "height": 86,
+              "bottom": 524,
+              "right": 968
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 552,
+              "left": 408,
+              "width": 385,
+              "height": 47,
+              "bottom": 598,
+              "right": 793
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 630,
+              "left": 408,
+              "width": 581,
+              "height": 74,
+              "bottom": 704,
+              "right": 989
+            },
+            "textLength": 92,
+            "textSnippet": "2 Active Ventures 2,500+ Community Built AI & ML CSE Special"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 86,
+              "left": 408,
+              "width": 581,
+              "height": 618,
+              "bottom": 704,
+              "right": 989
+            },
+            "textLength": 434,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 86,
+              "left": 1045,
+              "width": 467,
+              "height": 475,
+              "bottom": 561,
+              "right": 1512
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        },
+        "500": {
+          "checkpointMs": 500,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 1920,
+              "height": 1045,
+              "bottom": 1045,
+              "right": 1920
+            },
+            "textLength": 1086,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 178,
+              "left": 408,
+              "width": 581,
+              "height": 160,
+              "bottom": 338,
+              "right": 989
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 438,
+              "left": 408,
+              "width": 560,
+              "height": 86,
+              "bottom": 524,
+              "right": 968
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 552,
+              "left": 408,
+              "width": 385,
+              "height": 47,
+              "bottom": 598,
+              "right": 793
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 630,
+              "left": 408,
+              "width": 581,
+              "height": 74,
+              "bottom": 704,
+              "right": 989
+            },
+            "textLength": 91,
+            "textSnippet": "1 Active Ventures 1,804 Community Built AI & ML CSE Speciali"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 86,
+              "left": 408,
+              "width": 581,
+              "height": 618,
+              "bottom": 704,
+              "right": 989
+            },
+            "textLength": 433,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 86,
+              "left": 1045,
+              "width": 467,
+              "height": 475,
+              "bottom": 561,
+              "right": 1512
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        },
+        "1000": {
+          "checkpointMs": 1000,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 1920,
+              "height": 1045,
+              "bottom": 1045,
+              "right": 1920
+            },
+            "textLength": 1086,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 178,
+              "left": 408,
+              "width": 581,
+              "height": 160,
+              "bottom": 338,
+              "right": 989
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 438,
+              "left": 408,
+              "width": 560,
+              "height": 86,
+              "bottom": 524,
+              "right": 968
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 552,
+              "left": 408,
+              "width": 385,
+              "height": 47,
+              "bottom": 598,
+              "right": 793
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 630,
+              "left": 408,
+              "width": 581,
+              "height": 74,
+              "bottom": 704,
+              "right": 989
+            },
+            "textLength": 91,
+            "textSnippet": "1 Active Ventures 2,467 Community Built AI & ML CSE Speciali"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 86,
+              "left": 408,
+              "width": 581,
+              "height": 618,
+              "bottom": 704,
+              "right": 989
+            },
+            "textLength": 433,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 86,
+              "left": 1045,
+              "width": 467,
+              "height": 475,
+              "bottom": 561,
+              "right": 1512
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        },
+        "2000": {
+          "checkpointMs": 2000,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 1920,
+              "height": 1045,
+              "bottom": 1045,
+              "right": 1920
+            },
+            "textLength": 1087,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 178,
+              "left": 408,
+              "width": 581,
+              "height": 160,
+              "bottom": 338,
+              "right": 989
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 438,
+              "left": 408,
+              "width": 560,
+              "height": 86,
+              "bottom": 524,
+              "right": 968
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 552,
+              "left": 408,
+              "width": 385,
+              "height": 47,
+              "bottom": 598,
+              "right": 793
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 630,
+              "left": 408,
+              "width": 581,
+              "height": 74,
+              "bottom": 704,
+              "right": 989
+            },
+            "textLength": 92,
+            "textSnippet": "2 Active Ventures 2,500+ Community Built AI & ML CSE Special"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 86,
+              "left": 408,
+              "width": 581,
+              "height": 618,
+              "bottom": 704,
+              "right": 989
+            },
+            "textLength": 434,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 86,
+              "left": 1045,
+              "width": 467,
+              "height": 475,
+              "bottom": 561,
+              "right": 1512
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        }
+      }
+    },
+    "mobile-390x844": {
+      "config": {
+        "name": "mobile-390x844",
+        "width": 390,
+        "height": 844,
+        "mobile": true
+      },
+      "checkpoints": {
+        "100": {
+          "checkpointMs": 100,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 390,
+              "height": 1909,
+              "bottom": 1909,
+              "right": 390
+            },
+            "textLength": 1087,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 225,
+              "left": 33,
+              "width": 325,
+              "height": 42,
+              "bottom": 267,
+              "right": 357
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 362,
+              "left": 16,
+              "width": 358,
+              "height": 114,
+              "bottom": 476,
+              "right": 374
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 504,
+              "left": 16,
+              "width": 358,
+              "height": 109,
+              "bottom": 614,
+              "right": 374
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 646,
+              "left": 16,
+              "width": 358,
+              "height": 139,
+              "bottom": 784,
+              "right": 374
+            },
+            "textLength": 92,
+            "textSnippet": "2 Active Ventures 2,500+ Community Built AI & ML CSE Special"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 16,
+              "width": 358,
+              "height": 700,
+              "bottom": 784,
+              "right": 374
+            },
+            "textLength": 434,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 824,
+              "left": 16,
+              "width": 358,
+              "height": 629,
+              "bottom": 1453,
+              "right": 374
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        },
+        "500": {
+          "checkpointMs": 500,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 390,
+              "height": 1909,
+              "bottom": 1909,
+              "right": 390
+            },
+            "textLength": 1086,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 225,
+              "left": 33,
+              "width": 325,
+              "height": 42,
+              "bottom": 267,
+              "right": 357
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 362,
+              "left": 16,
+              "width": 358,
+              "height": 114,
+              "bottom": 476,
+              "right": 374
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 504,
+              "left": 16,
+              "width": 358,
+              "height": 109,
+              "bottom": 614,
+              "right": 374
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 646,
+              "left": 16,
+              "width": 358,
+              "height": 139,
+              "bottom": 784,
+              "right": 374
+            },
+            "textLength": 91,
+            "textSnippet": "1 Active Ventures 1,502 Community Built AI & ML CSE Speciali"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 16,
+              "width": 358,
+              "height": 700,
+              "bottom": 784,
+              "right": 374
+            },
+            "textLength": 433,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 824,
+              "left": 16,
+              "width": 358,
+              "height": 629,
+              "bottom": 1453,
+              "right": 374
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        },
+        "1000": {
+          "checkpointMs": 1000,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 390,
+              "height": 1909,
+              "bottom": 1909,
+              "right": 390
+            },
+            "textLength": 1086,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 225,
+              "left": 33,
+              "width": 325,
+              "height": 42,
+              "bottom": 267,
+              "right": 357
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 362,
+              "left": 16,
+              "width": 358,
+              "height": 114,
+              "bottom": 476,
+              "right": 374
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 504,
+              "left": 16,
+              "width": 358,
+              "height": 109,
+              "bottom": 614,
+              "right": 374
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 646,
+              "left": 16,
+              "width": 358,
+              "height": 139,
+              "bottom": 784,
+              "right": 374
+            },
+            "textLength": 91,
+            "textSnippet": "1 Active Ventures 2,418 Community Built AI & ML CSE Speciali"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 16,
+              "width": 358,
+              "height": 700,
+              "bottom": 784,
+              "right": 374
+            },
+            "textLength": 433,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 824,
+              "left": 16,
+              "width": 358,
+              "height": 629,
+              "bottom": 1453,
+              "right": 374
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        },
+        "2000": {
+          "checkpointMs": 2000,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 390,
+              "height": 1909,
+              "bottom": 1909,
+              "right": 390
+            },
+            "textLength": 1087,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 225,
+              "left": 33,
+              "width": 325,
+              "height": 42,
+              "bottom": 267,
+              "right": 357
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 362,
+              "left": 16,
+              "width": 358,
+              "height": 114,
+              "bottom": 476,
+              "right": 374
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 504,
+              "left": 16,
+              "width": 358,
+              "height": 109,
+              "bottom": 614,
+              "right": 374
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 646,
+              "left": 16,
+              "width": 358,
+              "height": 139,
+              "bottom": 784,
+              "right": 374
+            },
+            "textLength": 92,
+            "textSnippet": "2 Active Ventures 2,500+ Community Built AI & ML CSE Special"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 16,
+              "width": 358,
+              "height": 700,
+              "bottom": 784,
+              "right": 374
+            },
+            "textLength": 434,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 824,
+              "left": 16,
+              "width": 358,
+              "height": 629,
+              "bottom": 1453,
+              "right": 374
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        }
+      }
+    },
+    "mobile-412x915": {
+      "config": {
+        "name": "mobile-412x915",
+        "width": 412,
+        "height": 915,
+        "mobile": true
+      },
+      "checkpoints": {
+        "100": {
+          "checkpointMs": 100,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 412,
+              "height": 1785,
+              "bottom": 1785,
+              "right": 412
+            },
+            "textLength": 1087,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 176,
+              "left": 44,
+              "width": 325,
+              "height": 42,
+              "bottom": 218,
+              "right": 368
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 314,
+              "left": 16,
+              "width": 380,
+              "height": 114,
+              "bottom": 428,
+              "right": 396
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 456,
+              "left": 16,
+              "width": 380,
+              "height": 109,
+              "bottom": 565,
+              "right": 396
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 597,
+              "left": 16,
+              "width": 380,
+              "height": 139,
+              "bottom": 736,
+              "right": 396
+            },
+            "textLength": 92,
+            "textSnippet": "2 Active Ventures 2,500+ Community Built AI & ML CSE Special"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 16,
+              "width": 380,
+              "height": 652,
+              "bottom": 736,
+              "right": 396
+            },
+            "textLength": 434,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 776,
+              "left": 16,
+              "width": 380,
+              "height": 610,
+              "bottom": 1385,
+              "right": 396
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        },
+        "500": {
+          "checkpointMs": 500,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 412,
+              "height": 1785,
+              "bottom": 1785,
+              "right": 412
+            },
+            "textLength": 1086,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 176,
+              "left": 44,
+              "width": 325,
+              "height": 42,
+              "bottom": 218,
+              "right": 368
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 314,
+              "left": 16,
+              "width": 380,
+              "height": 114,
+              "bottom": 428,
+              "right": 396
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 456,
+              "left": 16,
+              "width": 380,
+              "height": 109,
+              "bottom": 565,
+              "right": 396
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 597,
+              "left": 16,
+              "width": 380,
+              "height": 139,
+              "bottom": 736,
+              "right": 396
+            },
+            "textLength": 91,
+            "textSnippet": "1 Active Ventures 1,502 Community Built AI & ML CSE Speciali"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 16,
+              "width": 380,
+              "height": 652,
+              "bottom": 736,
+              "right": 396
+            },
+            "textLength": 433,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 776,
+              "left": 16,
+              "width": 380,
+              "height": 610,
+              "bottom": 1385,
+              "right": 396
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        },
+        "1000": {
+          "checkpointMs": 1000,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 412,
+              "height": 1785,
+              "bottom": 1785,
+              "right": 412
+            },
+            "textLength": 1086,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 176,
+              "left": 44,
+              "width": 325,
+              "height": 42,
+              "bottom": 218,
+              "right": 368
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 314,
+              "left": 16,
+              "width": 380,
+              "height": 114,
+              "bottom": 428,
+              "right": 396
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 456,
+              "left": 16,
+              "width": 380,
+              "height": 109,
+              "bottom": 565,
+              "right": 396
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 597,
+              "left": 16,
+              "width": 380,
+              "height": 139,
+              "bottom": 736,
+              "right": 396
+            },
+            "textLength": 91,
+            "textSnippet": "1 Active Ventures 2,418 Community Built AI & ML CSE Speciali"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 16,
+              "width": 380,
+              "height": 652,
+              "bottom": 736,
+              "right": 396
+            },
+            "textLength": 433,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 776,
+              "left": 16,
+              "width": 380,
+              "height": 610,
+              "bottom": 1385,
+              "right": 396
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        },
+        "2000": {
+          "checkpointMs": 2000,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 412,
+              "height": 1785,
+              "bottom": 1785,
+              "right": 412
+            },
+            "textLength": 1087,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 176,
+              "left": 44,
+              "width": 325,
+              "height": 42,
+              "bottom": 218,
+              "right": 368
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 314,
+              "left": 16,
+              "width": 380,
+              "height": 114,
+              "bottom": 428,
+              "right": 396
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 456,
+              "left": 16,
+              "width": 380,
+              "height": 109,
+              "bottom": 565,
+              "right": 396
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 597,
+              "left": 16,
+              "width": 380,
+              "height": 139,
+              "bottom": 736,
+              "right": 396
+            },
+            "textLength": 92,
+            "textSnippet": "2 Active Ventures 2,500+ Community Built AI & ML CSE Special"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 16,
+              "width": 380,
+              "height": 652,
+              "bottom": 736,
+              "right": 396
+            },
+            "textLength": 434,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 776,
+              "left": 16,
+              "width": 380,
+              "height": 610,
+              "bottom": 1385,
+              "right": 396
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        }
+      }
+    },
+    "mobile-430x932": {
+      "config": {
+        "name": "mobile-430x932",
+        "width": 430,
+        "height": 932,
+        "mobile": true
+      },
+      "checkpoints": {
+        "100": {
+          "checkpointMs": 100,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 430,
+              "height": 1723,
+              "bottom": 1723,
+              "right": 430
+            },
+            "textLength": 1087,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 176,
+              "left": 53,
+              "width": 325,
+              "height": 42,
+              "bottom": 218,
+              "right": 377
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 314,
+              "left": 16,
+              "width": 398,
+              "height": 114,
+              "bottom": 428,
+              "right": 414
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 456,
+              "left": 23,
+              "width": 385,
+              "height": 47,
+              "bottom": 502,
+              "right": 407
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 534,
+              "left": 16,
+              "width": 398,
+              "height": 139,
+              "bottom": 673,
+              "right": 414
+            },
+            "textLength": 92,
+            "textSnippet": "2 Active Ventures 2,500+ Community Built AI & ML CSE Special"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 16,
+              "width": 398,
+              "height": 589,
+              "bottom": 673,
+              "right": 414
+            },
+            "textLength": 434,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 713,
+              "left": 16,
+              "width": 398,
+              "height": 610,
+              "bottom": 1323,
+              "right": 414
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        },
+        "500": {
+          "checkpointMs": 500,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 430,
+              "height": 1723,
+              "bottom": 1723,
+              "right": 430
+            },
+            "textLength": 1086,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 176,
+              "left": 53,
+              "width": 325,
+              "height": 42,
+              "bottom": 218,
+              "right": 377
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 314,
+              "left": 16,
+              "width": 398,
+              "height": 114,
+              "bottom": 428,
+              "right": 414
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 456,
+              "left": 23,
+              "width": 385,
+              "height": 47,
+              "bottom": 502,
+              "right": 407
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 534,
+              "left": 16,
+              "width": 398,
+              "height": 139,
+              "bottom": 673,
+              "right": 414
+            },
+            "textLength": 91,
+            "textSnippet": "1 Active Ventures 1,445 Community Built AI & ML CSE Speciali"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 16,
+              "width": 398,
+              "height": 589,
+              "bottom": 673,
+              "right": 414
+            },
+            "textLength": 433,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 713,
+              "left": 16,
+              "width": 398,
+              "height": 610,
+              "bottom": 1323,
+              "right": 414
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        },
+        "1000": {
+          "checkpointMs": 1000,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 430,
+              "height": 1723,
+              "bottom": 1723,
+              "right": 430
+            },
+            "textLength": 1086,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 176,
+              "left": 53,
+              "width": 325,
+              "height": 42,
+              "bottom": 218,
+              "right": 377
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 314,
+              "left": 16,
+              "width": 398,
+              "height": 114,
+              "bottom": 428,
+              "right": 414
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 456,
+              "left": 23,
+              "width": 385,
+              "height": 47,
+              "bottom": 502,
+              "right": 407
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 534,
+              "left": 16,
+              "width": 398,
+              "height": 139,
+              "bottom": 673,
+              "right": 414
+            },
+            "textLength": 91,
+            "textSnippet": "1 Active Ventures 2,418 Community Built AI & ML CSE Speciali"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 16,
+              "width": 398,
+              "height": 589,
+              "bottom": 673,
+              "right": 414
+            },
+            "textLength": 433,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 713,
+              "left": 16,
+              "width": 398,
+              "height": 610,
+              "bottom": 1323,
+              "right": 414
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        },
+        "2000": {
+          "checkpointMs": 2000,
+          "isHeroPopulated": true,
+          "isTitleInViewport": true,
+          "hasHorizontalOverflow": false,
+          "hero": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 0,
+              "left": 0,
+              "width": 430,
+              "height": 1723,
+              "bottom": 1723,
+              "right": 430
+            },
+            "textLength": 1087,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "title": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 176,
+              "left": 53,
+              "width": 325,
+              "height": 42,
+              "bottom": 218,
+              "right": 377
+            },
+            "textLength": 12,
+            "textSnippet": "MAYANK YADAV"
+          },
+          "pitch": {
+            "exists": true,
+            "display": "block",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 314,
+              "left": 16,
+              "width": 398,
+              "height": 114,
+              "bottom": 428,
+              "right": 414
+            },
+            "textLength": 171,
+            "textSnippet": "Building at the intersection of AI, Web3 & Physical Asset In"
+          },
+          "ctas": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 456,
+              "left": 23,
+              "width": 385,
+              "height": 47,
+              "bottom": 502,
+              "right": 407
+            },
+            "textLength": 37,
+            "textSnippet": "Explore Selected Work Let's Connect →"
+          },
+          "stats": {
+            "exists": true,
+            "display": "grid",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 534,
+              "left": 16,
+              "width": 398,
+              "height": 139,
+              "bottom": 673,
+              "right": 414
+            },
+            "textLength": 92,
+            "textSnippet": "2 Active Ventures 2,500+ Community Built AI & ML CSE Special"
+          },
+          "heroText": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 84,
+              "left": 16,
+              "width": 398,
+              "height": 589,
+              "bottom": 673,
+              "right": 414
+            },
+            "textLength": 434,
+            "textSnippet": "BUILDING MRIG (RENTRO & GETNEXTIN) MAYANK YADAV TECHNOLOGY F"
+          },
+          "heroVisual": {
+            "exists": true,
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": 1,
+            "transform": "none",
+            "rect": {
+              "top": 713,
+              "left": 16,
+              "width": 398,
+              "height": 610,
+              "bottom": 1323,
+              "right": 414
+            },
+            "textLength": 486,
+            "textSnippet": "SYS.TELEMETRY // LIVE ARCHITECTURE ONLINE // PARENT ECOSYSTE"
+          }
+        }
+      }
+    }
+  },
+  "consoleErrors": [],
+  "networkFailures": [],
+  "reducedMotionVerification": {
+    "heroDisplay": "block",
+    "heroVisibility": "visible",
+    "heroOpacity": "1",
+    "titleText": "MAYANK YADAV",
+    "cursorDotDisplay": "flex"
+  }
+}

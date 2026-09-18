@@ -135,17 +135,23 @@
   </header>
 
   <main id="main-content" style="padding-top: 5rem;">
-    <!-- Action Bar for Printing -->
-    <div class="container no-print" style="margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center;">
+    <!-- Action Bar for Printing / Downloading -->
+    <div class="container no-print" style="margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
       <div class="breadcrumb" style="margin-bottom: 0;">
         <a href="index.html">HQ</a>
         <span class="breadcrumb-sep">/</span>
         <span class="breadcrumb-current">Founder Dossier</span>
       </div>
-      <button onclick="window.print()" class="btn btn-secondary btn-sm">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
-        <span>Print / Save as PDF</span>
-      </button>
+      <div style="display: flex; gap: 0.75rem; align-items: center;">
+        <a href="/api/resume/download" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="download-active-resume-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Download Active PDF</span>
+        </a>
+        <button onclick="window.print()" class="btn btn-secondary btn-sm">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          <span>Print / Save</span>
+        </button>
+      </div>
     </div>
 
     <!-- ===== Dossier Document Sheet ===== -->
@@ -293,7 +299,6 @@
   <script src="data/blocks.js"></script>
   <script src="data/data-loader.js"></script>
   <script src="js/founder-identity.js"></script>
-  <script src="js/profile-studio.js"></script>
   <script src="js/core.js"></script>
 </body>
 </html>

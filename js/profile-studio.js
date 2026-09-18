@@ -343,7 +343,7 @@
         if (window.FounderIdentity) {
           await window.FounderIdentity.resetAvatar();
           this.loadDefaultImage();
-          this.showToast('Reset to original founder portrait.');
+          this.showToast('Reset identity avatar.');
         }
       });
 
@@ -430,8 +430,10 @@
     }
 
     loadDefaultImage() {
-      const def = window.FounderIdentity ? window.FounderIdentity.getDefaultAvatar() : 'assets/founder-mayank.png';
-      this.loadImageFromUrl(def, 'Default Asset');
+      const def = window.FounderIdentity ? window.FounderIdentity.getDefaultAvatar() : null;
+      if (def) {
+        this.loadImageFromUrl(def, 'Default Asset');
+      }
     }
 
     renderCanvas() {

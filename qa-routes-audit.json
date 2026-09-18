@@ -1,0 +1,37 @@
+{
+  "about.html": {
+    "title": "localhost",
+    "nav": false,
+    "footer": false,
+    "personalPhoto": false,
+    "brokenImages": 0
+  },
+  "projects.html": {
+    "title": "localhost",
+    "nav": false,
+    "footer": false,
+    "personalPhoto": false,
+    "brokenImages": 0
+  },
+  "experience.html": {
+    "title": "localhost",
+    "nav": false,
+    "footer": false,
+    "personalPhoto": false,
+    "brokenImages": 0
+  },
+  "skills.html": {
+    "title": "localhost",
+    "nav": false,
+    "footer": false,
+    "personalPhoto": false,
+    "brokenImages": 0
+  },
+  "contact.html": {
+    "title": "localhost",
+    "nav": false,
+    "footer": false,
+    "personalPhoto": false,
+    "brokenImages": 0
+  }
+}

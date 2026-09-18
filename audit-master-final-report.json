@@ -1,0 +1,172 @@
+{
+  "timestamp": "2026-09-18T04:21:06.205Z",
+  "desktopResults": {
+    "hero": {
+      "titleFound": true,
+      "titleText": "MAYANK YADAV",
+      "titleFitsInViewport": true,
+      "ctaCount": 2,
+      "hexSigFound": true,
+      "hexSigText": "HEX //\n              4D 41 59 41 4E 4B 20 59 41 44 41 56",
+      "glyphCanvasFound": true,
+      "terminalFound": true
+    }
+  },
+  "mobileResults": {
+    "metrics": {
+      "documentScrollWidth": 430,
+      "bodyScrollWidth": 430,
+      "windowInnerWidth": 430,
+      "hasHorizontalOverflow": false,
+      "isExactMatch": true
+    },
+    "hero": {
+      "titleFound": true,
+      "titleText": "MAYANK YADAV",
+      "titleWidth": 284.515625,
+      "titleFitsInViewport": true,
+      "ctaCount": 2,
+      "hexSigFound": true,
+      "hexSigText": "HEX //\n              4D 41 59 41 4E 4B 20 59 41 44 41 56"
+    },
+    "navigation": {
+      "hamburgerFound": true,
+      "drawerFound": true,
+      "drawerOpenedOnClick": true,
+      "closeBtnFound": true,
+      "navLinksCount": 7
+    },
+    "work": {
+      "cardCount": 4,
+      "allCardsFitViewport": true,
+      "projects": [
+        {
+          "id": "rentro",
+          "title": "Rentro",
+          "hasUrl": true
+        },
+        {
+          "id": "getnextin",
+          "title": "GetNextIn",
+          "hasUrl": true
+        },
+        {
+          "id": "crypticard",
+          "title": "Crypticard",
+          "hasUrl": true
+        },
+        {
+          "id": "svg-aegisvault",
+          "title": "SVG AegisVault",
+          "hasUrl": true
+        }
+      ]
+    },
+    "capabilities": {
+      "totalItems": 5,
+      "triggersFound": 5,
+      "touchToggleSuccess": true,
+      "allFitWidth": true,
+      "capabilityTitles": [
+        "Product Architecture & Strategy",
+        "AI & Machine Learning Systems",
+        "Web3 Protocol & Smart Account Engineering",
+        "Multi-Sided Marketplace Design",
+        "Ecosystem Growth & Community Architecture"
+      ]
+    },
+    "skills": {
+      "categoryTabsCount": 7,
+      "searchInputFound": true,
+      "totalSkillsCount": 36,
+      "tabFilteringVerified": true,
+      "aiTabSkillCount": 6,
+      "allCardsFitViewport": true
+    },
+    "connections": {
+      "connectionCardsCount": 11,
+      "copyButtonsCount": 13,
+      "allCardsFitWidth": true
+    },
+    "contact": {
+      "formFound": true,
+      "copyEmailBtnFound": true,
+      "emailInputsInteractive": true,
+      "mailtoPatternVerified": true,
+      "noFakePGP": true,
+      "noFakeLatency": true
+    },
+    "externalLinks": {
+      "totalLinks": 82,
+      "externalLinksCount": 79,
+      "targetBlankCount": 46,
+      "targetBlankAllHaveNoopener": true,
+      "rentroLinksCount": 8,
+      "getNextInLinksCount": 8,
+      "typoLinksCount": 0
+    }
+  },
+  "crossViewports": [
+    {
+      "viewport": "Desktop Full HD (1920x1080)",
+      "scrollWidth": 1920,
+      "innerWidth": 1920,
+      "noOverflow": true,
+      "titleFits": true
+    },
+    {
+      "viewport": "Desktop Laptop Standard (1440x900)",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "noOverflow": true,
+      "titleFits": true
+    },
+    {
+      "viewport": "Desktop Laptop Compact (1366x768)",
+      "scrollWidth": 1366,
+      "innerWidth": 1366,
+      "noOverflow": true,
+      "titleFits": true
+    },
+    {
+      "viewport": "Desktop Small / Tablet Landscape (1280x720)",
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "noOverflow": true,
+      "titleFits": true
+    },
+    {
+      "viewport": "Mobile iPhone 14/15/16 Pro Max (430x932)",
+      "scrollWidth": 430,
+      "innerWidth": 430,
+      "noOverflow": true,
+      "titleFits": true
+    },
+    {
+      "viewport": "Mobile Android Large Pixel 7 (412x915)",
+      "scrollWidth": 412,
+      "innerWidth": 412,
+      "noOverflow": true,
+      "titleFits": true
+    },
+    {
+      "viewport": "Mobile iPhone 12/13/14 Standard (390x844)",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "noOverflow": true,
+      "titleFits": true
+    }
+  ],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "screenshots": [
+    "audit-desktop-01-hero.png",
+    "audit-mobile-430-01-hero.png",
+    "audit-mobile-430-02-drawer.png",
+    "audit-mobile-430-03-work.png",
+    "audit-mobile-430-04-capabilities.png",
+    "audit-mobile-430-05-skills.png",
+    "audit-mobile-430-06-connections.png",
+    "audit-mobile-430-07-contact.png"
+  ]
+}

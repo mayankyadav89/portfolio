@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Founder OS // Admin Resume Management &middot; Mayank Yadav</title>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .admin-container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 6rem;
+    }
+    .admin-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--border-default);
+      margin-bottom: 2.5rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .admin-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+    .admin-brand-logo {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+    }
+    .admin-brand-badge {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-full);
+      background: rgba(167, 139, 250, 0.15);
+      color: var(--accent-violet);
+      border: 1px solid rgba(167, 139, 250, 0.3);
+    }
+    .admin-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    @media (max-width: 860px) {
+      .admin-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .admin-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-default);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow-md);
+      position: relative;
+    }
+    .admin-card-title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .active-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-full);
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      background: rgba(52, 211, 153, 0.12);
+      color: var(--accent-emerald);
+      border: 1px solid rgba(52, 211, 153, 0.35);
+    }
+    .active-pulse-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent-emerald);
+      box-shadow: 0 0 8px var(--accent-emerald);
+      animation: statusPulse 2s infinite ease-in-out;
+    }
+    .metadata-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.85rem;
+      font-size: 0.88rem;
+    }
+    .metadata-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 0.65rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .metadata-label {
+      color: var(--text-muted);
+      font-size: 0.82rem;
+    }
+    .metadata-value {
+      font-family: var(--font-mono);
+      color: var(--text-primary);
+      font-size: 0.82rem;
+      text-align: right;
+      word-break: break-all;
+    }
+    .dropzone-area {
+      border: 2px dashed rgba(167, 139, 250, 0.35);
+      border-radius: var(--radius-md);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      cursor: pointer;
+      background: rgba(15, 15, 22, 0.5);
+      transition: border-color 0.2s ease, background-color 0.2s ease;
+    }
+    .dropzone-area:hover, .dropzone-area.dragover {
+      border-color: var(--accent-violet);
+      background: rgba(167, 139, 250, 0.08);
+    }
+    .history-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+      margin-top: 1rem;
+    }
+    .history-table th {
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border-default);
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .history-table td {
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid var(--border-subtle);
+      vertical-align: middle;
+    }
+    .history-table tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .login-box {
+      max-width: 440px;
+      margin: 4rem auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border-default);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-lg);
+    }
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+    .form-label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin-bottom: 0.45rem;
+      font-family: var(--font-mono);
+    }
+    .form-input {
+      width: 100%;
+      background: rgba(10, 10, 15, 0.85);
+      border: 1px solid var(--border-default);
+      border-radius: var(--radius-sm);
+      padding: 0.75rem 1rem;
+      color: #ffffff;
+      font-size: 0.9rem;
+      font-family: var(--font-sans);
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      box-sizing: border-box;
+    }
+    .form-input:focus {
+      border-color: var(--accent-violet);
+      box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.2);
+    }
+    .alert-banner {
+      padding: 0.85rem 1.15rem;
+      border-radius: var(--radius-sm);
+      margin-bottom: 1.25rem;
+      font-size: 0.85rem;
+      display: none;
+    }
+    .alert-banner.error {
+      background: rgba(244, 63, 94, 0.12);
+      border: 1px solid rgba(244, 63, 94, 0.4);
+      color: #fca5a5;
+    }
+    .alert-banner.success {
+      background: rgba(52, 211, 153, 0.12);
+      border: 1px solid rgba(52, 211, 153, 0.4);
+      color: #6ee7b7;
+    }
+  </style>
+</head>
+<body>
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <div class="grain-overlay"></div>
+
+  <!-- Main Admin Wrapper -->
+  <div class="admin-container">
+    <!-- Header -->
+    <header class="admin-header">
+      <div class="admin-brand">
+        <a href="index.html" class="admin-brand-logo">MY</a>
+        <span class="admin-brand-badge">FOUNDER OS // RESUME ADMIN</span>
+      </div>
+      <div style="display: flex; gap: 0.75rem; align-items: center;">
+        <a href="index.html" class="btn btn-outline" style="font-size: 0.8rem; padding: 0.45rem 0.85rem;">
+          <span>&larr; Public HQ</span>
+        </a>
+        <button type="button" id="admin-logout-btn" class="btn btn-outline" style="font-size: 0.8rem; padding: 0.45rem 0.85rem; display: none;">
+          <span>Logout</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Global Alert Banner -->
+    <div id="admin-alert" class="alert-banner" role="alert"></div>
+
+    <!-- ===== 1. UNAUTHENTICATED LOGIN VIEW ===== -->
+    <div id="login-section" class="login-box" style="display: none;">
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🛡️</div>
+        <h1 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 0.35rem;">Superuser Authentication</h1>
+        <p style="color: var(--text-muted); font-size: 0.82rem;">Restricted management area for site owner.</p>
+      </div>
+
+      <form id="admin-login-form">
+        <div class="form-group">
+          <label class="form-label" for="login-identifier">Superuser Email / Username</label>
+          <input type="text" id="login-identifier" class="form-input" placeholder="hello@itsmayank.me or mayankyadav89" required autocomplete="username">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="login-password">Password</label>
+          <input type="password" id="login-password" class="form-input" placeholder="••••••••••••" required autocomplete="current-password">
+        </div>
+
+        <button type="submit" id="login-submit-btn" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 0.5rem;">
+          <span>Authenticate &rarr;</span>
+        </button>
+      </form>
+    </div>
+
+    <!-- ===== 2. AUTHENTICATED DASHBOARD VIEW ===== -->
+    <div id="dashboard-section" style="display: none;">
+      <div class="admin-grid">
+        <!-- Active Resume Card -->
+        <div class="admin-card">
+          <div class="admin-card-title">
+            <span>Current Active Resume</span>
+            <span class="active-badge"><span class="active-pulse-dot"></span> LIVE / PUBLIC</span>
+          </div>
+
+          <div class="metadata-list" id="active-metadata-list">
+            <div class="metadata-item">
+              <span class="metadata-label">Filename:</span>
+              <span class="metadata-value" id="active-filename">Loading...</span>
+            </div>
+            <div class="metadata-item">
+              <span class="metadata-label">File Size:</span>
+              <span class="metadata-value" id="active-size">&mdash;</span>
+            </div>
+            <div class="metadata-item">
+              <span class="metadata-label">Last Updated:</span>
+              <span class="metadata-value" id="active-updated">&mdash;</span>
+            </div>
+            <div class="metadata-item">
+              <span class="metadata-label">Version Number:</span>
+              <span class="metadata-value" id="active-version">&mdash;</span>
+            </div>
+            <div class="metadata-item" style="flex-direction: column; align-items: flex-start; gap: 0.35rem;">
+              <span class="metadata-label">SHA-256 Checksum:</span>
+              <span class="metadata-value" id="active-checksum" style="font-size: 0.72rem; color: var(--accent-cyan);">&mdash;</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <a href="/api/resume/download" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download Active PDF</span>
+            </a>
+            <a href="/resume.html" target="_blank" class="btn btn-secondary btn-sm">
+              <span>View Dossier Page &rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Upload New Version Card -->
+        <div class="admin-card">
+          <div class="admin-card-title">
+            <span>Upload &amp; Replace Resume</span>
+            <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-violet);">PDF ONLY (MAX 10MB)</span>
+          </div>
+
+          <form id="resume-upload-form">
+            <div class="dropzone-area" id="pdf-dropzone">
+              <input type="file" id="pdf-file-input" accept=".pdf,application/pdf" style="display: none;">
+              <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">📄</div>
+              <div style="font-weight: 600; font-size: 0.95rem; margin-bottom: 0.25rem;" id="dropzone-label">
+                Drag &amp; drop new PDF resume here, or <span style="color: var(--accent-violet); text-decoration: underline;">browse</span>
+              </div>
+              <p style="color: var(--text-muted); font-size: 0.78rem; margin: 0;">
+                MIME: application/pdf &middot; Strictly verified server-side
+              </p>
+            </div>
+
+            <div id="file-preview" style="display: none; margin-top: 1rem; padding: 0.75rem 1rem; background: rgba(10, 10, 15, 0.7); border: 1px solid var(--border-default); border-radius: var(--radius-sm); font-size: 0.85rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span id="preview-filename" style="font-weight: 600; color: #ffffff;"></span>
+                <span id="preview-filesize" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);"></span>
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-top: 1rem;">
+              <label class="form-label" for="upload-notes">Version Notes (Optional)</label>
+              <input type="text" id="upload-notes" class="form-input" placeholder="e.g. Added 2026 Q3 venture milestones & Unfold bounty">
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1.25rem;">
+              <input type="checkbox" id="set-active-checkbox" checked style="accent-color: var(--accent-violet);">
+              <label for="set-active-checkbox" style="font-size: 0.82rem; color: var(--text-secondary); cursor: pointer;">
+                Set as active public resume immediately
+              </label>
+            </div>
+
+            <button type="submit" id="upload-submit-btn" class="btn btn-primary" style="width: 100%; justify-content: center;" disabled>
+              <span>Upload &amp; Set Active &rarr;</span>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Version History & Rollback System -->
+      <div class="admin-card">
+        <div class="admin-card-title">
+          <span>Version History &amp; Rollback</span>
+          <span id="version-count-badge" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">1 version</span>
+        </div>
+
+        <div style="overflow-x: auto;">
+          <table class="history-table">
+            <thead>
+              <tr>
+                <th>Version</th>
+                <th>Filename</th>
+                <th>Size</th>
+                <th>Upload Date</th>
+                <th>SHA-256</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="history-table-body">
+              <tr>
+                <td colspan="7" style="text-align: center; color: var(--text-muted); padding: 2rem;">Loading version history...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/admin-dashboard.js"></script>
+</body>
+</html>

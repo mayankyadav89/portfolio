@@ -1,0 +1,272 @@
+{
+  "hero": {
+    "titleFound": true,
+    "ariaLabel": "Mayank Yadav",
+    "charCount": 11,
+    "charsText": "MAYANKYADAV",
+    "glyphCanvas": {
+      "found": true,
+      "width": 160,
+      "height": 160
+    },
+    "cursor": {
+      "dotFound": true,
+      "ringFound": true,
+      "dotVisible": true
+    }
+  },
+  "cursor": {},
+  "threeD": {},
+  "hover": {},
+  "mobile": {
+    "390x844": {
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "hasHorizontalOverflow": false,
+      "cursorDisabledOnMobile": true,
+      "hamburgerFound": true
+    }
+  },
+  "capabilities": {
+    "itemCount": 0,
+    "activeCountAfterClick": 0,
+    "itemTitles": []
+  },
+  "work": {
+    "cardCount": 4,
+    "projects": [
+      {
+        "id": "rentro",
+        "title": "Rentro",
+        "tagline": "Physical Asset Marketplace · Product under MRIG",
+        "url": "https://rentro.mrig.tech"
+      },
+      {
+        "id": "getnextin",
+        "title": "GetNextIn",
+        "tagline": "AI Career Platform · Product under MRIG",
+        "url": "https://getnextin.mrig.tech"
+      },
+      {
+        "id": "crypticard",
+        "title": "Crypticard",
+        "tagline": "Self-Sovereign Identity for the Web3 Era",
+        "url": "projects/crypticard.html"
+      },
+      {
+        "id": "svg-aegisvault",
+        "title": "SVG AegisVault",
+        "tagline": "ERC-4337 Hybrid Smart Account with Passkeys",
+        "url": "ERC-4337 Smart Account"
+      }
+    ]
+  },
+  "experience": {
+    "pillCount": 0,
+    "totalCards": 0,
+    "cardsBeforeFilter": 0,
+    "cardsAfterFounderFilter": 0,
+    "roles": []
+  },
+  "skills": {
+    "categoriesCount": 0,
+    "searchFilterInputFound": true,
+    "visibleTagsForPostGIS": []
+  },
+  "connections": {
+    "cardsCount": 0,
+    "copyBtnsCount": 12,
+    "items": []
+  },
+  "contact": {
+    "formFound": true,
+    "copyEmailBtnFound": true,
+    "hasBhopalLocation": true,
+    "hasAvailableStatus": true,
+    "hasFakePGP": false,
+    "hasFakeLatency": false
+  },
+  "terminal": {
+    "outputLines": 60,
+    "commandsTested": [
+      "help",
+      "about",
+      "mrig",
+      "rentro",
+      "getnextin",
+      "crypticard",
+      "web3",
+      "matrix"
+    ]
+  },
+  "easterEggs": {},
+  "web3": {},
+  "brandAssets": [
+    {
+      "src": "http://localhost:3000/assets/mrig-emblem.png",
+      "alt": "MRIG Emblem",
+      "width": 433,
+      "height": 577,
+      "loaded": true
+    },
+    {
+      "src": "http://localhost:3000/assets/rentro-icon.png",
+      "alt": "Rentro App Icon",
+      "width": 1254,
+      "height": 1254,
+      "loaded": true
+    },
+    {
+      "src": "http://localhost:3000/assets/getnextin-icon.png",
+      "alt": "GetNextIn Neon App Icon",
+      "width": 1254,
+      "height": 1254,
+      "loaded": true
+    },
+    {
+      "src": "http://localhost:3000/assets/crypticard-icon.png",
+      "alt": "Crypticard App Icon",
+      "width": 1254,
+      "height": 1254,
+      "loaded": true
+    },
+    {
+      "src": "http://localhost:3000/assets/mrig-emblem.png",
+      "alt": "MRIG Emblem",
+      "width": 433,
+      "height": 577,
+      "loaded": true
+    },
+    {
+      "src": "http://localhost:3000/assets/getnextin-icon.png",
+      "alt": "GetNextIn Product Icon",
+      "width": 1254,
+      "height": 1254,
+      "loaded": true
+    },
+    {
+      "src": "http://localhost:3000/assets/rentro-icon.png",
+      "alt": "Rentro App Icon",
+      "width": 1254,
+      "height": 1254,
+      "loaded": true
+    },
+    {
+      "src": "http://localhost:3000/assets/crypticard-icon.png",
+      "alt": "Crypticard App Icon",
+      "width": 1254,
+      "height": 1254,
+      "loaded": true
+    },
+    {
+      "src": "http://localhost:3000/assets/koii-logo.png",
+      "alt": "Koii Network Logo",
+      "width": 216,
+      "height": 216,
+      "loaded": true
+    },
+    {
+      "src": "http://localhost:3000/assets/victus-logo.png",
+      "alt": "Victus Global Logo",
+      "width": 200,
+      "height": 200,
+      "loaded": true
+    }
+  ],
+  "routes": {
+    "about.html": {
+      "title": "About · Founder Philosophy — Mayank Yadav",
+      "hasNav": true,
+      "hasFooter": true,
+      "personalPhotosCount": 1,
+      "brokenImgsCount": 0,
+      "hasFakePGP": false,
+      "hasFakeLatency": false
+    },
+    "projects.html": {
+      "title": "Projects · Ecosystem Archive — Mayank Yadav",
+      "hasNav": true,
+      "hasFooter": true,
+      "personalPhotosCount": 1,
+      "brokenImgsCount": 0,
+      "hasFakePGP": false,
+      "hasFakeLatency": false
+    },
+    "experience.html": {
+      "title": "Experience · Leadership Track Record — Mayank Yadav",
+      "hasNav": true,
+      "hasFooter": true,
+      "personalPhotosCount": 1,
+      "brokenImgsCount": 0,
+      "hasFakePGP": false,
+      "hasFakeLatency": false
+    },
+    "skills.html": {
+      "title": "Skills · Technical Architecture Matrix — Mayank Yadav",
+      "hasNav": true,
+      "hasFooter": true,
+      "personalPhotosCount": 1,
+      "brokenImgsCount": 0,
+      "hasFakePGP": false,
+      "hasFakeLatency": false
+    },
+    "contact.html": {
+      "title": "Contact · Encrypted Communication Hub — Mayank Yadav",
+      "hasNav": true,
+      "hasFooter": true,
+      "personalPhotosCount": 1,
+      "brokenImgsCount": 0,
+      "hasFakePGP": false,
+      "hasFakeLatency": false
+    },
+    "projects/mrig.html": {
+      "title": "MRIG Ecosystem — Venture Architecture & Products | Mayank Yadav",
+      "hasNav": true,
+      "hasFooter": true,
+      "personalPhotosCount": 0,
+      "brokenImgsCount": 0,
+      "hasFakePGP": false,
+      "hasFakeLatency": false
+    },
+    "projects/crypticard.html": {
+      "title": "Crypticard Case Study — Decentralized Digital Identity | Mayank Yadav",
+      "hasNav": true,
+      "hasFooter": true,
+      "personalPhotosCount": 0,
+      "brokenImgsCount": 0,
+      "hasFakePGP": false,
+      "hasFakeLatency": false
+    },
+    "projects/svg-aegisvault.html": {
+      "title": "SVG AegisVault Case Study — ERC-4337 Smart Account Wallet | Mayank Yadav",
+      "hasNav": true,
+      "hasFooter": true,
+      "personalPhotosCount": 0,
+      "brokenImgsCount": 0,
+      "hasFakePGP": false,
+      "hasFakeLatency": false
+    }
+  },
+  "consoleErrors": [],
+  "screenshots": [
+    "audit-desktop-01-hero.png",
+    "audit-desktop-02-capabilities.png",
+    "audit-desktop-03-work.png",
+    "audit-desktop-04-experience.png",
+    "audit-desktop-05-skills.png",
+    "audit-desktop-06-connections.png",
+    "audit-desktop-07-contact.png",
+    "audit-desktop-08-cmd-palette.png",
+    "audit-desktop-09-terminal.png",
+    "audit-mobile-01-hero-390.png",
+    "audit-mobile-02-drawer-390.png",
+    "audit-page-about-html.png",
+    "audit-page-projects-html.png",
+    "audit-page-experience-html.png",
+    "audit-page-skills-html.png",
+    "audit-page-contact-html.png",
+    "audit-page-projects-mrig-html.png",
+    "audit-page-projects-crypticard-html.png",
+    "audit-page-projects-svg-aegisvault-html.png"
+  ]
+}

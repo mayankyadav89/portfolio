@@ -31,7 +31,7 @@ const BLOCKS_DATA = [
     founderIdentity: {
       role: "Founder & Product Architect",
       focus: "AI, Web3, Physical Asset Infrastructure, Startups",
-      image: "assets/founder-mayank.png",
+      image: null,
       ens: "Maayankyadav.base.eth",
       ensUrl: "https://basescan.org/name/Maayankyadav.base.eth",
       evm: "0x8b99d1ace44d52659bbe65f7f4c7f5d59afc2b7e",

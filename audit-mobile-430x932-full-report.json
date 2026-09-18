@@ -1,0 +1,121 @@
+{
+  "viewport": "430x932",
+  "timestamp": "2026-09-17T17:08:37.458Z",
+  "metrics": {
+    "documentScrollWidth": 430,
+    "bodyScrollWidth": 430,
+    "windowInnerWidth": 430,
+    "hasHorizontalOverflow": false,
+    "isExactMatch": true
+  },
+  "hero": {
+    "titleFound": true,
+    "titleText": "MAYANK\n              YADAV",
+    "titleWidth": 223.609375,
+    "titleFitsInViewport": false,
+    "ctaCount": 0
+  },
+  "navigation": {
+    "hamburgerFound": true,
+    "drawerFound": true,
+    "drawerOpenedOnClick": true,
+    "closeBtnFound": true,
+    "navLinks": [
+      {
+        "text": "About",
+        "href": "#about"
+      },
+      {
+        "text": "Selected Work",
+        "href": "#work"
+      },
+      {
+        "text": "Capabilities",
+        "href": "#capabilities"
+      },
+      {
+        "text": "Experience",
+        "href": "#experience"
+      },
+      {
+        "text": "Skills",
+        "href": "#skills"
+      },
+      {
+        "text": "Web3 & Ecosystem",
+        "href": "#connections"
+      },
+      {
+        "text": "Contact",
+        "href": "#contact"
+      }
+    ]
+  },
+  "work": {
+    "cardCount": 4,
+    "allCardsFitViewport": true,
+    "projects": [
+      {
+        "id": "rentro",
+        "title": "Rentro",
+        "hasUrl": true
+      },
+      {
+        "id": "getnextin",
+        "title": "GetNextIn",
+        "hasUrl": true
+      },
+      {
+        "id": "crypticard",
+        "title": "Crypticard",
+        "hasUrl": true
+      },
+      {
+        "id": "svg-aegisvault",
+        "title": "SVG AegisVault",
+        "hasUrl": true
+      }
+    ]
+  },
+  "capabilities": {
+    "totalItems": 0,
+    "touchToggleSuccess": false,
+    "allFitWidth": true
+  },
+  "skills": {
+    "categoryPillsCount": 0,
+    "searchInputFound": true,
+    "totalSkillsCount": 0,
+    "allTagsFitViewport": true
+  },
+  "connections": {
+    "connectionCardsCount": 0,
+    "copyButtonsCount": 12,
+    "allCardsFitWidth": true
+  },
+  "copyButtons": {},
+  "externalLinks": {
+    "totalLinks": 82,
+    "externalLinksCount": 79,
+    "rentroLinksCount": 8,
+    "getNextInLinksCount": 8,
+    "typoLinksCount": 0,
+    "allExternalHaveRelNoopener": false
+  },
+  "cursorState": {
+    "dotHidden": true,
+    "ringHidden": true,
+    "labelHidden": false,
+    "isTouchSafe": true
+  },
+  "consoleErrors": [],
+  "screenshots": [
+    "audit-mobile-430-01-hero.png",
+    "audit-mobile-430-02-drawer.png",
+    "audit-mobile-430-03-work.png",
+    "audit-mobile-430-04-capabilities.png",
+    "audit-mobile-430-05-skills.png",
+    "audit-mobile-430-06-connections.png",
+    "audit-mobile-430-07-contact.png"
+  ]
+}
