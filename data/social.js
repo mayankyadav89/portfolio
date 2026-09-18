@@ -123,8 +123,8 @@ const CONNECTIONS_DATA = {
         {
           id: "x-twitter",
           platform: "X / Twitter",
-          handle: "@maayankavy07",
-          url: "https://x.com/maayankavy07",
+          handle: "@maayankyadav07",
+          url: "https://x.com/maayankyadav07",
           type: "social",
           context: "Frontier thoughts on AI career tech, physical asset tokenization & Web3.",
           badge: "Frontier Discourse",

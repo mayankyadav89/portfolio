@@ -301,15 +301,11 @@ body {
   line-height: 1.05;
   letter-spacing: -0.035em;
   margin-bottom: 0.75rem;
-  background: linear-gradient(180deg, #ffffff 0%, #e4e4e7 65%, #a1a1aa 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ffffff;
 }
 
 .hero-main-title .accent-text {
-  background: linear-gradient(135deg, #c4b5fd 0%, #a78bfa 50%, #818cf8 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--accent-violet);
 }
 
 .hero-role-headline {

@@ -193,12 +193,21 @@
 
 .mag-char-inner {
   display: inline-block;
-  transition: color 0.2s ease, text-shadow 0.2s ease;
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+  transition: color 0.2s ease, text-shadow 0.2s ease, transform 0.15s ease;
   will-change: transform;
+}
+
+[data-founder-last-name] .mag-char-inner,
+.hero-main-title .accent-text .mag-char-inner {
+  color: var(--accent-violet, #a78bfa);
+  -webkit-text-fill-color: var(--accent-violet, #a78bfa);
 }
 
 .mag-char-wrap.char-in-light .mag-char-inner {
   color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
   text-shadow: 0 0 24px rgba(167, 139, 250, 0.8),
                0 0 12px rgba(56, 189, 248, 0.6);
 }

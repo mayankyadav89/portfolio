@@ -124,7 +124,7 @@
       { title: "Victus Global (Web3 Venture & Protocol Due Diligence)", category: "Experience", badge: "Advisory", url: "https://victusglobal.com", external: true },
       { title: "GitHub: @mayankyadav89", category: "Channels", badge: "OSS", url: "https://github.com/mayankyadav89", external: true },
       { title: "LinkedIn: @mayankyadav89", category: "Channels", badge: "Executive", url: "https://www.linkedin.com/in/mayankyadav89/", external: true },
-      { title: "X / Twitter: @maayankavy07", category: "Channels", badge: "Updates", url: "https://x.com/maayankavy07", external: true },
+      { title: "X / Twitter: @maayankyadav07", category: "Channels", badge: "Updates", url: "https://x.com/maayankyadav07", external: true },
       { title: "Devfolio Profile: @Mayankyadav", category: "Channels", badge: "Hackathons", url: "https://devfolio.co/@Mayankyadav", external: true }
     ];
 

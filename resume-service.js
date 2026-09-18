@@ -84,22 +84,26 @@ function verifyPassword(password, storedHash, salt) {
 
 /**
  * Initialize Admin Configuration
+ * Strict Single-Superuser Security: FAILS CLOSED if ADMIN_PASSWORD is not set.
+ * NO hardcoded fallback credentials permitted.
  */
 function initAdminConfig() {
+  const rawAdminPassword = process.env.ADMIN_PASSWORD;
   const adminEmail = process.env.ADMIN_EMAIL || 'hello@itsmayank.me';
-  const rawAdminPassword = process.env.ADMIN_PASSWORD || 'Mayank@Founder2026!';
 
-  if (!fs.existsSync(ADMIN_CONFIG_FILE)) {
-    const hashed = hashPassword(rawAdminPassword);
-    const config = {
-      email: adminEmail,
-      username: 'mayankyadav89',
-      passwordHash: hashed.hash,
-      salt: hashed.salt,
-      createdAt: new Date().toISOString(),
-      lastLogin: null
-    };
-    fs.writeFileSync(ADMIN_CONFIG_FILE, JSON.stringify(config, null, 2));
+  if (rawAdminPassword && typeof rawAdminPassword === 'string' && rawAdminPassword.trim().length >= 8) {
+    if (!fs.existsSync(ADMIN_CONFIG_FILE)) {
+      const hashed = hashPassword(rawAdminPassword.trim());
+      const config = {
+        email: adminEmail,
+        username: 'mayankyadav89',
+        passwordHash: hashed.hash,
+        salt: hashed.salt,
+        createdAt: new Date().toISOString(),
+        lastLogin: null
+      };
+      fs.writeFileSync(ADMIN_CONFIG_FILE, JSON.stringify(config, null, 2));
+    }
   }
 }
 
@@ -108,14 +112,14 @@ function initAdminConfig() {
  */
 function getAdminConfig() {
   initAdminConfig();
-  try {
-    return JSON.parse(fs.readFileSync(ADMIN_CONFIG_FILE, 'utf8'));
-  } catch (err) {
-    return {
-      email: 'hello@itsmayank.me',
-      username: 'mayankyadav89'
-    };
+  if (fs.existsSync(ADMIN_CONFIG_FILE)) {
+    try {
+      return JSON.parse(fs.readFileSync(ADMIN_CONFIG_FILE, 'utf8'));
+    } catch (err) {
+      return null;
+    }
   }
+  return null;
 }
 
 /**
@@ -244,6 +248,13 @@ function authenticateAdmin(identifier, password, ip = '127.0.0.1') {
   }
 
   const config = getAdminConfig();
+  if (!config || !config.passwordHash) {
+    return {
+      success: false,
+      error: 'Superuser access is locked: ADMIN_PASSWORD environment variable is not configured.'
+    };
+  }
+
   const cleanId = (identifier || '').trim().toLowerCase();
   const isEmailMatch = cleanId === (config.email || '').toLowerCase();
   const isUserMatch = cleanId === (config.username || '').toLowerCase();
